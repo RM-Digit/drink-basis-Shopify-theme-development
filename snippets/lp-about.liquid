@@ -1,0 +1,111 @@
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% if atc-text == blank %}
+    {% assign atc-text = "Start My Trial" %}
+{% endif %}
+
+{% if object.headline != blank %}
+    {% assign headline = object.headline %}
+{% else %}
+    {% assign headline = "How does it work?" %}
+{% endif %}
+{% if object.tagline != blank %}
+    {% assign tagline = object.tagline %}
+{% else %}
+    {% assign tagline = "It's super easy!" %}
+{% endif %}
+{% if object.variant-id != blank %}
+    {% assign variant-id = object.variant-id %}
+{% else %}
+    {% assign variant-id = "32078604959862" %}
+{% endif %}
+
+{% if object.step1-icon != blank %}
+    {% assign step1-icon = object.step1-icon %}
+{% endif %}
+{% if object.step1-title != blank %}
+    {% assign step1-title = object.step1-title %}
+{% else %}
+    {% assign step1-title = "Pick your favorite flavors" %}
+{% endif %}
+{% if object.step1-text != blank %}
+    {% assign step1-text = object.step1-text %}
+{% else %}
+    {% assign step1-text = "We'd recommend the variety pack so you can try all of our delicious flavors at once." %}
+{% endif %}
+
+{% if object.step2-icon != blank %}
+    {% assign step2-icon = object.step2-icon %}
+{% endif %}
+{% if object.step2-title != blank %}
+    {% assign step2-title = object.step2-title %}
+{% else %}
+    {% assign step2-title = "Enjoy limited time 25% discount!" %}
+{% endif %}
+{% if object.step2-text != blank %}
+    {% assign step2-text = object.step2-text %}
+{% else %}
+    {% assign step2-text = "Start your trial with 15 Clean Hydration sticks for 25% off!" %}
+{% endif %}
+
+{% if object.step3-icon != blank %}
+    {% assign step3-icon = object.step3-icon %}
+{% endif %}
+{% if object.step3-title != blank %}
+    {% assign step3-title = object.step3-title %}
+{% else %}
+    {% assign step3-title = "You're all set!" %}
+{% endif %}
+{% if object.step3-text != blank %}
+    {% assign step3-text = object.step3-text %}
+{% else %}
+    {% assign step3-text = "After 18 days, your flexible hydration plan will start and we'll send you your next order for $24.99. Pause or cancel your plan at any time." %}
+{% endif %}
+
+<section class="plp-how">
+    <div class="container">
+        <h2 class="headline">{{ headline }}</h2>
+        <div class="tagline">{{ tagline }}</div>
+        <div class="row hiw-content">
+            <div class="column col-xs-12 col-md-4">
+                <div class="hiw-icon">
+                {% if step1-icon %}
+                    <img src="{{step1-icon | img_url: '92x'}}"/>
+                {% else %}
+                    💦
+                {% endif %}
+                </div>
+                <div class="title">{{step1-title}}</div>
+                <div class="text">{{step1-text}}</div>
+            </div>
+            <div class="column col-xs-12 col-md-4">
+                <div class="hiw-icon">
+                {% if step2-icon %}
+                    <img src="{{step2-icon | img_url: '92x'}}"/>
+                {% else %}
+                    💰
+                {% endif %}
+                </div>
+                <div class="title">{{step2-title}}</div>
+                <div class="text">{{step2-text}}</div>
+            </div>
+            <div class="column col-xs-12 col-md-4">
+                <div class="hiw-icon">
+                {% if step3-icon %}
+                    <img src="{{step3-icon | img_url: '92x'}}"/>
+                {% else %}
+                    🎉
+                {% endif %}
+                </div>
+                <div class="title">{{step3-title}}</div>
+                <div class="text">{{step3-text}}</div>
+            </div>
+        </div>
+        <a href="{% if is-atc %}/cart/{{variant-id}}:1?discount=vp25o1{% else %}#{% endif %}" data-variant-id="{{variant-id}}" class="btn btn-default add-to-cart btn-subscribe">{{atc-text}}</a>
+    </div>
+</section>

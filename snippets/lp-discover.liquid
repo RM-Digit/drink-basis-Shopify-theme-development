@@ -1,0 +1,191 @@
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+{{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+{{ 'slick.min.js'  | asset_url | script_tag }}
+
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% if atc-text == blank %}
+    {% assign atc-text = "Start My Trial" %}
+{% endif %}
+
+{% if object.headline != blank %}
+    {% assign headline = object.headline %}
+{% else %}
+    {% assign headline = "Discover our delicious flavors" %}
+{% endif %}
+{% if object.description != blank %}
+    {% assign description = object.description %}
+{% else %}
+    {% assign description = "We'd recommend the variety pack so you can try all of our delicious flavors at once." %}
+{% endif %}
+
+{% if object.variant1-image != blank %}
+    {% assign variant1-image = object.variant1-image | img_url: '700x' %}
+{% else %}
+    {% assign variant1-image = 'prod-varietypack-pouch-front.png' | asset_url %}
+{% endif %}
+{% if object.variant1-title != blank %}
+    {% assign variant1-title = object.variant1-title %}
+{% else %}
+    {% assign variant1-title = "Variety Pack" %}
+{% endif %}
+{% if object.variant1-description != blank %}
+    {% assign variant1-description = object.variant1-description %}
+{% else %}
+    {% assign variant1-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh." %}
+{% endif %}
+{% if object.variant1-id != blank %}
+    {% assign variant1-id = object.variant1-id %}
+{% else %}
+    {% assign variant1-id = "32078604959862" %}
+{% endif %}
+{% if object.variant1-bg-color != blank %}
+    {% assign variant1-bg-color = object.variant1-bg-color %}
+{% else %}
+    {% assign variant1-bg-color = "#fecdc6" %}
+{% endif %}
+
+{% if object.variant2-image != blank %}
+    {% assign variant2-image = object.variant2-image | img_url: '700x' %}
+{% else %}
+    {% assign variant2-image = 'prod-blackberrylemon-ex-front.png' | asset_url %}
+{% endif %}
+{% if object.variant2-title != blank %}
+    {% assign variant2-title = object.variant2-title %}
+{% else %}
+    {% assign variant2-title = "Blackberry Lemon" %}
+{% endif %}
+{% if object.variant2-description != blank %}
+    {% assign variant2-description = object.variant2-description %}
+{% else %}
+    {% assign variant2-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh." %}
+{% endif %}
+{% if object.variant2-id != blank %}
+    {% assign variant2-id = object.variant2-id %}
+{% else %}
+    {% assign variant2-id = "32078604861558" %}
+{% endif %}
+{% if object.variant2-bg-color != blank %}
+    {% assign variant2-bg-color = object.variant2-bg-color %}
+{% else %}
+    {% assign variant2-bg-color = "#bfacc9" %}
+{% endif %}
+
+{% if object.variant3-image != blank %}
+    {% assign variant3-image = object.variant3-image | img_url: '700x' %}
+{% else %}
+    {% assign variant3-image = 'prod-blackberrylemon-ex-front.png' | asset_url %}
+{% endif %}
+{% if object.variant3-title != blank %}
+    {% assign variant3-title = object.variant3-title %}
+{% else %}
+    {% assign variant3-title = "Cran Raspberry" %}
+{% endif %}
+{% if object.variant3-description != blank %}
+    {% assign variant3-description = object.variant3-description %}
+{% else %}
+    {% assign variant3-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh." %}
+{% endif %}
+{% if object.variant3-id != blank %}
+    {% assign variant3-id = object.variant3-id %}
+{% else %}
+    {% assign variant3-id = "32078604927094" %}
+{% endif %}
+{% if object.variant3-bg-color != blank %}
+    {% assign variant3-bg-color = object.variant3-bg-color %}
+{% else %}
+    {% assign variant3-bg-color = "gold" %}
+{% endif %}
+
+{% if object.variant4-image != blank %}
+    {% assign variant4-image = object.variant4-image | img_url: '700x' %}
+{% else %}
+    {% assign variant4-image = 'prod-varietypack-pouch-front.png' | asset_url %}
+{% endif %}
+{% if object.variant4-title != blank %}
+    {% assign variant4-title = object.variant4-title %}
+{% else %}
+    {% assign variant4-title = "Grapefruit Melon" %}
+{% endif %}
+{% if object.variant4-description != blank %}
+    {% assign variant4-description = object.variant4-description %}
+{% else %}
+    {% assign variant4-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh." %}
+{% endif %}
+{% if object.variant4-id != blank %}
+    {% assign variant4-id = object.variant4-id %}
+{% else %}
+    {% assign variant4-id = "32078604894326" %}
+{% endif %}
+{% if object.variant4-bg-color != blank %}
+    {% assign variant4-bg-color = object.variant4-bg-color %}
+{% else %}
+    {% assign variant4-bg-color = "green" %}
+{% endif %}
+
+<section class="plp-discover">
+    <div class="container">
+        <div class="row">
+            <div class="column col-xs-12 col-md-4 discover-intro">
+                <h2 class="headline">{{headline}}</h2>
+                <div>{{description}}</div>
+            </div>
+            <div class="column col-xs-12 col-md-8 discover-prod-wrap count4">
+                <div class="row">
+                    <div class="column col-xs-5 col-md-6 discover-item active" style="background-color: {{variant1-bg-color}};">
+                        <div class="prod-simple">
+                            <h3 class="prod-name">{{variant1-title}}</h3>
+                            <div class="prod-description">{{variant1-description}}</div>
+                            <img src="{{variant1-image}}" alt="" class="prod-image">
+                            <a href="{% if is-atc %}/cart/{{variant1-id}}:1?discount=vp25o1{% else %}#{% endif %}" data-variant-id="{{variant1-id}}" class="btn btn-default add-to-cart btn-subscribe">{{atc-text}}</a>
+                        </div>
+                    </div>
+                    <div class="column col-xs-5 col-md-6 discover-item" style="background-color: {{variant2-bg-color}};">
+                        <div class="prod-simple">
+                            <h3 class="prod-name">{{variant2-title}}</h3>
+                            <div class="prod-description">{{variant2-description}}</div>
+                            <img src="{{variant2-image}}" alt="" class="prod-image">
+                            <a href="{% if is-atc %}/cart/{{variant2-id}}:1?discount=vp25o1{% else %}#{% endif %}" data-variant-id="{{variant2-id}}" class="btn btn-default add-to-cart btn-subscribe">{{atc-text}}</a>
+                        </div>
+                    </div>
+                    <div class="column col-xs-5 col-md-6 discover-item" style="background-color: {{variant3-bg-color}};">
+                        <div class="prod-simple">
+                            <h3 class="prod-name">{{variant3-title}}</h3>
+                            <div class="prod-description">{{variant3-description}}</div>
+                            <img src="{{variant3-image}}" alt="" class="prod-image">
+                            <a href="{% if is-atc %}/cart/{{variant3-id}}:1?discount=vp25o1{% else %}#{% endif %}" data-variant-id="{{variant3-id}}" class="btn btn-default add-to-cart btn-subscribe">{{atc-text}}</a>
+                        </div>
+                    </div>
+                    <div class="column col-xs-5 col-md-6 discover-item" style="background-color: {{variant4-bg-color}};">
+                        <div class="prod-simple">
+                            <h3 class="prod-name">{{variant4-title}}</h3>
+                            <div class="prod-description">{{variant4-description}}</div>
+                            <img src="{{variant4-image}}" alt="" class="prod-image">
+                            <a href="{% if is-atc %}/cart/{{variant4-id}}:1?discount=vp25o1{% else %}#{% endif %}" data-variant-id="{{variant4-id}}" class="btn btn-default add-to-cart btn-subscribe">{{atc-text}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="discover-prod-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="22" viewBox="0 0 31 22"><g><g transform="rotate(180 15.5 11)"><path d="M2.927 10.325l8.932-8.637L11.147 1 1 10.812l10.144 9.808.712-.689-8.929-8.633h26.408v-.973z"></path><path fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="20" stroke-width="2" d="M2.927 10.325v0l8.932-8.637v0L11.147 1v0L1 10.812v0l10.144 9.808v0l.712-.689v0l-8.929-8.633v0h26.408v0-.973 0z"></path></g></g></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+$('.discover-prod-next').on('click', function(e){
+    var $wrapEl = $(this).closest('.discover-prod-wrap');
+    var $activeItem = $wrapEl.find('.discover-item.active');
+    if($activeItem.is(':last-child')){
+        $activeItem.removeClass('active');
+        $wrapEl.find('.discover-item').first().addClass('active');
+    } else {
+        $activeItem.removeClass('active').next().addClass('active');
+    }
+});
+</script>

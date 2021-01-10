@@ -1,0 +1,187 @@
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+{{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+{{ 'slick.min.js'  | asset_url | script_tag }}
+
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% if object.headline != blank %}
+    {% assign headline = object.headline %}
+{% else %}
+    {% assign headline = "You may also like..." %}
+{% endif %}
+
+{% if object.prod1-image != blank %}
+    {% assign prod1-image = object.prod1-image | img_url: 'x302' %}
+{% else %}
+    {% assign prod1-image = 'prod-cranraspberry-pouch-front.png' | asset_url %}
+{% endif %}
+{% if object.prod1-name != blank %}
+    {% assign prod1-name = object.prod1-name %}
+{% else %}
+    {% assign prod1-name = "Variety Pack" %}
+{% endif %}
+{% if object.prod1-cart-link != blank %}
+    {% assign prod1-cart-link = object.prod1-cart-link %}
+{% else %}
+    {% assign prod1-cart-link = "" %}
+{% endif %}
+{% if object.prod1-bg != blank %}
+    {% assign prod1-bg = object.prod1-bg %}
+{% else %}
+    {% assign prod1-bg = "#6DC8D2" %}
+{% endif %}
+{% if object.prod1-btn-bg != blank %}
+    {% assign prod1-btn-bg = object.prod1-btn-bg %}
+{% else %}
+    {% assign prod1-btn-bg = "#95D4D4" %}
+{% endif %}
+
+{% if object.prod2-image != blank %}
+    {% assign prod2-image = object.prod2-image | img_url: 'x302' %}
+{% else %}
+    {% assign prod2-image = 'prod-cranraspberry-pouch-front.png' | asset_url %}
+{% endif %}
+{% if object.prod2-name != blank %}
+    {% assign prod2-name = object.prod2-name %}
+{% else %}
+    {% assign prod2-name = "Clean Hydration Mix Cran Raspberry" %}
+{% endif %}
+{% if object.prod2-cart-link != blank %}
+    {% assign prod2-cart-link = object.prod2-cart-link %}
+{% else %}
+    {% assign prod2-cart-link = "" %}
+{% endif %}
+{% if object.prod2-bg != blank %}
+    {% assign prod2-bg = object.prod2-bg %}
+{% else %}
+    {% assign prod2-bg = "#ff91b3" %}
+{% endif %}
+{% if object.prod2-btn-bg != blank %}
+    {% assign prod2-btn-bg = object.prod2-btn-bg %}
+{% else %}
+    {% assign prod2-btn-bg = "#df5f7c" %}
+{% endif %}
+
+{% if object.prod3-image != blank %}
+    {% assign prod3-image = object.prod3-image | img_url: 'x302' %}
+{% else %}
+    {% assign prod3-image = 'prod-cranraspberry-pouch-front.png' | asset_url %}
+{% endif %}
+{% if object.prod3-name != blank %}
+    {% assign prod3-name = object.prod3-name %}
+{% else %}
+    {% assign prod3-name = "Cran Raspberry" %}
+{% endif %}
+{% if object.prod3-cart-link != blank %}
+    {% assign prod3-cart-link = object.prod3-cart-link %}
+{% else %}
+    {% assign prod3-cart-link = "" %}
+{% endif %}
+{% if object.prod3-bg != blank %}
+    {% assign prod3-bg = object.prod3-bg %}
+{% else %}
+    {% assign prod3-bg = "#ff91b3" %}
+{% endif %}
+{% if object.prod3-btn-bg != blank %}
+    {% assign prod3-btn-bg = object.prod3-btn-bg %}
+{% else %}
+    {% assign prod3-btn-bg = "#df5f7c" %}
+{% endif %}
+
+{% if object.prod4-image != blank %}
+    {% assign prod4-image = object.prod4-image | img_url: 'x302' %}
+{% else %}
+    {% assign prod4-image = 'prod-cranraspberry-pouch-front.png' | asset_url %}
+{% endif %}
+{% if object.prod4-name != blank %}
+    {% assign prod4-name = object.prod4-name %}
+{% else %}
+    {% assign prod4-name = "Blackberry Lemon" %}
+{% endif %}
+{% if object.prod4-cart-link != blank %}
+    {% assign prod4-cart-link = object.prod4-cart-link %}
+{% else %}
+    {% assign prod4-cart-link = "" %}
+{% endif %}
+{% if object.prod4-bg != blank %}
+    {% assign prod4-bg = object.prod4-bg %}
+{% else %}
+    {% assign prod4-bg = "#c9b0ff" %}
+{% endif %}
+{% if object.prod4-btn-bg != blank %}
+    {% assign prod4-btn-bg = object.prod4-btn-bg %}
+{% else %}
+    {% assign prod4-btn-bg = "#9d7fe0" %}
+{% endif %}
+
+
+
+
+<section class="similar-products">
+    <div class="container">
+        <h2 class="headline">{{headline}}</h2>
+        <div class="row similar-product-listing slider">
+            <div class="column col-xs-12 col-md-3" style="background-color: {{prod1-bg}};">
+                <div class="prod-simple">
+                    <div><img src="{{prod1-image}}" alt=""></div>
+                    <div class="title">{{prod1-name}}</div>
+                    <a href="{{prod1-cart-link}}" class="btn btn-default" style="background-color: {{prod1-btn-bg}};">Shop Now</a>
+                </div>
+            </div>
+            <div class="column col-xs-12 col-md-3" style="background-color: {{prod2-bg}};">
+                <div class="prod-simple">
+                    <div><img src="{{prod2-image}}" alt=""></div>
+                    <div class="title">{{prod2-name}}</div>
+                    <a href="{{prod2-cart-link}}" class="btn btn-default" style="background-color: {{prod2-btn-bg}};">Shop Now</a>
+                </div>
+            </div>
+            <div class="column col-xs-12 col-md-3" style="background-color: {{prod3-bg}};">
+                <div class="prod-simple">
+                    <div><img src="{{prod3-image}}" alt=""></div>
+                    <div class="title">{{prod3-name}}</div>
+                    <a href="{{prod3-cart-link}}" class="btn btn-default" style="background-color: {{prod3-btn-bg}};">Shop Now</a>
+                </div>
+            </div>
+            <div class="column col-xs-12 col-md-3" style="background-color: {{prod4-bg}};">
+                <div class="prod-simple">
+                    <div><img src="{{prod4-image}}" alt=""></div>
+                    <div class="title">{{prod4-name}}</div>
+                    <a href="{{prod4-cart-link}}" class="btn btn-default" style="background-color: {{prod4-btn-bg}};">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+function initSliderSP(){
+    $('.similar-products .slider').slick({
+        infinite: true,
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+}
+function checkMobileSliderSP(){
+    if($('.isMobile').css('display') == 'block'){
+        if(!$('.similar-products .slider').hasClass('slick-initialized')){
+            initSliderSP();
+        }
+    } else {
+        if($('.similar-products .slider').hasClass('slick-initialized')){
+            $('.similar-products .slider').slick('unslick');
+        }
+    }
+}
+$(document).ready(function(){
+    checkMobileSliderSP();
+    $(window).resize(function(e){
+        checkMobileSliderSP();
+    });
+});
+</script>

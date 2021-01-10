@@ -1,0 +1,64 @@
+.no-js {
+	#shopify-section-header { position: relative; }
+	.menu-item:hover,
+	.submenu-item:hover {
+		.submenu,
+		.megamenu-wrapper {
+			z-index: 10;
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+		}
+	}
+
+	.menu-item--meganav .submenu,
+	.menu-item--meganav:not(.is-expanded)>.megamenu-wrapper { pointer-events: auto; }
+
+	.logos-slider {
+		text-align: center;
+		white-space: nowrap;
+		overflow-x: auto;
+		overflow-y: hidden;
+
+		.js-slide {
+			display: inline-block;
+			margin: 0 60px;
+
+			@media screen and (max-width: 767px) {
+				margin: 0 30px;
+			}
+		}
+	}
+
+	.lazyload:not(.js-slide) { display: none !important; }
+	.no-js-image { display: block; }
+
+	.will-animate,
+	.is-loading .collectionBlock,
+	[data-animation="popUp"] { opacity: 1; }
+
+	.hero--is-loading {
+		background: none;
+		.slide-background-container,
+		.slide-image-container { opacity: 1; }
+	}
+
+	&.allow-text-animations {
+		.slick-slide {
+			[data-animation="popUp"],
+			[data-animation="popUp"].animated { opacity: 1; }
+		}
+	}
+
+    .js-quickView,
+    .collectionBlock .lazyload,
+    .article__image.lazyload,
+    .gallery-slider .slide-image-bg { display: none; }
+    .gallery-slider .slide-image-bg.no-js-slide { display: block; }
+
+    .is-page-loading {
+		opacity: 1;
+        .will-animate,
+        [data-animation] { opacity: 1; }
+    }
+}

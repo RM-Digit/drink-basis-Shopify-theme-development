@@ -1,0 +1,72 @@
+
+{% render 'shogun-products', content: product %}
+{{product.metafields.shogun.above}}
+
+{% if product.tags contains 'hydration mix' %}
+	{% if  product.tags contains '30-pack' %}
+		{% section 'product-template-hm-30' %}
+	{% else %}
+		{% section 'product-template-hm' %}
+	{% endif %}	
+
+       <div class="yotpo yotpo-reviews-carousel" 
+	data-background-color="transparent" 
+	data-mode="top_rated" 
+	data-type="site" 
+	data-count="9" 
+	data-show-bottomline="1" 
+	data-autoplay-enabled="1" 
+	data-autoplay-speed="3000" 
+	data-show-navigation="1">&nbsp;</div>
+			{%- comment -%}{% section 'product-nutrition-hm' %}
+			{% section 'product-comparison-hm' %}
+			{% section 'product-purpose-hm' %}
+			{% section 'product-science-hm' %}{%- endcomment -%}
+	
+	{%- assign on_sale = false -%}
+	{%- if product.compare_at_price > product.price -%}
+		{%- assign on_sale = true -%}
+		{%- assign on_sale_class = ' is-sale' -%}
+	{%- endif -%}
+
+	{%- assign sold_out = true -%}
+	{%- if product.available -%}
+		{%- assign sold_out = false -%}
+	{%- endif -%}
+
+<div itemscope itemtype="http://schema.org/Product">
+		<meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
+		<meta itemprop="description" content="{{ product.description | strip_html | escape | strip_newlines }}">
+		<meta itemprop="image" content="{{ product.featured_media.preview_image.src | img_url: 'grande' }}">
+		{%- if product.variants.first.barcode -%}
+			<meta itemprop="gtin8" content="{{ product.variants.first.barcode }}">
+		{%- endif -%}
+		{%- if product.vendor -%}
+			<meta itemprop="brand" content="{{ product.vendor | escape }}">
+		{%- endif -%}
+		{%- if product.first_available_variant.sku != blank -%}
+			<meta itemprop="sku" content="{{ product.first_available_variant.sku }}">
+		{%- else -%}
+			<meta itemprop="sku" content="{{ product.first_available_variant.id }}">
+		{%- endif -%}
+
+		{%- if product.first_available_variant.barcode.size == 12 -%}
+			<meta itemprop="gtin12" content="{{ product.first_available_variant.barcode }}">
+		{%- endif -%}
+		{%- if product.first_available_variant.barcode.size == 13 -%}
+			<meta itemprop="gtin13" content="{{ product.first_available_variant.barcode }}">
+		{%- endif -%}
+		{%- if product.first_available_variant.barcode.size == 14 -%}
+			<meta itemprop="gtin14" content="{{ product.first_available_variant.barcode }}">
+		{%- endif -%}
+	
+{% else %}
+	{%- section 'product-template' -%}
+	{%- section 'faq-section__product' -%}
+	{%- section 'related-products' -%}
+{% endif %}
+</div>
+
+{{product.metafields.shogun.below}}
+
+

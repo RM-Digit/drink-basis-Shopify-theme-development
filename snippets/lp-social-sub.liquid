@@ -1,0 +1,79 @@
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% if atc_text == blank %}
+    {% assign atc_text = "Start My Trial" %}
+{% endif %}
+
+{% assign id = object.id %}
+
+{% if object.headline != blank %}
+    {% assign headline = object.headline %}
+{% else %}
+    {% capture headline %}Follow us <a href="https://www.instagram.com/drinkbasis/" target="_blank">@drinkbasis</a>!{% endcapture %}
+{% endif %}
+
+{% if object.image1 != blank %}
+    {% assign image1 = object.image1 | img_url: 'master' %}
+{% else %}
+    {% assign image1 = 'insta1.png' | asset_url %}
+{% endif %}
+{% if object.image2 != blank %}
+    {% assign image2 = object.image2 | img_url: 'master' %}
+{% else %}
+    {% assign image2 = 'insta2.png' | asset_url %}
+{% endif %}
+{% if object.image3 != blank %}
+    {% assign image3 = object.image3 | img_url: 'master' %}
+{% else %}
+    {% assign image3 = 'insta3.png' | asset_url %}
+{% endif %}
+{% if object.image4 != blank %}
+    {% assign image4 = object.image4 | img_url: 'master' %}
+{% else %}
+    {% assign image4 = 'insta4.png' | asset_url %}
+{% endif %}
+{% if object.image5 != blank %}
+    {% assign image5 = object.image5 | img_url: 'master' %}
+{% else %}
+    {% assign image5 = 'insta5.png' | asset_url %}
+{% endif %}
+
+
+<section class="plp-social sid-{{id}}">
+    <div class="container">
+        <h2 class="headline">{{headline}}</h2>
+        <div class="media-grid">
+            <div class="mg-img bg1"><img src="{{image1}}" class="desktop-none"/></div>
+            <div class="mg-img bg2"><img src="{{image2}}" class="desktop-none"/></div>
+            <div class="mg-img bg3"><img src="{{image3}}" class="desktop-none"/></div>
+            <div class="mg-img bg4"><img src="{{image4}}" class="desktop-none"/></div>
+            <div class="mg-img bg5"><img src="{{image5}}" class="desktop-none"/></div>
+        </div>
+        <div class="cta-wrap"><a href="#featuredProduct" class="btn btn-default">{{atc_text}}</a></div>
+    </div>
+</section>
+<style>
+@media (min-width: 768px)
+{
+    .sid-{{id}} .mg-img.bg1 {
+        background-image: url('{{image1}}');
+    }
+    .sid-{{id}} .mg-img.bg2 {
+        background-image: url('{{image2}}');
+    }
+    .sid-{{id}} .mg-img.bg3 {
+        background-image: url('{{image3}}');
+    }
+    .sid-{{id}} .mg-img.bg4 {
+        background-image: url('{{image4}}');
+    }
+    .sid-{{id}} .mg-img.bg5 {
+        background-image: url('{{image5}}');
+    }
+}
+</style>

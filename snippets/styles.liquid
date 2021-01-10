@@ -1,0 +1,32 @@
+{%- assign color_footer_text = settings.color_footer_text -%}
+{%- assign color_footer_bg = settings.color_footer_bg -%}
+{%- assign color_footer_bottom_bg = settings.color_bottom_bar_bg -%}
+{%- assign color_footer_bottom_contrast = color_footer_bottom_bg | color_contrast: color_footer_text -%}
+{%- if color_footer_bottom_contrast < 4.5 -%}
+    {%- assign color_footer_bottom_bg_lightness = color_footer_bottom_bg | color_brightness -%}
+    {%- if color_footer_bottom_bg_lightness < 50 -%}
+        {%- assign color_footer_bottom_text = color_footer_bottom_bg | color_lighten: 70 -%}
+    {%- else -%}
+        {%- assign color_footer_bottom_text = color_footer_bottom_bg | color_darken: 70  -%}
+    {%- endif -%}
+{%- else %}
+    {%- assign color_footer_bottom_text = color_footer_text | color_modify: 'alpha', 0.7 -%}
+{%- endif %}
+
+<style>
+:root {
+    --color-footer-text: {{ color_footer_text }};
+    --color-footer-placeholder-text: {{ color_footer_text | color_modify: 'alpha', 0.5 }};
+    --color-footer-bg: {{ color_footer_bg }};
+    --color-footer-bg-hover: {{ color_footer_text | color_modify: 'alpha', 0.05 }};
+    --color-footer-bottom-text: {{ color_footer_bottom_text }};
+    --color-footer-bottom-bg: {{ color_footer_bottom_bg }};
+    --color-footer-bottom-bg-hover: {{ color_footer_bottom_text | color_modify: 'alpha', 0.05 }};
+    --color-footer-bottom-border: {{ color_footer_bottom_text | color_modify: 'alpha', 0.1 }};
+}
+</style>
+
+{{- 'theme.scss.css' | asset_url | stylesheet_tag -}}
+<noscript id="no-js-style">
+    {{- 'no-js.scss.css' | asset_url | stylesheet_tag -}}
+</noscript>

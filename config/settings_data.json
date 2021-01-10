@@ -1,0 +1,3201 @@
+{
+  "current": {
+    "color_heading_new": "#191c22",
+    "color_text_new": "#505f6a",
+    "color_error_new": "#d02e2e",
+    "color_border_new": "#000000",
+    "color_background_new": "#ffffff",
+    "color_accent_line": "#191c22",
+    "color_button_primary_bg": "#191c22",
+    "color_button_secondary_bg": "#ffffff",
+    "color_top_bar": "#ffffff",
+    "color_top_bar_text": "#191c22",
+    "color_header_bg_home": "rgba(0,0,0,0)",
+    "color_header_text_home": "#ffffff",
+    "color_header_bg": "rgba(0,0,0,0)",
+    "color_header_text": "#191c22",
+    "color_header_bg_scroll": "#ffffff",
+    "color_header_text_scroll": "#191c22",
+    "color_dropdown_bg": "#ffffff",
+    "color_dropdown_text": "#191c22",
+    "drawer_bg_color": "rgba(0,0,0,0)",
+    "drawer_text_color": "#000000",
+    "header_icon_color_home": "#191c22",
+    "header_bg_color_home": "rgba(0,0,0,0)",
+    "header_icon_color": "#000000",
+    "header_bg_color": "rgba(0,0,0,0)",
+    "header_icon_color_scroll": "#222222",
+    "header_bg_color_scroll": "rgba(0,0,0,0)",
+    "color_badge_bg": "#191c22",
+    "color_footer_text": "#191c22",
+    "color_footer_bg": "#ffffff",
+    "color_bottom_bar_bg": "#fafafa",
+    "header_font_picker": "montserrat_n6",
+    "heading_letter_spacing": 0,
+    "general_font_picker": "work_sans_n4",
+    "body_letter_spacing": 0,
+    "accent_line": "none",
+    "transition_text": true,
+    "transition_grid_items": true,
+    "transition_images_fade": true,
+    "transition_collections_list": true,
+    "dots_style": "hidden",
+    "show_search": false,
+    "search_type": "product",
+    "search_overlay_color": "#333333",
+    "search_overlay_opacity": 50,
+    "image_aspect_ratio": 1,
+    "image_size": "contain",
+    "product_title_position": "center",
+    "show_quick_view": true,
+    "show_quick_view_description": true,
+    "price_hover": false,
+    "show_quantity": true,
+    "show_review_stars": false,
+    "hover_image": false,
+    "enable_payment_button": true,
+    "color_swatches": true,
+    "color_swatches_style": "circle",
+    "product_badge_style": "circle",
+    "products_rows": 4,
+    "products_columns": 4,
+    "products_columns_mobile": "1",
+    "enable_video_looping": false,
+    "cart_icon": "cart",
+    "enable_ajax_cart": true,
+    "enable_cart_order_notes": false,
+    "show_continue_shopping": true,
+    "tax_text": "Excluding taxes and shipping",
+    "show_breadcrumbs": false,
+    "show_reviews": true,
+    "enable_yotpo": true,
+    "yotpo_ID": "WTrS15amKT89ndS4I5PoAsVHyXzGyjLDr4V6vQ62",
+    "favicon": "shopify:\/\/shop_images\/Fav_retina.png",
+    "twitter_url": "",
+    "facebook_url": "",
+    "pinterest_url": "",
+    "instagram_url": "",
+    "tumblr_url": "",
+    "youtube_url": "",
+    "rss_url": "",
+    "share_on_twitter": false,
+    "share_on_facebook": false,
+    "share_on_pinterest": false,
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Dark_logo_2x_713ba4d9-be31-4442-b662-996bafe774d1.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "base_font_size": 14,
+    "body_font_size": 14,
+    "transition_product_features": true,
+    "color_primary_new": "#000000",
+    "color_secondary_new": "#000000",
+    "color_overlay_bg": "#000000",
+    "promo_url": "",
+    "browse_by_tag_enabled": true,
+    "collection_collectionGrid_columns": "3",
+    "twitter_via": "",
+    "color_seconsdary_new": "#2e3234",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Basis_White_3x_93a3a738-6a36-46b3-8b81-60a013f74187.png",
+          "logo_other": "shopify:\/\/shop_images\/Dark_logo.png",
+          "logo_max_width": 135,
+          "show_site_name": false,
+          "menu_list": "main-menu",
+          "links_position": "links_left",
+          "logo_position": "logo_center",
+          "image_aspect_ratio": 1,
+          "meganav_image_heading": ""
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_title": true,
+          "show_sort_filter": true,
+          "filter_mode": "tag",
+          "position_filters": "left",
+          "show_banner": true,
+          "banner_image": "",
+          "banner_height": "normal",
+          "banner_subheading": "",
+          "banner_text_position": "bottom-left",
+          "banner_color_text": "#ffffff",
+          "banner_color_overlay": "#333333",
+          "banner_overlay_opacity": 0,
+          "show_featured_image": false,
+          "featured_image": "",
+          "featured_heading": "Use this image showcase promotional content.",
+          "featured_text": "<p>Elaborate on it with rich text<\/p>",
+          "featured_button_text": "Learn More",
+          "featured_button_link": "",
+          "featured_button_style": "primary",
+          "featured_color_text": "#ffffff",
+          "featured_color_overlay": "#333333",
+          "featured_overlay_opacity": 0
+        }
+      },
+      "1498737500673": {
+        "type": "slideshow",
+        "blocks": {
+          "1498737500673-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2020-08-19_at_5.04.58_PM.png",
+              "image_mobile": "",
+              "image_position": "center-center",
+              "alignment": "center",
+              "color_style": "white",
+              "subheading": "",
+              "title": "Bounce back from whatever dehydrates you",
+              "text": "<p>Everything you need, nothing you don't.<\/p>",
+              "cta": "Shop Now",
+              "link": "shopify:\/\/collections\/all",
+              "cta_primary_btn_style": "primary",
+              "cta_2": "",
+              "link_2": "",
+              "cta_secondary_btn_style": "secondary",
+              "overlay_color": "#333333",
+              "overlay_opacity": 0
+            }
+          }
+        },
+        "block_order": [
+          "1498737500673-0"
+        ],
+        "settings": {
+          "showNavArrows": false,
+          "show_arrow_down": false,
+          "autoplay": false,
+          "duration": 4,
+          "transition": "zoom-out",
+          "dots_position": "center",
+          "slide_height": "one-hundred-height-hero",
+          "button_size": "large"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "product_layout": "slideshow",
+          "image_size": "large",
+          "add_cart_position": "top",
+          "lightbox": true,
+          "show_vendor": false,
+          "show_quantity": true,
+          "show_cart_bar": true,
+          "enable_payment_button": false,
+          "show_newsletter": true,
+          "text_newsletter": "<p>Notify me when this product is available:<\/p>",
+          "enable_tabs_h6": false,
+          "page_tab_1": "",
+          "page_tab_2": "",
+          "page_tab_3": "",
+          "product_slideshow_dots": false,
+          "product_slideshow_arrows": false,
+          "enable_video_looping": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "show_payment_icons": false,
+          "show_social_icons": false,
+          "menu": "ms-menu",
+          "show_locale_selector": false,
+          "show_currency_selector": false
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": "disabled",
+          "popup_position": "left",
+          "popup_header": "Use the popup to catch emails and showcase promotions",
+          "popup_content": "<p>Popups can detract from a user&#x27;s experience, so try to limit how often they appear.<\/p>",
+          "text_alignment": "left",
+          "show_popup_newsletter": true,
+          "popup_delay": 5,
+          "popup_reappear_time": "7"
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "color": "#222",
+          "background": "#ffffff",
+          "title": "Newsletter",
+          "content": "<p>Let's keep in touch<\/p>"
+        }
+      },
+      "product-features": {
+        "type": "product-features",
+        "blocks": {
+          "1528250359730": {
+            "type": "text",
+            "settings": {
+              "heading": "This is a heading for a Product feature block.",
+              "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary"
+            }
+          },
+          "1528250384489": {
+            "type": "text",
+            "settings": {
+              "heading": "This is a heading for a Product feature block.",
+              "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
+              "image": "",
+              "image_link": "",
+              "button_text": "",
+              "button_link": "",
+              "button_style": "primary"
+            }
+          }
+        },
+        "block_order": [
+          "1528250359730",
+          "1528250384489"
+        ],
+        "settings": {
+          "blocks_alignment": "center",
+          "image_aspect_ratio": 0.9
+        }
+      },
+      "rich-text": {
+        "type": "rich-text",
+        "settings": {
+          "layout": "split",
+          "subheading": "Humble Beginnings",
+          "title": "",
+          "content": "",
+          "button_text": "",
+          "button_link": "",
+          "button_style": "primary"
+        }
+      },
+      "icons-row": {
+        "type": "icons-row",
+        "blocks": {
+          "1528250366509": {
+            "type": "text",
+            "settings": {
+              "icon_name": "shop",
+              "icon_image": "",
+              "title": "Feature",
+              "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+            }
+          },
+          "1528250367690": {
+            "type": "text",
+            "settings": {
+              "icon_name": "sync",
+              "icon_image": "",
+              "title": "Feature",
+              "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+            }
+          },
+          "1528250369041": {
+            "type": "text",
+            "settings": {
+              "icon_name": "target",
+              "icon_image": "",
+              "title": "Feature",
+              "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+            }
+          }
+        },
+        "block_order": [
+          "1528250366509",
+          "1528250367690",
+          "1528250369041"
+        ],
+        "settings": {
+          "alignment": "center",
+          "color_icons_bg": "#fafafa",
+          "color_icons_text": "#333333"
+        }
+      },
+      "1532038945687": {
+        "type": "rich-text",
+        "settings": {
+          "layout": "default",
+          "subheading": "CLEAN HYDRATION",
+          "title": "2 Ways to Hydrate <br>Bottled or Hydration Mix.",
+          "content": "<p>Healthy hydration products that are truly functional. Made with 1000mg of the key electrolytes and only 4 grams of organic cane sugar.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "button_style": "primary"
+        }
+      },
+      "list-collections-page-template": {
+        "type": "list-collections-page-template",
+        "settings": {
+          "show_description": true,
+          "collections_columns": 2,
+          "coll_text_position": "center",
+          "button_text": "Shop Now",
+          "button_style": "primary",
+          "text_color": "#ffffff",
+          "overlay_color": "#333333",
+          "overlay_opacity": 0
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "show_blog_name": false,
+          "show_rss": false,
+          "show_featured_post": true,
+          "tags": true,
+          "author": true,
+          "date": true,
+          "show_comments": true,
+          "image_aspect_ratio": 1,
+          "article_rows": 4,
+          "article_columns": 4
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "1532039480983": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "image_mobile": "",
+              "image_position": "center-center",
+              "alignment": "center",
+              "color_style": "white",
+              "subheading": "",
+              "title": "Welcome to Modular",
+              "text": "<p>A unique layout with a striking design<\/p>",
+              "cta": "Shop Now",
+              "link": "shopify:\/\/collections\/all",
+              "cta_primary_btn_style": "primary",
+              "cta_2": "",
+              "link_2": "",
+              "cta_secondary_btn_style": "secondary",
+              "overlay_color": "#333333",
+              "overlay_opacity": 0
+            }
+          },
+          "1532039484050": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "image_mobile": "",
+              "image_position": "center-center",
+              "alignment": "center",
+              "color_style": "white",
+              "subheading": "",
+              "title": "Welcome to Modular",
+              "text": "<p>A unique layout with a striking design<\/p>",
+              "cta": "Shop Now",
+              "link": "shopify:\/\/collections\/all",
+              "cta_primary_btn_style": "primary",
+              "cta_2": "",
+              "link_2": "",
+              "cta_secondary_btn_style": "secondary",
+              "overlay_color": "#333333",
+              "overlay_opacity": 0
+            }
+          }
+        },
+        "block_order": [
+          "1532039480983",
+          "1532039484050"
+        ],
+        "settings": {
+          "showNavArrows": true,
+          "show_arrow_down": false,
+          "autoplay": true,
+          "duration": 4,
+          "transition": "slide",
+          "dots_position": "center",
+          "slide_height": "five-fifty-height-hero",
+          "button_size": "normal"
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "show_announcement": true,
+          "show_announcement_on_mobile": true,
+          "text": "<p>Free Shipping on All Orders!<\/p>"
+        }
+      },
+      "faq-section__product": {
+        "type": "faq-section__product",
+        "settings": {
+          "title": "",
+          "subheading": ""
+        }
+      },
+      "related-products": {
+        "type": "related-products",
+        "settings": {
+          "related_products_enable": false,
+          "product_recommendations_heading": "Related products"
+        }
+      },
+      "page-template": {
+        "type": "page-template",
+        "settings": {
+          "show_page_title": true
+        }
+      },
+      "1601595839015": {
+        "type": "featured-product",
+        "settings": {
+          "product": "clean-hydration-12-pack",
+          "image_position": "4",
+          "image_size": "large",
+          "product_slideshow_arrows": false,
+          "show_quantity": true,
+          "enable_payment_button": true,
+          "enable_video_looping": false
+        }
+      },
+      "1601595908035": {
+        "type": "featured-product",
+        "settings": {
+          "product": "clean-hydration-mix",
+          "image_position": "4",
+          "image_size": "large",
+          "product_slideshow_arrows": false,
+          "show_quantity": true,
+          "enable_payment_button": true,
+          "enable_video_looping": false
+        }
+      },
+      "1601596456929": {
+        "type": "custom-html",
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "html": ""
+        }
+      },
+      "landing-page": {
+        "type": "landing-page",
+        "blocks": {
+          "1602077024102": {
+            "type": "lp-featured-product",
+            "settings": {
+              "product-name": "",
+              "price": "FREE",
+              "full-price": "",
+              "discount": "(100% off)",
+              "is-new": true,
+              "tagline": "",
+              "point1-icon": "shopify:\/\/shop_images\/high-voltage-sign_26a1.png",
+              "point1-text": "",
+              "point2-icon": "shopify:\/\/shop_images\/seedling_1f331.png",
+              "point2-text": "",
+              "point3-icon": "shopify:\/\/shop_images\/face-savouring-delicious-food_1f60b.png",
+              "point3-text": "",
+              "variant-1-id": "32078604959862",
+              "variant-1-name": "Variety pack",
+              "variant-1-color": "",
+              "variant-1-description": "Whats inside? 5 Cran-Raspberry sticks. 5 Grapefruit Melon, and 5 Blackberry Lemon.",
+              "variant-1-image": "shopify:\/\/shop_images\/prod-vpack-scaled2.png",
+              "variant-1-nutrition-image": "shopify:\/\/shop_images\/4.png",
+              "variant-2-id": "32078604861558",
+              "variant-2-name": "",
+              "variant-2-color": "",
+              "variant-2-description": "",
+              "variant-2-image": "shopify:\/\/shop_images\/prod-blackberry-scaled.png",
+              "variant-2-nutrition-image": "shopify:\/\/shop_images\/2.png",
+              "variant-3-id": "32078604927094",
+              "variant-3-name": "",
+              "variant-3-color": "",
+              "variant-3-description": "",
+              "variant-3-image": "shopify:\/\/shop_images\/prod-cranrasp-scaled.png",
+              "variant-3-nutrition-image": "shopify:\/\/shop_images\/1.png",
+              "variant-4-id": "32078604894326",
+              "variant-4-name": "Grapefruit Melon",
+              "variant-4-color": "",
+              "variant-4-description": "Our most subtle flavor with only a hint of grapefruit and melon.",
+              "variant-4-image": "shopify:\/\/shop_images\/prod-grapefruit-scaled.png",
+              "variant-4-nutrition-image": "shopify:\/\/shop_images\/3.png"
+            }
+          },
+          "1602109103833": {
+            "type": "lp-about",
+            "settings": {
+              "headline": "",
+              "tagline": "",
+              "variant-id": "32078604959862",
+              "step1-icon": "shopify:\/\/shop_images\/splashing-sweat-symbol_1f4a6.png",
+              "step1-title": "",
+              "step1-text": "",
+              "step2-icon": "shopify:\/\/shop_images\/money-bag_1f4b0.png",
+              "step2-title": "Start Hydrating for FREE!",
+              "step2-text": "Just pay Shipping and Handling and we'll send you 15 FREE clean hydration sticks.",
+              "step3-icon": "shopify:\/\/shop_images\/party-popper_1f389.png",
+              "step3-title": "",
+              "step3-text": "After 15 days, your flexible hydration plan will start and we'll send you your next order for $24.99. Pause or cancel your plan at any time."
+            }
+          },
+          "1602159104961": {
+            "type": "lp-discover",
+            "settings": {
+              "headline": "",
+              "description": "",
+              "variant1-image": "shopify:\/\/shop_images\/prod-vpack-scaled.png",
+              "variant1-title": "Variety Pack",
+              "variant1-description": "Whats inside? 5 Cran-Raspberry sticks. 5 Grapefruit Melon, and 5 Blackberry Lemon.",
+              "variant1-id": "32078604959862",
+              "variant1-bg-color": "#fecdc6",
+              "variant2-image": "shopify:\/\/shop_images\/prod-blackberry-scaled.png",
+              "variant2-title": "Blackberry Lemon",
+              "variant2-description": "A nice mix of berry with a hint of citrus. Our number one selling beverage flavor!",
+              "variant2-id": "32078604861558",
+              "variant2-bg-color": "",
+              "variant3-image": "shopify:\/\/shop_images\/prod-grapefruit-scaled.png",
+              "variant3-title": "Grapefruit Melon",
+              "variant3-description": "Our most subtle flavor with only a hint of grapefruit and melon.",
+              "variant3-id": "32078604894326",
+              "variant3-bg-color": "#fecdc6",
+              "variant4-image": "shopify:\/\/shop_images\/prod-cranrasp-scaled.png",
+              "variant4-title": "Cran Raspberry",
+              "variant4-description": "Our most flavorful option with a classic berry combination.",
+              "variant4-id": "32078604927094",
+              "variant4-bg-color": "#ff91b3"
+            }
+          },
+          "1602162106800": {
+            "type": "lp-comparison",
+            "settings": {
+              "featured-image": "shopify:\/\/shop_images\/1.jpeg",
+              "variant-id": "32078604959862",
+              "compare1-point1-text": "",
+              "compare1-point2-text": "",
+              "compare1-point3-text": "",
+              "compare2-logo-text": "",
+              "compare2-point1-text": "",
+              "compare2-point2-text": "",
+              "compare2-point3-text": ""
+            }
+          },
+          "1602164138074": {
+            "type": "lp-reviews",
+            "settings": {
+              "headline": "",
+              "review_1_rating": "5",
+              "review_1_icon": "shopify:\/\/shop_images\/thumbs-up-sign_1f44d.png",
+              "review_1_quote": "",
+              "review_1_author": "",
+              "review_2_rating": "5",
+              "review_2_icon": "shopify:\/\/shop_images\/grinning-face_1f600.png",
+              "review_2_quote": "",
+              "review_2_author": "",
+              "review_3_rating": "5",
+              "review_3_icon": "shopify:\/\/shop_images\/flexed-biceps_1f4aa.png",
+              "review_3_quote": "",
+              "review_3_author": ""
+            }
+          },
+          "1602165033979": {
+            "type": "lp-social",
+            "settings": {
+              "headline": "",
+              "image1": "shopify:\/\/shop_images\/4.jpeg",
+              "image3": "shopify:\/\/shop_images\/3.jpeg",
+              "image4": "shopify:\/\/shop_images\/2.jpeg"
+            }
+          },
+          "1602166274351": {
+            "type": "lp-similar-products",
+            "settings": {
+              "headline": "",
+              "prod1-image": "shopify:\/\/shop_images\/Variety.png",
+              "prod1-name": "",
+              "prod1-cart-link": "shopify:\/\/products\/clean-hydration-12-pack",
+              "prod1-bg": "",
+              "prod1-btn-bg": "",
+              "prod2-name": "",
+              "prod2-cart-link": "shopify:\/\/products\/clean-hydration-mix",
+              "prod2-bg": "",
+              "prod2-btn-bg": "",
+              "prod3-image": "shopify:\/\/shop_images\/Basis_bottle_CR_front.png",
+              "prod3-name": "",
+              "prod3-cart-link": "shopify:\/\/products\/clean-hydration-12-pack",
+              "prod3-bg": "",
+              "prod3-btn-bg": "",
+              "prod4-image": "shopify:\/\/shop_images\/Basis_bottle_BL_front.png",
+              "prod4-name": "",
+              "prod4-cart-link": "shopify:\/\/products\/clean-hydration-12-pack",
+              "prod4-bg": "",
+              "prod4-btn-bg": ""
+            }
+          }
+        },
+        "block_order": [
+          "1602077024102",
+          "1602109103833",
+          "1602159104961",
+          "1602162106800",
+          "1602164138074",
+          "1602165033979",
+          "1602166274351"
+        ],
+        "settings": {
+          "lp-announcement-bar": "",
+          "lp-hide-announcement-bar": true
+        }
+      },
+      "landing-page-alt": {
+        "type": "landing-page-alt",
+        "blocks": {
+          "1603255194900": {
+            "type": "lp-featured-product",
+            "settings": {
+              "product-name": "",
+              "price": "",
+              "full-price": "",
+              "discount": "(25% off)",
+              "is-new": true,
+              "tagline": "",
+              "point1-icon": "shopify:\/\/shop_images\/high-voltage-sign_26a1.png",
+              "point1-text": "1,000mg of electrolytes",
+              "point2-icon": "shopify:\/\/shop_images\/seedling_1f331.png",
+              "point2-text": "",
+              "point3-icon": "shopify:\/\/shop_images\/face-savouring-delicious-food_1f60b.png",
+              "point3-text": "",
+              "variant-1-id": "32049261281398",
+              "variant-1-name": "Variety Pack",
+              "variant-1-color": "",
+              "variant-1-description": "Whats inside? 5 Cran-Raspberry sticks. 5 Grapefruit Melon, and 5 Blackberry Lemon.",
+              "variant-1-image": "shopify:\/\/shop_images\/prod-vpack-scaled2.png",
+              "variant-1-nutrition-image": "shopify:\/\/shop_images\/4.png",
+              "variant-2-id": "32049261183094",
+              "variant-2-name": "Blackberry Lemon",
+              "variant-2-color": "",
+              "variant-2-description": "",
+              "variant-2-image": "shopify:\/\/shop_images\/prod-blackberry-scaled.png",
+              "variant-2-nutrition-image": "shopify:\/\/shop_images\/2.png",
+              "variant-3-id": "32049261248630",
+              "variant-3-name": "Cran Raspberry",
+              "variant-3-color": "",
+              "variant-3-description": "",
+              "variant-3-image": "shopify:\/\/shop_images\/prod-cranrasp-scaled.png",
+              "variant-3-nutrition-image": "shopify:\/\/shop_images\/1.png",
+              "variant-4-id": "32049261215862",
+              "variant-4-name": "Grapefruit Melon",
+              "variant-4-color": "",
+              "variant-4-description": "Our most subtle flavor with only a hint of grapefruit and melon.",
+              "variant-4-image": "shopify:\/\/shop_images\/prod-grapefruit-scaled.png",
+              "variant-4-nutrition-image": "shopify:\/\/shop_images\/3.png"
+            }
+          },
+          "1603255220404": {
+            "type": "lp-about",
+            "settings": {
+              "headline": "Clean Hydration, Backed by Science",
+              "tagline": "Not just any science, the gold standard in science, the World Health Organization",
+              "variant-id": "32049261281398",
+              "step1-icon": "shopify:\/\/shop_images\/Electrolytes-white.png",
+              "step1-title": "1000mg Electrolytes",
+              "step1-text": "Sodium, potassium, and magnesium to help your body and mind perform.",
+              "step2-icon": "shopify:\/\/shop_images\/Sugar_with_a_purpose-white.png",
+              "step2-title": "Only 4g of Organic Sugar",
+              "step2-text": "Plant based organic cane sugar to quickly absorb electrolytes for increased hydration.",
+              "step3-icon": "shopify:\/\/shop_images\/98_Water-white.png",
+              "step3-title": "3x More Hydrating than Water",
+              "step3-text": "Basis is backed by science to deliver 3x the hydration of a glass of water alone."
+            }
+          },
+          "1603255270598": {
+            "type": "lp-discover",
+            "settings": {
+              "headline": "",
+              "description": "",
+              "variant1-image": "shopify:\/\/shop_images\/prod-vpack-scaled.png",
+              "variant1-title": "Variety Pack",
+              "variant1-description": "Whats inside? 5 Cran-Raspberry sticks. 5 Grapefruit Melon, and 5 Blackberry Lemon.",
+              "variant1-id": "32049261281398",
+              "variant1-bg-color": "#fecdc6",
+              "variant2-image": "shopify:\/\/shop_images\/prod-blackberry-scaled.png",
+              "variant2-title": "Blackberry Lemon",
+              "variant2-description": "A nice mix of berry with a hint of citrus. Our number one selling beverage flavor!",
+              "variant2-id": "32049261183094",
+              "variant2-bg-color": "#bfacc9",
+              "variant3-image": "shopify:\/\/shop_images\/prod-grapefruit-scaled.png",
+              "variant3-title": "Grapefruit Melon",
+              "variant3-description": "Our most subtle flavor with only a hint of grapefruit and melon.",
+              "variant3-id": "32049261215862",
+              "variant3-bg-color": "#fecdc6",
+              "variant4-image": "shopify:\/\/shop_images\/prod-cranrasp-scaled.png",
+              "variant4-title": "Cran Raspberry",
+              "variant4-description": "Our most flavorful option with a classic berry combination.",
+              "variant4-id": "32049261248630",
+              "variant4-bg-color": "#ff91b3"
+            }
+          },
+          "1603255282706": {
+            "type": "lp-comparison",
+            "settings": {
+              "featured-image": "shopify:\/\/shop_images\/1.jpeg",
+              "variant-id": "32049261281398",
+              "compare1-point1-text": "",
+              "compare1-point2-text": "",
+              "compare1-point3-text": "1,000mg electrolytes",
+              "compare2-logo-text": "",
+              "compare2-point1-text": "",
+              "compare2-point2-text": "",
+              "compare2-point3-text": "890mg electrolytes"
+            }
+          },
+          "1603255294932": {
+            "type": "lp-reviews",
+            "settings": {
+              "headline": "",
+              "review_1_rating": "5",
+              "review_1_icon": "shopify:\/\/shop_images\/thumbs-up-sign_1f44d.png",
+              "review_1_quote": "",
+              "review_1_author": "",
+              "review_2_rating": "5",
+              "review_2_icon": "shopify:\/\/shop_images\/grinning-face_1f600.png",
+              "review_2_quote": "Love it! Normally a liquid IV customer but will definitely switch over - enjoying the low sugar and light flavor!",
+              "review_2_author": "Rachel (@rachelagtt)",
+              "review_3_rating": "5",
+              "review_3_icon": "shopify:\/\/shop_images\/flexed-biceps_1f4aa.png",
+              "review_3_quote": "",
+              "review_3_author": ""
+            }
+          },
+          "1603255308804": {
+            "type": "lp-social",
+            "settings": {
+              "headline": "",
+              "image1": "shopify:\/\/shop_images\/4.jpeg",
+              "image3": "shopify:\/\/shop_images\/3.jpeg",
+              "image4": "shopify:\/\/shop_images\/2.jpeg"
+            }
+          }
+        },
+        "block_order": [
+          "1603255194900",
+          "1603255220404",
+          "1603255270598",
+          "1603255282706",
+          "1603255294932",
+          "1603255308804"
+        ],
+        "settings": {
+          "lp-announcement-bar": "",
+          "lp-hide-announcement-bar": false
+        }
+      },
+      "lp-subscription": {
+        "type": "lp-subscription",
+        "blocks": {
+          "627f729d-d4a8-4346-a462-7d119cca8cb6": {
+            "type": "lp-featured-product",
+            "settings": {
+              "product-name": "Clean Hydration Mix",
+              "price": "$19.99",
+              "full-price": "$24.99",
+              "discount": "(subscribe and save 20%)",
+              "tagline": "20% off on all future orders + free shipping",
+              "product-rating": "5",
+              "product-review-count": "4.5  (120 REVIEWS)",
+              "point1-icon": "shopify:\/\/shop_images\/high-voltage-sign_26a1.png",
+              "point1-text": "1,000mg of electrolytes",
+              "point2-icon": "shopify:\/\/shop_images\/seedling_1f331.png",
+              "point2-text": "4 grams of organic cane sugar",
+              "point3-icon": "shopify:\/\/shop_images\/face-savouring-delicious-food_1f60b.png",
+              "point3-text": "Deliciously subtle flavor",
+              "variant-1-id": "32076794331254",
+              "variant-1-name": "Cran Raspberry",
+              "variant-1-color": "#ff91b3",
+              "variant-1-description": "A hydration mix made with clean ingredients and 1000mg of electrolytes to help you bounce back from exercise, a night out, or just a long day.",
+              "variant-1-image": "shopify:\/\/shop_images\/prod-cranrasp-scaled.png",
+              "variant-1-nutrition-image": "shopify:\/\/shop_images\/1.png",
+              "variant-2-id": "32076794265718",
+              "variant-2-name": "Blackberry Lemon",
+              "variant-2-color": "#bfacc9",
+              "variant-2-description": "A hydration mix made with clean ingredients and 1000mg of electrolytes to help you bounce back from exercise, a night out, or just a long day.",
+              "variant-2-image": "shopify:\/\/shop_images\/prod-blackberry-scaled.png",
+              "variant-2-nutrition-image": "shopify:\/\/shop_images\/2.png",
+              "variant-3-id": "32076794298486",
+              "variant-3-name": "Grapefruit Melon",
+              "variant-3-color": "#fecdc6",
+              "variant-3-description": "A hydration mix made with clean ingredients and 1000mg of electrolytes to help you bounce back from exercise, a night out, or just a long day.",
+              "variant-3-image": "shopify:\/\/shop_images\/prod-grapefruit-scaled.png",
+              "variant-3-nutrition-image": "shopify:\/\/shop_images\/3.png",
+              "variant-4-id": "32076794364022",
+              "variant-4-name": "Variety Pack",
+              "variant-4-color": "rgba(0,0,0,0)",
+              "variant-4-description": "A hydration mix made with clean ingredients and 1000mg of electrolytes to help you bounce back from exercise, a night out, or just a long day.",
+              "variant-4-image": "shopify:\/\/shop_images\/prod-vpack-scaled.png",
+              "variant-4-nutrition-image": "shopify:\/\/shop_images\/4.png"
+            }
+          },
+          "a537613a-fac6-48d2-9113-8d051e09dcbd": {
+            "type": "lp-whysub",
+            "settings": {
+              "headline": "Why subscribe?",
+              "point1-icon": "shopify:\/\/shop_images\/money-bag_1f4b0.png",
+              "point1-title": "Pay Less, Forever",
+              "point1-text": "When you subscribe and join the Basis fam, you save 20% on every single order, forever.",
+              "point2-icon": "shopify:\/\/shop_images\/rocket_1f680.png",
+              "point2-title": "Exclusive Perks",
+              "point2-text": "Basis subscriptions come with early access to new flavors, a dedicated support channel, and so much more!",
+              "point3-icon": "shopify:\/\/shop_images\/collision_1f4a5.png",
+              "point3-title": "No Strings Attached",
+              "point3-text": "Easily swap flavors, skip orders, or cancel your subscription anytime.",
+              "point4-icon": "shopify:\/\/shop_images\/handshake_1f91d.png",
+              "point4-title": "Money Back Guarantee",
+              "point4-text": "We think you’ll love us. But if you don’t, just reach out and we’ll take care of you!"
+            }
+          },
+          "bad80e8d-acee-46b2-b4e4-3bbbac37fecc": {
+            "type": "lp-about",
+            "settings": {
+              "headline": "Clean hydration, backed by science",
+              "tagline": "We created Basis using rehydration therapies developed by the World Health Organization, the gold standard in hydration science.",
+              "step1-icon": "shopify:\/\/shop_images\/Electrolytes.png",
+              "step1-title": "1000mg of Electrolytes",
+              "step1-text": "Water alone doesn’t cut it. We have the right balance of magnesium, potassium, and sodium to perfectly rehydrate you.",
+              "step2-icon": "shopify:\/\/shop_images\/Sugar_with_a_purpose.png",
+              "step2-title": "Only 4g of Organic Sugar",
+              "step2-text": "Our sugar has a purpose. Cane sugar or technically speaking, glucose, is needed to absorb the water into the bloodstream quicker, making you feel better, faster.",
+              "step3-icon": "shopify:\/\/shop_images\/98_Water.png",
+              "step3-title": "Deliciously subtle taste",
+              "step3-text": "Basis is made with just enough flavoring and no salty aftertaste."
+            }
+          },
+          "976cc4ec-b7b4-42ac-b01a-82c3aa870fbd": {
+            "type": "lp-comparison",
+            "settings": {
+              "featured-image": "shopify:\/\/shop_images\/1.jpeg",
+              "variant-id": "",
+              "compare1-point1-text": "",
+              "compare1-point2-text": "",
+              "compare1-point3-text": "",
+              "compare2-logo-text": "",
+              "compare2-point1-text": "",
+              "compare2-point2-text": "",
+              "compare2-point3-text": ""
+            }
+          },
+          "54cac7c5-9af2-4326-8bc0-55bd01602914": {
+            "type": "lp-reviews",
+            "settings": {
+              "headline": "The Reviews are In!",
+              "review1-image": "shopify:\/\/shop_images\/review1-image_2x_53e656d8-5b2f-4194-bce8-8cb0a6e2b35f.png",
+              "review1-rating": "5",
+              "review1-quote": "“We are obsessed with Basis and it will forever be a staple in our household”",
+              "review1-author": "@stylemeblonde",
+              "review2-image": "shopify:\/\/shop_images\/review2-image.png",
+              "review2-rating": "5",
+              "review2-quote": "“I’m floored at how incredible your product is 😀 and can't believe it took so long for someone to do it, but I'm so glad you are!\"",
+              "review2-author": "@mkminnis_"
+            }
+          },
+          "b0ddb20b-4904-4e26-b088-7f82fd912785": {
+            "type": "lp-social",
+            "settings": {
+              "headline": "",
+              "image1": "shopify:\/\/shop_images\/social-sub-1_3x_fb347c5d-18d5-4349-8a5b-71a3039e9da4.png",
+              "image2": "shopify:\/\/shop_images\/social-sub-2_4x_5b57ce53-9709-4e02-b0f7-2dc128bdc019.png",
+              "image3": "shopify:\/\/shop_images\/2.jpeg",
+              "image4": "shopify:\/\/shop_images\/social-sub-3_4x_e2b316af-d8f7-4689-9b7b-56e704b3ca08.png",
+              "image5": "shopify:\/\/shop_images\/1.jpeg"
+            }
+          },
+          "505c9096-34cf-45f5-98d5-eb348d5cec28": {
+            "type": "lp-signup",
+            "settings": {
+              "title": "Become an insider",
+              "left-menu": "subscription-page-left-menu",
+              "right-menu": "subscription-page-right-menu"
+            }
+          }
+        },
+        "block_order": [
+          "627f729d-d4a8-4346-a462-7d119cca8cb6",
+          "a537613a-fac6-48d2-9113-8d051e09dcbd",
+          "bad80e8d-acee-46b2-b4e4-3bbbac37fecc",
+          "976cc4ec-b7b4-42ac-b01a-82c3aa870fbd",
+          "54cac7c5-9af2-4326-8bc0-55bd01602914",
+          "b0ddb20b-4904-4e26-b088-7f82fd912785",
+          "505c9096-34cf-45f5-98d5-eb348d5cec28"
+        ],
+        "settings": {
+          "lp-announcement-bar": "Free Shipping On All Orders!",
+          "lp-hide-announcement-bar": false
+        }
+      },
+      "product-template-hm": {
+        "type": "product-template-hm",
+        "settings": {
+          "pack-count": "15 pack",
+          "tagline": "Free shipping on all orders",
+          "tagline-sub": "20% off on all future orders + free shipping",
+          "ni-cta-text": "",
+          "ni-point1-icon": "shopify:\/\/shop_images\/98_Water.png",
+          "ni-point1-headline": "1,000mg of Electrolytes",
+          "ni-point1-content": "Water alone doesn't cut it. We have the right balance of magnesium, potassium, and sodium to perfectly rehydrate you.",
+          "ni-point2-icon": "shopify:\/\/shop_images\/Sugar_with_a_purpose.png",
+          "ni-point2-headline": "Only 4g of Organic Cane Sugar",
+          "ni-point2-content": "Our sugar has a purpose. Cane sugar or technically speaking, glucose, is needed to absorb the water into the bloodstream quicker, making you feel better, faster.",
+          "ni-point3-icon": "shopify:\/\/shop_images\/nutrition-kp3_4x_093ff880-144b-4bf3-9138-709aa40a1ff8.png",
+          "ni-point3-headline": "Monk fruit, never Stevia or Erythritol",
+          "ni-point3-content": "We use Monk Fruit to sweeten our product. A zero caloric sweetener that comes from Southeast Asia.",
+          "ni-point4-icon": "shopify:\/\/shop_images\/nutrition-kp4_4x_d4599378-7147-4477-a89c-def9ff3a1e2a.png",
+          "ni-point4-headline": "Zero added coloring",
+          "ni-point4-content": "Unlike other products we never add anything that isn't necessary to rehydration, this includes coloring.",
+          "ni-cal-ps-vp": "20",
+          "ni-fat-ps-vp": "0",
+          "ni-fat-dv-vp": "0%",
+          "ni-sodium-ps-vp": "350mg",
+          "ni-sodium-dv-vp": "15%",
+          "ni-tcarb-ps-vp": "5g",
+          "ni-tcarb-dv-vp": "2%",
+          "ni-totalsugar-ps-vp": "4g",
+          "ni-totalsugar-dv-vp": "",
+          "ni-addedsugar-ps-vp": "4g",
+          "ni-addedsugar-dv-vp": "8%",
+          "ni-protein-ps-vp": "0g",
+          "ni-protein-dv-vp": "0%",
+          "ni-potassium-ps-vp": "150mg",
+          "ni-potassium-dv-vp": "4%",
+          "ni-magnesium-ps-vp": "70mg",
+          "ni-magnesium-dv-vp": "15%",
+          "ni-zinc-ps-vp": "430mg",
+          "ni-zinc-dv-vp": "20%",
+          "ingredients-vp": "<p>Organic Cane Sugar<br\/>Natural Fruit Flavors<br\/>Citric Acid<br\/>Sea Salt<br\/>Magnesium Citrate<br\/>Potassium Citrate<br\/>Sodium Citrate<br\/>Monk Fruit Extract<\/p>",
+          "ingredients-bl": "<p>Organic Cane Sugar<br\/>Sea Salt<br\/>Natural Blackberry Flavors<br\/>Citric Acid<br\/>Magnesium Citrate<br\/>Potassium Citrate<br\/>Sodium Citrate<br\/>Natural Lemon Flavors<br\/>Monk Fruit Extract<\/p>",
+          "ingredients-gm": "<p>Organic Cane Sugar<br\/>Natural Grapefruit Flavors<br\/>Sea Salt<br\/>Citric Acid<br\/>Magnesium Citrate<br\/>Potassium Citrate<br\/>Sodium Citrate<br\/>Natural Melon Flavors<br\/>Monk Fruit Extract<\/p>",
+          "ingredients-cr": "<p>Organic Cane Sugar<br\/>Natural Cranberry and Raspberry Flavors<br\/>Sea Salt<br\/>Citric Acid<br\/>Magnesium Citrate<br\/>Potassium Citrate<br\/>Sodium Citrate<br\/>Monk Fruit Extract<\/p>",
+          "ni-s-point1-text": "Gluten Free",
+          "ni-s-point1-icon": "shopify:\/\/shop_images\/ni-icon1_4x_d73b6187-a6bd-4bf9-aedf-51b72b3ed77c.png",
+          "ni-s-point2-text": "1% for the Planet",
+          "ni-s-point2-icon": "shopify:\/\/shop_images\/ni-icon2_4x_c59b246c-11d4-4822-a1f6-6c2113e7f9fd.png",
+          "ni-s-point3-text": "Non-GMO",
+          "ni-s-point3-icon": "shopify:\/\/shop_images\/Non_GMO.png",
+          "compare-cta-url": "#featuredProduct",
+          "compare-cta-text": "",
+          "compare-headline": "Not all hydration is created equal",
+          "compare-other-image": "shopify:\/\/shop_images\/Other_sugar_copy.png",
+          "compare-other-calories": "45",
+          "compare-other-sugar": "11g",
+          "compare-other-electrolytes": "875mg",
+          "compare-basis-image": "shopify:\/\/shop_images\/Basis_sugar-c1.png",
+          "compare-basis-calories": "25",
+          "compare-basis-sugar": "4g",
+          "compare-basis-electrolytes": "1000mg",
+          "lifestyle-cta-url": "#featuredProduct",
+          "lifestyle-cta-text": "",
+          "lifestyle-headline": " so we created Basis",
+          "lifestyle-tagline": "Basis was made to replenish electrolytes lost during the day, helping you to feel focused, energized, and relaxed.",
+          "lpoint1-icon": "shopify:\/\/shop_images\/Workout_2x_193266b7-6805-4d82-8887-32dc33b13a0e.png",
+          "lpoint1-title": "Pre\/Post workout",
+          "lpoint2-icon": "shopify:\/\/shop_images\/Hangovers_2x_35c82f9a-21f5-4d50-80da-366c23251a49.png",
+          "lpoint2-title": "Hangovers",
+          "lpoint3-icon": "shopify:\/\/shop_images\/Sleep_2x_241a6219-ade5-4c59-9ca3-a0bda3821a5c.png",
+          "lpoint3-title": "Sleep",
+          "lpoint4-icon": "shopify:\/\/shop_images\/Energy_2x_c5c3eb65-d81a-453f-9390-f7d35cfce8e6.png",
+          "lpoint4-title": "Energy",
+          "lpoint5-icon": "shopify:\/\/shop_images\/Parenting_2x_56c913dd-a80c-451e-bf49-12bd2b5c6edd.png",
+          "lpoint5-title": "Parenting",
+          "lpoint6-icon": "shopify:\/\/shop_images\/Immunity_2x_18160a80-079b-4120-8a2c-b6e7e67f5a09.png",
+          "lpoint6-title": "Immunity & Wellness",
+          "lpoint7-icon": "shopify:\/\/shop_images\/Beauty_and_skin_2x_2b351cdd-e57e-40d2-a025-04442e3e2215.png",
+          "lpoint7-title": "Beauty & Skin",
+          "lpoint8-icon": "shopify:\/\/shop_images\/Body_and_mind_2x_19fde786-2e9c-4d1f-92f9-820747aebf59.png",
+          "lpoint8-title": "Body & Mind",
+          "science-cta-url": "#featuredProduct",
+          "science-cta-text": "",
+          "science-s1-headline": "We're all about the science",
+          "science-s1-copy": "But without getting too scientific, we created Basis using rehydration therapies developed by the World Health Organization, the gold standard in hydration science. It’s been tested on elite athletes, gym rats, students, and even our moms.",
+          "science-s2-i1-icon": "shopify:\/\/shop_images\/Electrolytes.png",
+          "science-s2-i1-headline": "Electrolyte Balance",
+          "science-s2-i1-copy": "Water alone doesn't cut it. Your body needs the right balance of magnesium, potassium, and sodium to truly hydrate properly.",
+          "science-s2-i2-icon": "shopify:\/\/shop_images\/Sugar_with_a_purpose.png",
+          "science-s2-i2-headline": "Sugar with a purpose",
+          "science-s2-i2-copy": "Our sugar has a purpose. Organic cane sugar, or technically speaking, glucose, is needed to absorb the water into the bloodstream quicker, making you feel better, faster."
+        }
+      }
+    },
+    "content_for_index": [
+      "1498737500673",
+      "1532038945687",
+      "1601595839015",
+      "1601596456929",
+      "1601595908035"
+    ]
+  },
+  "presets": {
+    "Chelsea": {
+      "color_heading_new": "#000000",
+      "color_text_new": "#000000",
+      "color_error_new": "#d02e2e",
+      "color_border_new": "#000000",
+      "color_background_new": "#ffffff",
+      "color_button_primary_bg": "#8dcbe9",
+      "color_button_secondary_bg": "#ffffff",
+      "color_top_bar": "#8dcbe9",
+      "color_top_bar_text": "#000000",
+      "color_header_bg_home": "rgba(0,0,0,0)",
+      "color_header_text_home": "#ffffff",
+      "color_header_bg": "rgba(0,0,0,0)",
+      "color_header_text": "#000000",
+      "color_header_bg_scroll": "#ffffff",
+      "color_header_text_scroll": "#000000",
+      "color_dropdown_bg": "#ffffff",
+      "color_dropdown_text": "#000000",
+      "drawer_bg_color": "#ffffff",
+      "drawer_text_color": "#000000",
+      "header_icon_color_home": "#000000",
+      "header_bg_color_home": "#ffffff",
+      "header_icon_color": "#000000",
+      "header_bg_color": "#ffffff",
+      "header_icon_color_scroll": "#222222",
+      "header_bg_color_scroll": "#ffffff",
+      "color_badge_bg": "#8dcbe9",
+      "color_footer_text": "#000000",
+      "color_footer_bg": "#ffffff",
+      "color_bottom_bar_bg": "#fafafa",
+      "header_font_picker": "nunito_n4",
+      "base_font_size": 14,
+      "heading_letter_spacing": 0,
+      "general_font_picker": "nunito_sans_n4",
+      "body_font_size": 14,
+      "body_letter_spacing": 0,
+      "transition_grid_items": true,
+      "transition_product_features": true,
+      "transition_images_fade": true,
+      "transition_collections_list": true,
+      "show_search": true,
+      "image_aspect_ratio": 1,
+      "image_size": "cover",
+      "show_quick_view": true,
+      "show_quick_view_description": true,
+      "show_quantity": true,
+      "hover_image": false,
+      "enable_payment_button": true,
+      "color_swatches": true,
+      "color_swatches_style": "circle",
+      "products_rows": 4,
+      "products_columns": 4,
+      "enable_video_looping": false,
+      "enable_ajax_cart": true,
+      "enable_cart_order_notes": false,
+      "show_continue_shopping": true,
+      "tax_text": "Excluding taxes and shipping",
+      "show_breadcrumbs": true,
+      "show_reviews": true,
+      "enable_yotpo": false,
+      "yotpo_ID": "",
+      "favicon": "",
+      "twitter_url": "",
+      "facebook_url": "",
+      "pinterest_url": "",
+      "instagram_url": "",
+      "tumblr_url": "",
+      "youtube_url": "",
+      "rss_url": "",
+      "share_on_twitter": true,
+      "share_on_facebook": true,
+      "share_on_pinterest": true,
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#197bbd",
+      "checkout_button_color": "#197bbd",
+      "checkout_error_color": "#e32c2b",
+      "color_primary_new": "#8DCBE9",
+      "color_secondary_new": "#000000",
+      "color_overlay_bg": "#000000",
+      "promo_url": "",
+      "browse_by_tag_enabled": false,
+      "collection_collectionGrid_columns": "3",
+      "twitter_via": "",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": "",
+            "logo_other": "",
+            "logo_max_width": 100,
+            "show_site_name": true,
+            "menu_list": "main-menu",
+            "links_position": "links_center",
+            "logo_position": "logo_left",
+            "meganav_image": "",
+            "meganav_image_heading": "",
+            "meganav_image_link": ""
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_title": true,
+            "show_sort_filter": true,
+            "show_banner": true,
+            "banner_height": "normal",
+            "banner_subheading": "",
+            "banner_text_position": "center",
+            "banner_color_text": "#ffffff",
+            "banner_color_overlay": "#333333",
+            "banner_overlay_opacity": 0,
+            "featured_image": "",
+            "featured_heading": "Use this image showcase promotional content.",
+            "featured_text": "<p>Elaborate on it with rich text<\/p>",
+            "featured_button_text": "Learn More",
+            "featured_button_link": "",
+            "featured_button_style": "primary",
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#333333",
+            "featured_overlay_opacity": 0
+          }
+        },
+        "1498737500673": {
+          "type": "slideshow",
+          "blocks": {
+            "1498737500673-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "",
+                "title": "Welcome to Modular",
+                "text": "<p>A unique layout with a striking design<\/p>",
+                "cta": "Learn More",
+                "link": "",
+                "cta_primary_btn_style": "primary",
+                "cta_2": "",
+                "link_2": "",
+                "cta_secondary_btn_style": "secondary",
+                "overlay_color": "#333333",
+                "overlay_opacity": 0
+              }
+            },
+            "1498737500673-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "",
+                "title": "Welcome to Modular",
+                "text": "<p>A unique layout with a striking design<\/p>",
+                "cta": "Learn More",
+                "link": "",
+                "cta_primary_btn_style": "primary",
+                "cta_2": "",
+                "link_2": "",
+                "cta_secondary_btn_style": "secondary",
+                "overlay_color": "#333333",
+                "overlay_opacity": 0
+              }
+            }
+          },
+          "block_order": [
+            "1498737500673-0",
+            "1498737500673-1"
+          ],
+          "settings": {
+            "showNavArrows": true,
+            "show_arrow_down": false,
+            "autoplay": true,
+            "duration": 4,
+            "transition": "zoom-out",
+            "dots_position": "center",
+            "slide_height": "five-fifty-height-hero",
+            "button_size": "normal"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "product_layout": "slideshow",
+            "image_size": "large",
+            "add_cart_position": "top",
+            "show_vendor": true,
+            "show_quantity": false,
+            "show_cart_bar": true,
+            "enable_payment_button": true,
+            "show_newsletter": true,
+            "text_newsletter": "<p>Notify me when this product is available:<\/p>",
+            "page_tab_1": "",
+            "page_tab_2": "",
+            "page_tab_3": "",
+            "product_slideshow_dots": false,
+            "product_slideshow_arrows": false,
+            "enable_video_looping": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1528202808725": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "title": "Helpful Links",
+                "mobile_hide_block": true
+              }
+            },
+            "1582813156290": {
+              "type": "text",
+              "settings": {
+                "title": "Information",
+                "text": "<p>This text block is a great place to discuss shipping policies, or terms and conditions info.<\/p>",
+                "mobile_hide_block": false
+              }
+            },
+            "1582813160258": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "",
+                "mobile_hide_block": false
+              }
+            }
+          },
+          "block_order": [
+            "1528202808725",
+            "1582813156290",
+            "1582813160258"
+          ],
+          "settings": {
+            "show_payment_icons": true,
+            "show_social_icons": true,
+            "menu": ""
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {
+            "show_popup": "disabled",
+            "popup_position": "left",
+            "popup_header": "Use the popup to catch emails and showcase promotions",
+            "popup_content": "<p>Popups can detract from a user's experience, so try to limit how often they appear.<\/p>",
+            "text_alignment": "left",
+            "show_popup_newsletter": true,
+            "popup_delay": 5,
+            "popup_reappear_time": "7",
+            "popup_image": ""
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "color": "#222",
+            "background": "#ffffff",
+            "title": "Newsletter",
+            "content": "<p>Let's keep in touch<\/p>"
+          }
+        },
+        "product-features": {
+          "type": "product-features",
+          "blocks": {
+            "1528250359730": {
+              "type": "text",
+              "settings": {
+                "heading": "This is a heading for a Product feature block.",
+                "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
+                "image": "",
+                "image_link": "",
+                "button_text": "",
+                "button_link": "",
+                "button_style": "primary"
+              }
+            },
+            "1528250384489": {
+              "type": "text",
+              "settings": {
+                "heading": "This is a heading for a Product feature block.",
+                "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
+                "image": "",
+                "image_link": "",
+                "button_text": "",
+                "button_link": "",
+                "button_style": "primary"
+              }
+            }
+          },
+          "block_order": [
+            "1528250359730",
+            "1528250384489"
+          ],
+          "settings": {
+            "blocks_alignment": "center"
+          }
+        },
+        "rich-text": {
+          "type": "rich-text",
+          "settings": {
+            "layout": "split",
+            "subheading": "Humble Beginnings",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "icons-row": {
+          "type": "icons-row",
+          "blocks": {
+            "1528250366509": {
+              "type": "text",
+              "settings": {
+                "icon_name": "shop",
+                "icon_image": "",
+                "title": "Feature",
+                "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+              }
+            },
+            "1528250367690": {
+              "type": "text",
+              "settings": {
+                "icon_name": "sync",
+                "icon_image": "",
+                "title": "Feature",
+                "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+              }
+            },
+            "1528250369041": {
+              "type": "text",
+              "settings": {
+                "icon_name": "target",
+                "icon_image": "",
+                "title": "Feature",
+                "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+              }
+            }
+          },
+          "block_order": [
+            "1528250366509",
+            "1528250367690",
+            "1528250369041"
+          ],
+          "settings": {
+            "color_icons_bg": "#fafafa",
+            "color_icons_text": "#333333"
+          }
+        },
+        "1532039018217": {
+          "type": "featured-collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "frontpage",
+            "products_layout": "grid",
+            "show_button": true,
+            "button_style": "primary"
+          }
+        },
+        "1532039050804": {
+          "type": "testimonials",
+          "blocks": {
+            "1532039050804-0": {
+              "type": "testimonial",
+              "settings": {
+                "blockquote": "Use this testimonial as an opportunity for your most valued customer to discuss your brand and what sets you apart from the competition. This section looks best when limited to two or three lines!",
+                "author": "John Doe"
+              }
+            },
+            "1532039050804-1": {
+              "type": "testimonial",
+              "settings": {
+                "blockquote": "Use this testimonial as an opportunity for your most valued customer to discuss your brand and what sets you apart from the competition. This section looks best when limited to two or three lines!",
+                "author": "John Doe"
+              }
+            },
+            "1532039050804-2": {
+              "type": "testimonial",
+              "settings": {
+                "blockquote": "Use this testimonial as an opportunity for your most valued customer to discuss your brand and what sets you apart from the competition. This section looks best when limited to two or three lines!",
+                "author": "John Doe"
+              }
+            }
+          },
+          "block_order": [
+            "1532039050804-0",
+            "1532039050804-1",
+            "1532039050804-2"
+          ],
+          "settings": {
+            "title": "",
+            "title_position": "center",
+            "blocks_text_align": "justify",
+            "hide_quotes": false,
+            "columns": 3
+          }
+        },
+        "1532039073433": {
+          "type": "image-with-text",
+          "blocks": {
+            "1532039073433-0": {
+              "type": "gallery_image",
+              "settings": {
+                "slide": ""
+              }
+            },
+            "1532039073433-1": {
+              "type": "gallery_image",
+              "settings": {
+                "slide": ""
+              }
+            }
+          },
+          "block_order": [
+            "1532039073433-0",
+            "1532039073433-1"
+          ],
+          "settings": {
+            "color_style": "white",
+            "transition": "fade",
+            "autoplay": true,
+            "duration": 4,
+            "show_margins": false,
+            "slide_height": "five-fifty-height-hero",
+            "slide_image_position": "left",
+            "slide_image_width": "med_s12|med_s12",
+            "subheading": "Humble Beginnings",
+            "title": "Tell a Story",
+            "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
+            "cta": "Shop Now",
+            "link": "",
+            "button_style": "primary"
+          }
+        },
+        "list-collections-page-template": {
+          "type": "list-collections-page-template",
+          "settings": {
+            "show_description": true,
+            "collections_columns": 2,
+            "coll_text_position": "center",
+            "button_text": "Shop Now",
+            "text_color": "#ffffff",
+            "overlay_color": "#333333",
+            "overlay_opacity": 0
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "show_blog_name": false,
+            "show_rss": false,
+            "show_featured_post": true,
+            "tags": true,
+            "author": true,
+            "show_comments": true,
+            "article_rows": 4,
+            "article_columns": 4
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "1532039480983": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "",
+                "title": "Welcome to Modular",
+                "text": "<p>A unique layout with a striking design<\/p>",
+                "cta": "Shop Now",
+                "link": "shopify:\/\/collections\/all",
+                "cta_primary_btn_style": "primary",
+                "cta_2": "",
+                "link_2": "",
+                "cta_secondary_btn_style": "secondary",
+                "overlay_color": "#333333",
+                "overlay_opacity": 0
+              }
+            },
+            "1532039484050": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "",
+                "title": "Welcome to Modular",
+                "text": "<p>A unique layout with a striking design<\/p>",
+                "cta": "Shop Now",
+                "link": "shopify:\/\/collections\/all",
+                "cta_primary_btn_style": "primary",
+                "cta_2": "",
+                "link_2": "",
+                "cta_secondary_btn_style": "secondary",
+                "overlay_color": "#333333",
+                "overlay_opacity": 0
+              }
+            }
+          },
+          "block_order": [
+            "1532039480983",
+            "1532039484050"
+          ],
+          "settings": {
+            "showNavArrows": true,
+            "show_arrow_down": false,
+            "autoplay": true,
+            "duration": 4,
+            "transition": "fade",
+            "dots_position": "center",
+            "slide_height": "five-fifty-height-hero",
+            "button_size": "normal"
+          }
+        },
+        "1532041725090": {
+          "type": "slideshow",
+          "blocks": {
+            "1532041725090-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "Humble Beginnings",
+                "title": "Welcome to Modular",
+                "text": "<p>A unique layout with a striking design<\/p>",
+                "cta": "Shop Now",
+                "link": "shopify:\/\/collections\/all",
+                "cta_primary_btn_style": "primary",
+                "cta_2": "",
+                "link_2": "",
+                "cta_secondary_btn_style": "secondary",
+                "overlay_color": "#333333",
+                "overlay_opacity": 0
+              }
+            }
+          },
+          "block_order": [
+            "1532041725090-0"
+          ],
+          "settings": {
+            "showNavArrows": true,
+            "show_arrow_down": false,
+            "autoplay": true,
+            "duration": 4,
+            "transition": "fade",
+            "dots_position": "center",
+            "slide_height": "five-fifty-height-hero",
+            "button_size": "normal"
+          }
+        },
+        "1583105953406": {
+          "type": "rich-text",
+          "settings": {
+            "layout": "split",
+            "subheading": "Humble Beginnings",
+            "title": "Modular is a powerful Shopify theme that will set you apart from the rest.",
+            "content": "<p>It features ample space to showcase your imagery with Mosaic, Image with text, and Slideshow sections ... and even this Rich Text section itself.<\/p>",
+            "button_text": "Learn More",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "faq-section__product": {
+          "type": "faq-section__product",
+          "settings": {
+            "title": "",
+            "subheading": ""
+          }
+        },
+        "related-products": {
+          "type": "related-products",
+          "settings": {
+            "related_products_enable": true,
+            "product_recommendations_heading": "Related products"
+          }
+        }
+      },
+      "content_for_index": [
+        "1498737500673",
+        "1583105953406",
+        "1532039073433",
+        "1532039018217",
+        "1532039050804",
+        "1532041725090"
+      ]
+    },
+    "Mayfair": {
+      "color_heading_new": "#000000",
+      "color_text_new": "#000000",
+      "color_primary_new": "#000000",
+      "color_secondary_new": "#000000",
+      "color_border_new": "#000000",
+      "color_background_new": "#ffffff",
+      "color_button_primary_bg": "#333333",
+      "color_top_bar": "#ffffff",
+      "color_top_bar_text": "#000000",
+      "color_header_bg_home": "rgba(0,0,0,0)",
+      "color_header_text_home": "#ffffff",
+      "color_header_bg": "rgba(0,0,0,0)",
+      "color_header_text": "#000000",
+      "color_header_bg_scroll": "#ffffff",
+      "color_header_text_scroll": "#000000",
+      "color_dropdown_bg": "#ffffff",
+      "color_dropdown_text": "#000000",
+      "drawer_bg_color": "#ffffff",
+      "drawer_text_color": "#000000",
+      "header_icon_color_home": "#000000",
+      "header_bg_color_home": "#ffffff",
+      "header_icon_color": "#000000",
+      "header_bg_color": "#ffffff",
+      "color_badge_bg": "#2e3234",
+      "color_footer_text": "#000000",
+      "color_footer_bg": "#ffffff",
+      "color_bottom_bar_bg": "#fafafa",
+      "header_font_picker": "optima_nova_n7",
+      "base_font_size": 14,
+      "heading_letter_spacing": 0,
+      "general_font_picker": "work_sans_n4",
+      "body_font_size": 14,
+      "body_letter_spacing": 0,
+      "enable_cart_order_notes": false,
+      "enable_payment_button": true,
+      "show_breadcrumbs": true,
+      "favicon": "",
+      "twitter_url": "",
+      "facebook_url": "",
+      "pinterest_url": "",
+      "instagram_url": "",
+      "tumblr_url": "",
+      "youtube_url": "",
+      "rss_url": "",
+      "share_on_twitter": true,
+      "share_on_facebook": true,
+      "share_on_pinterest": true,
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#197bbd",
+      "checkout_button_color": "#197bbd",
+      "checkout_error_color": "#e32c2b",
+      "color_overlay_bg": "#000000",
+      "color_seconsdary_new": "#2e3234",
+      "browse_by_tag_enabled": true,
+      "collection_collectionGrid_columns": "3",
+      "twitter_via": "",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": "",
+            "logo_other": "",
+            "logo_max_width": 100,
+            "show_site_name": true,
+            "menu_list": "main-menu",
+            "links_position": "links_center",
+            "logo_position": "logo_left",
+            "meganav_image": "",
+            "meganav_image_heading": "",
+            "meganav_image_link": ""
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_title": true,
+            "show_sort_filter": true,
+            "show_banner": true,
+            "banner_height": "normal",
+            "banner_subheading": "",
+            "banner_text_position": "bottom-left",
+            "banner_color_text": "#ffffff",
+            "banner_color_overlay": "#333333",
+            "banner_overlay_opacity": 0,
+            "featured_image": "",
+            "featured_heading": "Use this image showcase promotional content.",
+            "featured_text": "<p>Elaborate on it with rich text<\/p>",
+            "featured_button_text": "Learn More",
+            "featured_button_link": "",
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#333333",
+            "featured_overlay_opacity": 0
+          }
+        },
+        "1498737500673": {
+          "type": "slideshow",
+          "blocks": {
+            "1498737500673-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "",
+                "title": "Welcome to Modular",
+                "text": "<p>A unique layout with a striking design<\/p>",
+                "cta": "Learn More",
+                "link": "",
+                "cta_2": "",
+                "link_2": "",
+                "overlay_color": "#333333",
+                "overlay_opacity": 0
+              }
+            },
+            "1498737500673-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "",
+                "title": "Welcome to Modular",
+                "text": "<p>A unique layout with a striking design<\/p>",
+                "cta": "Learn More",
+                "link": "",
+                "cta_2": "Shop Now",
+                "link_2": "",
+                "overlay_color": "#333333",
+                "overlay_opacity": 0
+              }
+            }
+          },
+          "block_order": [
+            "1498737500673-0",
+            "1498737500673-1"
+          ],
+          "settings": {
+            "showNavArrows": true,
+            "show_arrow_down": false,
+            "autoplay": true,
+            "duration": 4,
+            "transition": "zoom-out",
+            "dots_position": "center",
+            "slide_height": "five-fifty-height-hero"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "product_layout": "slideshow",
+            "image_size": "large",
+            "show_vendor": false,
+            "show_quantity": true,
+            "show_cart_bar": true,
+            "show_newsletter": true,
+            "text_newsletter": "<p>Notify me when this product is available:<\/p>",
+            "page_tab_1": "",
+            "page_tab_2": "",
+            "page_tab_3": "",
+            "product_slideshow_dots": false,
+            "product_slideshow_arrows": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1528202808725": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer",
+                "title": "Helpful Links",
+                "mobile_hide_block": true
+              }
+            },
+            "1582813156290": {
+              "type": "text",
+              "settings": {
+                "title": "Information",
+                "text": "<p>This text block is a great place to discuss shipping policies, or terms and conditions info.<\/p>",
+                "mobile_hide_block": false
+              }
+            },
+            "1582813160258": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "",
+                "mobile_hide_block": false
+              }
+            }
+          },
+          "block_order": [
+            "1528202808725",
+            "1582813156290",
+            "1582813160258"
+          ],
+          "settings": {
+            "show_payment_icons": true,
+            "show_social_icons": true,
+            "menu": ""
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {
+            "show_popup": "disabled",
+            "show_popup_newsletter": true,
+            "popup_delay": 5,
+            "popup_reappear_time": "7",
+            "popup_image": ""
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "color": "#222",
+            "background": "#ffffff",
+            "title": "Newsletter",
+            "content": "<p>Let's keep in touch<\/p>"
+          }
+        },
+        "product-features": {
+          "type": "product-features",
+          "blocks": {
+            "1528250359730": {
+              "type": "text",
+              "settings": {
+                "heading": "This is a heading for a Product feature block.",
+                "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
+                "image": "",
+                "image_link": "",
+                "button_text": "",
+                "button_link": ""
+              }
+            },
+            "1528250384489": {
+              "type": "text",
+              "settings": {
+                "heading": "This is a heading for a Product feature block.",
+                "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
+                "image": "",
+                "image_link": "",
+                "button_text": "",
+                "button_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1528250359730",
+            "1528250384489"
+          ],
+          "settings": {
+            "blocks_alignment": "center"
+          }
+        },
+        "rich-text": {
+          "type": "rich-text",
+          "settings": {
+            "layout": "split",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "icons-row": {
+          "type": "icons-row",
+          "blocks": {
+            "1528250366509": {
+              "type": "text",
+              "settings": {
+                "icon_name": "shop",
+                "title": "Feature",
+                "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+              }
+            },
+            "1528250367690": {
+              "type": "text",
+              "settings": {
+                "icon_name": "sync",
+                "title": "Feature",
+                "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+              }
+            },
+            "1528250369041": {
+              "type": "text",
+              "settings": {
+                "icon_name": "target",
+                "title": "Feature",
+                "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+              }
+            }
+          },
+          "block_order": [
+            "1528250366509",
+            "1528250367690",
+            "1528250369041"
+          ],
+          "settings": {
+            "color_icons_bg": "#fafafa",
+            "color_icons_text": "#333333"
+          }
+        },
+        "1532038945687": {
+          "type": "rich-text",
+          "settings": {
+            "layout": "split",
+            "title": "Describe your products or brand in detail here",
+            "content": "<p>Modular is a powerful Shopify theme that will set you apart from the rest. It features ample space to showcase your imagery with Mosaic, Image with text, and Slideshow sections.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "1532039018217": {
+          "type": "featured-collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "frontpage"
+          }
+        },
+        "1532039029252": {
+          "type": "mosaic",
+          "blocks": {
+            "1532039029252-0": {
+              "type": "text",
+              "settings": {
+                "title": "Featured collection",
+                "subheading": "Best Seller",
+                "text": "Showcase a two of your best products, video, a collection, or text with the blocks in this section.",
+                "button_label": "Shop now",
+                "button_link": ""
+              }
+            },
+            "1532039029252-1": {
+              "type": "product",
+              "settings": {
+                "product": ""
+              }
+            },
+            "1532039029252-2": {
+              "type": "product",
+              "settings": {
+                "product": ""
+              }
+            }
+          },
+          "block_order": [
+            "1532039029252-0",
+            "1532039029252-1",
+            "1532039029252-2"
+          ],
+          "settings": {
+            "image": "",
+            "hide_image_mobile": false,
+            "image_text": "",
+            "image_link": "",
+            "blocks_layout": "offset"
+          }
+        },
+        "1532039050804": {
+          "type": "testimonials",
+          "blocks": {
+            "1532039050804-0": {
+              "type": "testimonial",
+              "settings": {
+                "blockquote": "Use this testimonial as an opportunity for your most valued customer to discuss your brand and what sets you apart from the competition. This section looks best when limited to two or three lines!",
+                "author": "John Doe"
+              }
+            },
+            "1532039050804-1": {
+              "type": "testimonial",
+              "settings": {
+                "blockquote": "Use this testimonial as an opportunity for your most valued customer to discuss your brand and what sets you apart from the competition. This section looks best when limited to two or three lines!",
+                "author": "John Doe"
+              }
+            },
+            "1532039050804-2": {
+              "type": "testimonial",
+              "settings": {
+                "blockquote": "Use this testimonial as an opportunity for your most valued customer to discuss your brand and what sets you apart from the competition. This section looks best when limited to two or three lines!",
+                "author": "John Doe"
+              }
+            }
+          },
+          "block_order": [
+            "1532039050804-0",
+            "1532039050804-1",
+            "1532039050804-2"
+          ],
+          "settings": {
+            "title": "",
+            "title_position": "left",
+            "blocks_text_align": "justify",
+            "hide_quotes": false
+          }
+        },
+        "1532039073433": {
+          "type": "image-with-text",
+          "blocks": {
+            "1532039073433-0": {
+              "type": "gallery_image",
+              "settings": {
+                "slide": ""
+              }
+            },
+            "1532039073433-1": {
+              "type": "gallery_image",
+              "settings": {
+                "slide": ""
+              }
+            }
+          },
+          "block_order": [
+            "1532039073433-0",
+            "1532039073433-1"
+          ],
+          "settings": {
+            "color_style": "white",
+            "autoplay": true,
+            "duration": 4,
+            "show_margins": false,
+            "slide_height": "five-fifty-height-hero",
+            "slide_image_position": "left",
+            "slide_image_width": "med_s12|med_s12",
+            "subheading": "Humble Beginnings",
+            "title": "Tell a Story",
+            "content": "<p>By showcasing a product, collection, or your brand.<\/p>",
+            "cta": "Shop Now",
+            "link": ""
+          }
+        },
+        "1532039110708": {
+          "type": "featured-blog",
+          "settings": {
+            "heading": "",
+            "text": "",
+            "cta": "",
+            "tags": true,
+            "author": true,
+            "article_rows": 1,
+            "article_columns": 4
+          }
+        },
+        "1532039127139": {
+          "type": "map",
+          "settings": {
+            "api_key": "",
+            "map_address": "Carrer de Trilla, 2, 08012 Barcelona, Spain",
+            "map_height": "five-fifty-height-hero",
+            "location_title": "Modular",
+            "location_subheading": "Come visit our store",
+            "address": "566 Emerson Street\nPalo Alto, California",
+            "hours": "Mon - Fri, 8am - 11pm\nSaturday, 8am - 12pm\nSunday, 9am - 11pm",
+            "card_color": "#ffffff",
+            "style": "retro",
+            "zoom": 12,
+            "background_image": ""
+          }
+        },
+        "list-collections-page-template": {
+          "type": "list-collections-page-template",
+          "settings": {
+            "show_description": true,
+            "collections_columns": 2,
+            "coll_text_position": "center",
+            "button_text": "Shop Now",
+            "text_color": "#ffffff",
+            "overlay_color": "#333333",
+            "overlay_opacity": 0
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "show_blog_name": false,
+            "show_rss": false,
+            "show_featured_post": true,
+            "tags": true,
+            "author": true,
+            "show_comments": true,
+            "article_rows": 4,
+            "article_columns": 4
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "1532039480983": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "",
+                "title": "Welcome to Modular",
+                "text": "<p>A unique layout with a striking design<\/p>",
+                "cta": "Shop Now",
+                "link": "shopify:\/\/collections\/all",
+                "cta_2": "",
+                "link_2": "",
+                "overlay_color": "#333333",
+                "overlay_opacity": 0
+              }
+            },
+            "1532039484050": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "",
+                "title": "Welcome to Modular",
+                "text": "<p>A unique layout with a striking design<\/p>",
+                "cta": "Shop Now",
+                "link": "shopify:\/\/collections\/all",
+                "cta_2": "",
+                "link_2": "",
+                "overlay_color": "#333333",
+                "overlay_opacity": 0
+              }
+            }
+          },
+          "block_order": [
+            "1532039480983",
+            "1532039484050"
+          ],
+          "settings": {
+            "showNavArrows": true,
+            "show_arrow_down": false,
+            "autoplay": true,
+            "duration": 4,
+            "transition": "slide",
+            "dots_position": "center",
+            "slide_height": "five-fifty-height-hero"
+          }
+        }
+      },
+      "content_for_index": [
+        "1498737500673",
+        "1532038945687",
+        "1532039018217",
+        "1532039029252",
+        "1532039050804",
+        "1532039073433",
+        "1532039127139",
+        "1532039110708"
+      ]
+    },
+    "Hoxton": {
+      "color_heading_new": "#000000",
+      "color_text_new": "#000000",
+      "color_error_new": "#d02e2e",
+      "color_border_new": "#e4e4e4",
+      "color_background_new": "#ffffff",
+      "color_accent_line": "#40312c",
+      "color_button_primary_bg": "#000000",
+      "color_button_secondary_bg": "#ffffff",
+      "color_top_bar": "#1d1d1f",
+      "color_top_bar_text": "#ffffff",
+      "color_header_bg_home": "rgba(0,0,0,0)",
+      "color_header_text_home": "#ffffff",
+      "color_header_bg": "rgba(0,0,0,0)",
+      "color_header_text": "#333333",
+      "color_header_bg_scroll": "#ffffff",
+      "color_header_text_scroll": "#333333",
+      "color_dropdown_bg": "#ffffff",
+      "color_dropdown_text": "#333333",
+      "drawer_bg_color": "#ffffff",
+      "drawer_text_color": "#000000",
+      "header_icon_color_home": "#222222",
+      "header_bg_color_home": "#ffffff",
+      "header_icon_color": "#1d1d1f",
+      "header_bg_color": "#ffffff",
+      "header_icon_color_scroll": "#222222",
+      "header_bg_color_scroll": "#ffffff",
+      "color_badge_bg": "#2e3234",
+      "color_footer_text": "#ffffff",
+      "color_footer_bg": "#000000",
+      "color_bottom_bar_bg": "#000000",
+      "header_font_picker": "optima_nova_n4",
+      "heading_letter_spacing": 0,
+      "general_font_picker": "chivo_n4",
+      "body_letter_spacing": 0,
+      "accent_line": "straight",
+      "transition_text": true,
+      "transition_grid_items": true,
+      "transition_images_fade": true,
+      "transition_collections_list": true,
+      "dots_style": "hidden",
+      "show_search": true,
+      "search_type": "product",
+      "search_overlay_color": "#222222",
+      "search_overlay_opacity": 10,
+      "image_aspect_ratio": 1,
+      "image_size": "cover",
+      "product_title_position": "center",
+      "show_quick_view": true,
+      "show_quick_view_description": true,
+      "price_hover": false,
+      "show_quantity": true,
+      "show_review_stars": true,
+      "hover_image": false,
+      "enable_payment_button": true,
+      "color_swatches": true,
+      "color_swatches_style": "circle",
+      "product_badge_style": "circle",
+      "products_rows": 4,
+      "products_columns": 4,
+      "products_columns_mobile": "1",
+      "enable_video_looping": false,
+      "cart_icon": "cart",
+      "enable_ajax_cart": true,
+      "enable_cart_order_notes": false,
+      "show_continue_shopping": true,
+      "tax_text": "Excluding taxes and shipping",
+      "show_breadcrumbs": true,
+      "show_reviews": false,
+      "enable_yotpo": false,
+      "yotpo_ID": "",
+      "favicon": "",
+      "twitter_url": "#!",
+      "facebook_url": "#!",
+      "pinterest_url": "#!",
+      "instagram_url": "#!",
+      "tumblr_url": "",
+      "youtube_url": "",
+      "rss_url": "",
+      "share_on_twitter": true,
+      "share_on_facebook": true,
+      "share_on_pinterest": true,
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#197bbd",
+      "checkout_button_color": "#197bbd",
+      "checkout_error_color": "#e32c2b",
+      "base_font_size": 14,
+      "body_font_size": 14,
+      "transition_product_features": true,
+      "color_primary_new": "#8DCBE9",
+      "color_secondary_new": "#000000",
+      "color_overlay_bg": "#000000",
+      "promo_url": "",
+      "browse_by_tag_enabled": false,
+      "collection_collectionGrid_columns": "3",
+      "twitter_via": "",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo": "",
+            "logo_other": "",
+            "logo_max_width": 100,
+            "show_site_name": true,
+            "menu_list": "",
+            "links_position": "links_left",
+            "logo_position": "logo_left",
+            "meganav_image": "",
+            "image_aspect_ratio": 0.7,
+            "meganav_image_heading": "",
+            "meganav_image_link": ""
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_title": true,
+            "show_sort_filter": true,
+            "filter_mode": "group",
+            "position_filters": "left",
+            "show_banner": true,
+            "banner_image": "",
+            "banner_height": "normal",
+            "banner_subheading": "",
+            "banner_text_position": "center",
+            "banner_color_text": "#ffffff",
+            "banner_color_overlay": "#333333",
+            "banner_overlay_opacity": 25,
+            "show_featured_image": true,
+            "featured_image": "",
+            "featured_heading": "",
+            "featured_text": "",
+            "featured_button_text": "Learn More",
+            "featured_button_link": "shopify:\/\/pages\/about",
+            "featured_button_style": "secondary",
+            "featured_color_text": "#ffffff",
+            "featured_color_overlay": "#333333",
+            "featured_overlay_opacity": 25
+          }
+        },
+        "1498737500673": {
+          "type": "slideshow",
+          "blocks": {
+            "1498737500673-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "left",
+                "color_style": "white",
+                "subheading": "",
+                "title": "",
+                "text": "",
+                "cta": "",
+                "link": "",
+                "cta_primary_btn_style": "primary",
+                "cta_2": "",
+                "link_2": "",
+                "cta_secondary_btn_style": "secondary",
+                "overlay_color": "#1d1d1f",
+                "overlay_opacity": 10
+              }
+            },
+            "1596005081747": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "left",
+                "color_style": "white",
+                "subheading": "",
+                "title": "",
+                "text": "",
+                "cta": "Shop Now",
+                "link": "",
+                "cta_primary_btn_style": "primary",
+                "cta_2": "",
+                "link_2": "",
+                "cta_secondary_btn_style": "secondary",
+                "overlay_color": "#333333",
+                "overlay_opacity": 15
+              }
+            }
+          },
+          "block_order": [
+            "1498737500673-0",
+            "1596005081747"
+          ],
+          "settings": {
+            "showNavArrows": true,
+            "show_arrow_down": false,
+            "autoplay": true,
+            "duration": 4,
+            "transition": "zoom-out",
+            "dots_position": "center",
+            "slide_height": "one-hundred-height-hero",
+            "button_size": "normal"
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "product_layout": "scrollable",
+            "image_size": "large",
+            "add_cart_position": "top",
+            "lightbox": true,
+            "show_vendor": true,
+            "show_quantity": false,
+            "show_cart_bar": true,
+            "enable_payment_button": true,
+            "show_newsletter": true,
+            "text_newsletter": "<p>Notify me when this product is available:<\/p>",
+            "enable_tabs_h6": true,
+            "page_tab_1": "",
+            "page_tab_2": "",
+            "page_tab_3": "",
+            "product_slideshow_dots": false,
+            "product_slideshow_arrows": false,
+            "enable_video_looping": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1591670209300": {
+              "type": "logo",
+              "settings": {
+                "logo": "",
+                "logo_width": 130,
+                "mobile_hide_block": false
+              }
+            },
+            "1594448578668": {
+              "type": "menu",
+              "settings": {
+                "menu": "",
+                "title": "",
+                "mobile_hide_block": false
+              }
+            },
+            "1528202808725": {
+              "type": "menu",
+              "settings": {
+                "menu": "",
+                "title": "",
+                "mobile_hide_block": false
+              }
+            },
+            "1582813156290": {
+              "type": "text",
+              "settings": {
+                "title": "",
+                "text": "",
+                "mobile_hide_block": false
+              }
+            }
+          },
+          "block_order": [
+            "1591670209300",
+            "1594448578668",
+            "1528202808725",
+            "1582813156290"
+          ],
+          "settings": {
+            "show_payment_icons": true,
+            "show_social_icons": true,
+            "menu": "",
+            "show_locale_selector": true,
+            "show_currency_selector": true
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "settings": {
+            "show_popup": "enabled",
+            "popup_position": "left",
+            "popup_header": "Dispatches",
+            "popup_content": "",
+            "text_alignment": "left",
+            "show_popup_newsletter": true,
+            "popup_delay": 5,
+            "popup_reappear_time": "7",
+            "popup_image": ""
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "color": "#222",
+            "background": "#ffffff",
+            "title": "Newsletter",
+            "content": "<p>Let's keep in touch<\/p>"
+          }
+        },
+        "product-features": {
+          "type": "product-features",
+          "blocks": {
+            "1528250359730": {
+              "type": "text",
+              "settings": {
+                "heading": "This is a heading for a Product feature block.",
+                "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
+                "image": "",
+                "image_link": "",
+                "button_text": "",
+                "button_link": "",
+                "button_style": "primary"
+              }
+            },
+            "1528250384489": {
+              "type": "text",
+              "settings": {
+                "heading": "This is a heading for a Product feature block.",
+                "description": "<p>Use this text to share information about the point put forth above. Describe a product, your brand, or what makes you special.<\/p>",
+                "image": "",
+                "image_link": "",
+                "button_text": "",
+                "button_link": "",
+                "button_style": "primary"
+              }
+            }
+          },
+          "block_order": [
+            "1528250359730",
+            "1528250384489"
+          ],
+          "settings": {
+            "blocks_alignment": "center",
+            "image_aspect_ratio": 0.6
+          }
+        },
+        "rich-text": {
+          "type": "rich-text",
+          "settings": {
+            "layout": "split",
+            "subheading": "Humble Beginnings",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "icons-row": {
+          "type": "icons-row",
+          "blocks": {
+            "1528250366509": {
+              "type": "text",
+              "settings": {
+                "icon_name": "shop",
+                "icon_image": "",
+                "title": "Feature",
+                "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+              }
+            },
+            "1528250367690": {
+              "type": "text",
+              "settings": {
+                "icon_name": "sync",
+                "icon_image": "",
+                "title": "Feature",
+                "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+              }
+            },
+            "1528250369041": {
+              "type": "text",
+              "settings": {
+                "icon_name": "target",
+                "icon_image": "",
+                "title": "Feature",
+                "content": "Modular is a powerful Shopify theme that will set you apart from the rest with Mosaic, Image with text, and Slideshow sections."
+              }
+            }
+          },
+          "block_order": [
+            "1528250366509",
+            "1528250367690",
+            "1528250369041"
+          ],
+          "settings": {
+            "alignment": "center",
+            "color_icons_bg": "#fafafa",
+            "color_icons_text": "#333333"
+          }
+        },
+        "list-collections-page-template": {
+          "type": "list-collections-page-template",
+          "settings": {
+            "show_description": true,
+            "collections_columns": 2,
+            "coll_text_position": "center",
+            "button_text": "View products",
+            "button_style": "primary",
+            "text_color": "#ffffff",
+            "overlay_color": "#333333",
+            "overlay_opacity": 10
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "show_blog_name": false,
+            "show_rss": false,
+            "show_featured_post": true,
+            "tags": true,
+            "author": true,
+            "date": true,
+            "show_comments": true,
+            "image_aspect_ratio": 1,
+            "article_rows": 4,
+            "article_columns": 4
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "1532039480983": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "",
+                "title": "Welcome to Modular",
+                "text": "<p>A unique layout with a striking design<\/p>",
+                "cta": "Shop Now",
+                "link": "shopify:\/\/collections\/all",
+                "cta_primary_btn_style": "primary",
+                "cta_2": "",
+                "link_2": "",
+                "cta_secondary_btn_style": "secondary",
+                "overlay_color": "#333333",
+                "overlay_opacity": 0
+              }
+            },
+            "1532039484050": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "center-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "",
+                "title": "Welcome to Modular",
+                "text": "<p>A unique layout with a striking design<\/p>",
+                "cta": "Shop Now",
+                "link": "shopify:\/\/collections\/all",
+                "cta_primary_btn_style": "primary",
+                "cta_2": "",
+                "link_2": "",
+                "cta_secondary_btn_style": "secondary",
+                "overlay_color": "#333333",
+                "overlay_opacity": 0
+              }
+            }
+          },
+          "block_order": [
+            "1532039480983",
+            "1532039484050"
+          ],
+          "settings": {
+            "showNavArrows": true,
+            "show_arrow_down": false,
+            "autoplay": true,
+            "duration": 4,
+            "transition": "fade",
+            "dots_position": "center",
+            "slide_height": "five-fifty-height-hero",
+            "button_size": "normal"
+          }
+        },
+        "1583105953406": {
+          "type": "rich-text",
+          "settings": {
+            "layout": "default",
+            "subheading": "",
+            "title": "Choose your adventure",
+            "content": "<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "faq-section__product": {
+          "type": "faq-section__product",
+          "settings": {
+            "title": "",
+            "subheading": ""
+          }
+        },
+        "related-products": {
+          "type": "related-products",
+          "settings": {
+            "related_products_enable": true,
+            "product_recommendations_heading": "Related products"
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "show_announcement": true,
+            "show_announcement_on_mobile": true,
+            "text": "",
+            "link": ""
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {}
+        },
+        "about-template": {
+          "type": "about-template",
+          "blocks": {
+            "1591672067765": {
+              "type": "banner",
+              "settings": {
+                "image": "",
+                "height": "small",
+                "subheading": "",
+                "title": "",
+                "text": "",
+                "text_position": "center",
+                "color_text": "#ffffff",
+                "color_overlay": "#333333",
+                "overlay_opacity": 0
+              }
+            },
+            "1591672125723": {
+              "type": "rich-text",
+              "settings": {
+                "layout": "default",
+                "subheading": "",
+                "title": "",
+                "content": "",
+                "button_text": "",
+                "button_link": "",
+                "button_style": "secondary"
+              }
+            },
+            "1591672134152": {
+              "type": "product-feature",
+              "settings": {
+                "title": "",
+                "description": "",
+                "image": "",
+                "image_aspect_ratio": 0.7,
+                "image_link": "",
+                "button_text": "",
+                "button_link": "",
+                "button_style": "primary",
+                "blocks_alignment": "center",
+                "reverse_layout": false
+              }
+            },
+            "1591672502322": {
+              "type": "product-feature",
+              "settings": {
+                "title": "",
+                "description": "",
+                "image": "",
+                "image_aspect_ratio": 0.7,
+                "image_link": "",
+                "button_text": "",
+                "button_link": "",
+                "button_style": "primary",
+                "blocks_alignment": "center",
+                "reverse_layout": true
+              }
+            }
+          },
+          "block_order": [
+            "1591672067765",
+            "1591672125723",
+            "1591672134152",
+            "1591672502322"
+          ],
+          "settings": {
+            "show_page_title": false
+          }
+        },
+        "1594445604115": {
+          "type": "newsletter",
+          "settings": {
+            "color": "#222",
+            "background": "#fff",
+            "title": "Dispatches",
+            "content": "<p>Join our mailing list to stay up to date<\/p>"
+          }
+        },
+        "1594445793258": {
+          "type": "featured-collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "",
+            "show_description": true,
+            "products_layout": "grid",
+            "products_rows": 2,
+            "show_button": false,
+            "button_style": "primary",
+            "color_style": "white"
+          }
+        },
+        "1594446252690": {
+          "type": "image-with-text",
+          "blocks": {
+            "1594446252690-0": {
+              "type": "gallery_image",
+              "settings": {
+                "slide": ""
+              }
+            }
+          },
+          "block_order": [
+            "1594446252690-0"
+          ],
+          "settings": {
+            "show_nav_arrows": true,
+            "color_style": "white",
+            "transition": "fade",
+            "autoplay": true,
+            "duration": 4,
+            "show_margins": false,
+            "slide_height": "four-fifty-height-hero",
+            "slide_image_position": "left",
+            "slide_image_width": "med_s12|med_s12",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "cta": "",
+            "link": "",
+            "button_style": "primary"
+          }
+        },
+        "1594448655695": {
+          "type": "slideshow",
+          "blocks": {
+            "1594448655695-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_position": "top-center",
+                "alignment": "center",
+                "color_style": "white",
+                "subheading": "",
+                "title": "",
+                "text": "",
+                "cta": "Learn More",
+                "link": "shopify:\/\/collections\/all",
+                "cta_primary_btn_style": "primary",
+                "cta_2": "",
+                "link_2": "",
+                "cta_secondary_btn_style": "secondary",
+                "overlay_color": "#333333",
+                "overlay_opacity": 30
+              }
+            }
+          },
+          "block_order": [
+            "1594448655695-0"
+          ],
+          "settings": {
+            "showNavArrows": true,
+            "show_arrow_down": false,
+            "autoplay": true,
+            "duration": 4,
+            "transition": "slide",
+            "dots_position": "center",
+            "slide_height": "sixty-fifty-height-hero",
+            "button_size": "normal"
+          }
+        },
+        "1594530468076": {
+          "type": "testimonials",
+          "blocks": {
+            "1594530468076-1": {
+              "type": "testimonial",
+              "settings": {
+                "blockquote": "",
+                "author": ""
+              }
+            },
+            "1594530468076-0": {
+              "type": "testimonial",
+              "settings": {
+                "blockquote": "",
+                "author": ""
+              }
+            },
+            "1594530468076-2": {
+              "type": "testimonial",
+              "settings": {
+                "blockquote": "",
+                "author": ""
+              }
+            }
+          },
+          "block_order": [
+            "1594530468076-1",
+            "1594530468076-0",
+            "1594530468076-2"
+          ],
+          "settings": {
+            "title": "Testimonials",
+            "title_position": "left",
+            "blocks_text_align": "justify",
+            "hide_quotes": true,
+            "columns": 3
+          }
+        },
+        "1594536881336": {
+          "type": "image-with-text",
+          "blocks": {
+            "1594536881336-1": {
+              "type": "gallery_image",
+              "settings": {
+                "slide": ""
+              }
+            },
+            "1594536881336-0": {
+              "type": "gallery_image",
+              "settings": {
+                "slide": ""
+              }
+            }
+          },
+          "block_order": [
+            "1594536881336-1",
+            "1594536881336-0"
+          ],
+          "settings": {
+            "show_nav_arrows": true,
+            "color_style": "white",
+            "transition": "fade",
+            "autoplay": false,
+            "duration": 4,
+            "show_margins": false,
+            "slide_height": "five-fifty-height-hero",
+            "slide_image_position": "left",
+            "slide_image_width": "med_s35|med_s25",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "cta": "",
+            "link": "",
+            "button_style": "primary"
+          }
+        },
+        "1594537900323": {
+          "type": "list-collections",
+          "blocks": {
+            "1594537900323-0": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "image": ""
+              }
+            },
+            "1594537900323-1": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "image": ""
+              }
+            },
+            "1594538280788": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "image": ""
+              }
+            },
+            "1594537900323-2": {
+              "type": "collection",
+              "settings": {
+                "collection": "",
+                "image": ""
+              }
+            }
+          },
+          "block_order": [
+            "1594537900323-0",
+            "1594537900323-1",
+            "1594538280788",
+            "1594537900323-2"
+          ],
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "blocks_height": "default-height",
+            "coll_text_position": "top_left",
+            "show_description": true,
+            "button_text": "Shop Now",
+            "button_style": "primary",
+            "text_color": "#ffffff",
+            "overlay_color": "#333333",
+            "overlay_opacity": 10
+          }
+        },
+        "1594791907823": {
+          "type": "split-hero",
+          "settings": {
+            "image_height": "five-fifty-height-hero",
+            "image_desktop_left": "shopify:\/\/shop_images\/IMG_5192-1-2_4068c053-533f-49c5-868f-ee3fbabe51b9.jpg",
+            "image_mobile_left": "",
+            "image_left_position": "center-left",
+            "image_desktop_right": "shopify:\/\/shop_images\/IMG_5552-1.jpg",
+            "image_mobile_right": "",
+            "image_right_position": "center-center",
+            "content_alignment": "left",
+            "color_style": "white",
+            "subheading": "",
+            "title": "Welcome to Modular",
+            "text": "<p>A unique layout with a striking design<\/p>",
+            "cta": "Shop Now",
+            "link": "shopify:\/\/collections\/all",
+            "cta_2": "",
+            "link_2": "",
+            "overlay_color": "#333333",
+            "overlay_opacity": 20,
+            "button_size": "normal",
+            "button_primary_style": "primary",
+            "button_secondary_style": "secondary"
+          }
+        },
+        "1594792103659": {
+          "type": "featured-collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "featured-home-page",
+            "show_description": false,
+            "products_layout": "grid",
+            "products_rows": 2,
+            "show_button": true,
+            "button_style": "primary",
+            "color_style": "white"
+          }
+        },
+        "contact-template": {
+          "type": "contact-template",
+          "blocks": {
+            "1595189729376": {
+              "type": "select",
+              "settings": {
+                "title": "Subject",
+                "label-one": "",
+                "label-two": "",
+                "label-three": "",
+                "label-four": "",
+                "label-five": "",
+                "label-six": ""
+              }
+            },
+            "1595189814966": {
+              "type": "telephone",
+              "settings": {
+                "title": "Phone Number"
+              }
+            },
+            "1595189900673": {
+              "type": "spacer",
+              "settings": {
+                "line": true
+              }
+            }
+          },
+          "block_order": [
+            "1595189729376",
+            "1595189900673",
+            "1595189814966"
+          ],
+          "settings": {
+            "show_page_title": true,
+            "banner_image": "",
+            "banner_height": "small",
+            "banner_subheading": "",
+            "banner_text": "",
+            "banner_text_position": "center",
+            "banner_color_text": "#ffffff",
+            "banner_color_overlay": "#333333",
+            "banner_overlay_opacity": 25,
+            "form_heading": ""
+          }
+        },
+        "1595280572449": {
+          "type": "logo-list",
+          "blocks": {
+            "1595280572449-0": {
+              "type": "item_logo",
+              "settings": {
+                "logo_image": "",
+                "logo_url": ""
+              }
+            },
+            "1595280572449-1": {
+              "type": "item_logo",
+              "settings": {
+                "logo_image": "",
+                "logo_url": ""
+              }
+            },
+            "1595280572449-2": {
+              "type": "item_logo",
+              "settings": {
+                "logo_image": "",
+                "logo_url": ""
+              }
+            },
+            "1595280572449-3": {
+              "type": "item_logo",
+              "settings": {
+                "logo_image": "",
+                "logo_url": ""
+              }
+            },
+            "1595280572449-4": {
+              "type": "item_logo",
+              "settings": {
+                "logo_image": "",
+                "logo_url": ""
+              }
+            },
+            "1595280572449-5": {
+              "type": "item_logo",
+              "settings": {
+                "logo_image": "",
+                "logo_url": ""
+              }
+            }
+          },
+          "block_order": [
+            "1595280572449-0",
+            "1595280572449-1",
+            "1595280572449-2",
+            "1595280572449-3",
+            "1595280572449-4",
+            "1595280572449-5"
+          ],
+          "settings": {
+            "color_logos_bg": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "1498737500673",
+        "1594445793258",
+        "1594537900323",
+        "1595280572449",
+        "1594446252690",
+        "1594792103659",
+        "1594791907823",
+        "1594530468076",
+        "1594536881336",
+        "1583105953406",
+        "1594448655695",
+        "1594445604115"
+      ]
+    }
+  }
+}

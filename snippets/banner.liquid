@@ -1,0 +1,47 @@
+<div class="banner-inner banner-padded banner-padded--{{ height }} banner--text-{{ text_position }}">
+	{%- unless height == 'original-height' -%}
+		{%- unless image == blank -%}
+			<div class="banner-img lazyload" data-bgset="{% include 'bgset', image: image %}" data-sizes="auto" data-parent-fit="cover"></div>
+			<noscript>
+				<div class="banner-img" style="background-image:url('{{ image | img_url: '1024x' }}');"></div>
+			</noscript>
+		{%- else -%}
+			<div class="banner-img banner-img--placeholder svg-placeholder">
+				{{- 'lifestyle-1' | placeholder_svg_tag -}}
+			</div>
+		{%- endunless -%}
+	{%- else -%}
+		{%- assign image_widths = '295,394,590,700,800,1000,1200,1500,1800,2000,2400' -%}
+		{%- include 'theme-rias' -%}
+		<div class="banner-img__container" style="padding-top: {{ 100 | divided_by: image.aspect_ratio | append: '%' }}">
+			<img class="banner-img--original lazyload"
+				src="{{ 'blank.gif' | asset_img_url: '1x1' }}"
+				data-src="{{ image_url_pattern }}"
+				data-widths="[{{ image_widths }}]"
+				data-aspectratio="{{ image.aspect_ratio }}"
+				data-sizes="auto"
+				alt="{{ image.alt }}">
+			<noscript>
+				<img src="{{ image | img_url: '2048x' }}" alt="{{ image.alt | escape }}" class="banner-img--original no-js-image">
+			</noscript>
+		</div>
+	{%- endunless -%}
+
+	{%- unless heading == blank and subheading == blank and text == blank -%}
+		<div class="page-title">
+			<div class="container">
+				<div class="row row-sm">
+					{%- if subheading != blank -%}
+						<p class="page-title__subheading subheading-text">{{ subheading }}</p>
+					{%- endif -%}
+					{%- if heading != blank -%}
+						<h1 class="page-title__heading">{{ heading }}</h1>
+					{%- endif -%}
+					{%- if text != blank -%}
+						<div class="page-title__text">{{ text }}</div>
+					{%- endif -%}
+				</div>
+			</div>
+		</div>
+	{%- endunless -%}
+</div>

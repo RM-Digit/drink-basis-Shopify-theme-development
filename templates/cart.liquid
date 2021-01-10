@@ -1,0 +1,22 @@
+<!-- Begin ReCharge code -->
+{% include 'subscription-cart-footer' %}
+<!-- End ReCharge code -->
+<section class="container-wrap">
+	<div class="container">
+		{% include 'site-cart' %}
+	</div>
+</section>
+
+{% include 'ajax-cart' %}
+
+<!-- Snap Pixel -->
+<script type="text/javascript">
+snaptr('track', 'ADD_CART', {
+'currency': '{{shop.currency}}',
+'price': {{ cart.total_price | money_without_currency | remove: ',' }},
+'item_ids': [{% for item in cart.items %}<!--data-gpo-cart-line-item-key={{ item.key }}-->'{{ item.variant.id }}'{% unless forloop.last %}, {% endunless %}{% endfor %}],
+});
+</script>
+<!-- End Snap Pixel -->
+
+<!-- GPO installed -->

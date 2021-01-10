@@ -1,0 +1,356 @@
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% if atc_text == blank %}
+    {% assign atc_text = "Start My Trial" %}
+{% endif %}
+
+
+{% if object.product-name != blank %}
+    {% assign product-name = object.product-name %}
+{% endif %}
+{% if object.price != blank %}
+    {% assign price = object.price %}
+{% endif %}
+{% if object.full-price != blank %}
+    {% assign full-price = object.full-price %}
+{% endif %}
+{% if object.discount != blank %}
+    {% assign discount = object.discount %}
+{% endif %}
+{% if object.tagline != blank %}
+    {% assign tagline = object.tagline %}
+{% endif %}
+{% if object.product-rating != blank %}
+    {% assign product-rating = object.product-rating %}
+{% endif %}
+{% if object.product-review-count != blank %}
+    {% assign product-review-count = object.product-review-count %}
+{% endif %}
+
+
+{% if object.point1-icon != blank %}
+    {% capture point1-icon %}<img src="{{object.point1-icon | img_url: '28x'}}"/>{% endcapture %}
+{% endif %}
+{% if object.point1-text != blank %}
+    {% assign point1-text = object.point1-text %}
+{% endif %}
+{% if object.point2-icon != blank %}
+    {% capture point2-icon %}<img src="{{object.point2-icon | img_url: '28x'}}"/>{% endcapture %}
+{% endif %}
+{% if object.point2-text != blank %}
+    {% assign point2-text = object.point2-text %}
+{% endif %}
+{% if object.point3-icon != blank %}
+    {% capture point3-icon %}<img src="{{object.point3-icon | img_url: '28x'}}"/>{% endcapture %}
+{% endif %}
+{% if object.point3-text != blank %}
+    {% assign point3-text = object.point3-text %}
+{% endif %}
+
+
+{% if object.variant-1-id != blank %}
+    {% assign variant-1-id = object.variant-1-id %}
+{% endif %}
+{% if object.variant-1-name != blank %}
+    {% assign variant-1-name = object.variant-1-name %}
+{% endif %}
+{% if object.variant-1-color != blank %}
+    {% assign variant-1-color = object.variant-1-color %}
+{% endif %}
+{% if object.variant-1-description != blank %}
+    {% assign variant-1-description = object.variant-1-description %}
+{% endif %}
+{% if object.variant-1-image != blank %}
+    {% assign variant-1-image = object.variant-1-image | img_url: '700x' %}
+{% endif %}
+{% if object.variant-1-nutrition-image %}
+    {% assign variant-1-nutrition-image = object.variant-1-nutrition-image | img_url: 'master' %}
+{% endif %}
+
+{% if object.variant-2-id != blank %}
+    {% assign variant-2-id = object.variant-2-id %}
+{% endif %}
+{% if object.variant-2-name != blank %}
+    {% assign variant-2-name = object.variant-2-name %}
+{% endif %}
+{% if object.variant-2-color != blank %}
+    {% assign variant-2-color = object.variant-2-color %}
+{% endif %}
+{% if object.variant-2-description != blank %}
+    {% assign variant-2-description = object.variant-2-description %}
+{% endif %}
+{% if object.variant-2-image != blank %}
+    {% assign variant-2-image = object.variant-2-image | img_url: '700x' %}
+{% endif %}
+{% if object.variant-2-nutrition-image %}
+    {% assign variant-2-nutrition-image = object.variant-2-nutrition-image | img_url: 'master' %}
+{% endif %}
+
+{% if object.variant-3-id != blank %}
+    {% assign variant-3-id = object.variant-3-id %}
+{% endif %}
+{% if object.variant-3-name != blank %}
+    {% assign variant-3-name = object.variant-3-name %}
+{% endif %}
+{% if object.variant-3-color != blank %}
+    {% assign variant-3-color = object.variant-3-color %}
+{% endif %}
+{% if object.variant-3-description != blank %}
+    {% assign variant-3-description = object.variant-3-description %}
+{% endif %}
+{% if object.variant-3-image != blank %}
+    {% assign variant-3-image = object.variant-3-image | img_url: '700x' %}
+{% endif %}
+{% if object.variant-3-nutrition-image %}
+    {% assign variant-3-nutrition-image = object.variant-3-nutrition-image | img_url: 'master' %}
+{% endif %}
+
+{% if object.variant-4-id != blank %}
+    {% assign variant-4-id = object.variant-4-id %}
+{% endif %}
+{% if object.variant-4-name != blank %}
+    {% assign variant-4-name = object.variant-4-name %}
+{% endif %}
+{% if object.variant-4-color != blank %}
+    {% assign variant-4-color = object.variant-4-color %}
+{% endif %}
+{% if object.variant-4-description != blank %}
+    {% assign variant-4-description = object.variant-4-description %}
+{% endif %}
+{% if object.variant-4-image != blank %}
+    {% assign variant-4-image = object.variant-4-image | img_url: '700x' %}
+{% endif %}
+{% if object.variant-4-nutrition-image %}
+    {% assign variant-4-nutrition-image = object.variant-4-nutrition-image | img_url: 'master' %}
+{% endif %}
+
+{% assign bg-default = "color: #fecdc6; background-image: linear-gradient(to right, #ffbfb4 0%, #ff91b3 50%, #c8b0ff 100%);" %}
+
+
+<section class="plp-hero" id="featuredProduct">
+    <div class="modal-wrap" id="modalNutrition">
+        <div class="modal-inner">
+            <div class="modal-close"></div>
+            <div class="modal-content">{% if variant-4-nutrition-image != blank %}
+                <img src="{{variant-4-nutrition-image}}"/>
+            {% endif %}</div>
+        </div>
+    </div>
+    <div class="container container-full plp-product-details">
+        <div class="row">
+            <div class="column col-sm-6 col-xs-12 plp-hero-prod-img">
+                <img src="{{variant-4-image}}"/>
+                <div class="prod-key-points mobile-none">
+                    <div class="point point1">
+                        <span class="point-icon">{{point1-icon}}</span>
+                        <span class="point-text">{{point1-text}}</span>
+                    </div>
+                    <div class="point point2">
+                        <span class="point-icon">{{point2-icon}}</span>
+                        <span class="point-text">{{point2-text}}</span>
+                    </div>
+                    <div class="point point3">
+                        <span class="point-icon">{{point3-icon}}</span>
+                        <span class="point-text">{{point3-text}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-sm-6 col-xs-12 plp-hero-prod-details">
+                <h2 class="prod-name">
+                    {{product-name}}<br/>
+                    <span class="variation-name">{{variant-4-name}}</span>
+                </h2>
+                <div class="prod-price">
+                    <span class="cur-price">{{price}}</span>
+                    <strike class="full-price">{{full-price}}</strike>
+                    <span class="discount-percent">{{discount}}</span>
+                </div>
+                <div class="prod-reviews">
+                    <span>15 pack</span>
+                    <div class="review-stars stars stars{{product-rating}}">
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                    </div>
+                    <span class="review-count">{{product-review-count}}</span>
+                </div>
+                <div class="prod-description">
+                    <div class="prod-description-content">{{variant-4-description}}</div>
+                    <a class="prod-nutrition-chart-link{% if variant-4-nutrition-image != blank %} active{% endif %}">View Nutritional Chart</a>
+                </div>
+                <div class="prod-attribute-select">
+                    <div class="radio-container">
+                        <h3>Flavors</h3>
+                        <div class="radio row" id="product-variant-select">
+                            <input type="radio" name="variant" id="pvs-{{variant-1-id}}" value="{{variant-1-id}}" data-image="{{variant-1-image}}" data-color="{{variant-1-color}}" data-description="{{variant-1-description}}" data-nutrition-image="{{variant-1-nutrition-image}}"/>
+                            <label for="pvs-{{variant-1-id}}"><span class="circle" style="--var-bg:{{variant-1-color}}; {% if variant-1-color == 'rgba(0,0,0,0)' %}{{bg-default}}{% endif %}"></span>{{variant-1-name}}</label>
+                            <input type="radio" name="variant" id="pvs-{{variant-2-id}}" value="{{variant-2-id}}" data-image="{{variant-2-image}}" data-color="{{variant-2-color}}" data-description="{{variant-2-description}}" data-nutrition-image="{{variant-2-nutrition-image}}"/>
+                            <label for="pvs-{{variant-2-id}}"><span class="circle" style="--var-bg:{{variant-2-color}}; {% if variant-2-color == 'rgba(0,0,0,0)' %}{{bg-default}}{% endif %}"></span>{{variant-2-name}}</label>
+                            <input type="radio" name="variant" id="pvs-{{variant-3-id}}" value="{{variant-3-id}}" data-image="{{variant-3-image}}" data-color="{{variant-3-color}}" data-description="{{variant-3-description}}" data-nutrition-image="{{variant-3-nutrition-image}}"/>
+                            <label for="pvs-{{variant-3-id}}"><span class="circle" style="--var-bg:{{variant-3-color}}; {% if variant-3-color == 'rgba(0,0,0,0)' %}{{bg-default}}{% endif %}"></span>{{variant-3-name}}</label>
+                            <input type="radio" name="variant" id="pvs-{{variant-4-id}}" value="{{variant-4-id}}" data-image="{{variant-4-image}}" data-color="{{variant-4-color}}" data-description="{{variant-4-description}}" data-nutrition-image="{{variant-4-nutrition-image}}" checked/>
+                            <label for="pvs-{{variant-4-id}}"><span class="circle" style="--var-bg:{{variant-4-color}}; {% if variant-4-color == 'rgba(0,0,0,0)' %}{{bg-default}}{% endif %}"></span>{{variant-4-name}}</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod-frequency-select">
+                    <div class="radio-container">
+                        <h3>Frequency</h3>
+                        <div class="radio row" id="order-frequency-select">
+                            <input type="radio" name="frequency" id="ofs-15" value="15" checked/>
+                            <label for="ofs-15"><span></span>Every 15 Days</label>
+                            <input type="radio" name="frequency" id="ofs-30" value="30"/>
+                            <label for="ofs-30"><span></span>Every 30 Days</label>
+                            <input type="radio" name="frequency" id="ofs-45" value="45"/>
+                            <label for="ofs-45"><span></span>Every 45 Days</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod-quantity">
+                    <h3>Quantity</h3>
+                    <div class="prod-quantity-wrap">
+                        <div class="qty__adjust">
+                            <input type="number" id="quantity" name="quantity" value="1" min="1">
+                            <a href="#" class="qty__adjust-btn js-qty__adjust-btn decrease"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 1024 1024" class="icon icon-minus"><path d="M51.573 459.468l-0.017-0.585c0.795-0.020 0.795-0.020 1.59-0.024 1.42 0.011 1.42 0.011 1.933 0.050l915.021 0.002c0.407-0.005 0.407-0.005 0.805-0.006 29.324 0 53.095 23.771 53.095 53.095s-23.771 53.095-53.095 53.095c-0.365-0.001-0.365-0.001-0.524-0.004l-914.477-0.021c-1.378 0.059-1.378 0.059-2.762 0.071-29.35 0-53.142-23.793-53.142-53.142 0-28.271 22.132-51.558 50.361-53.069l0.832-0.044 0.382 0.582z"></path></svg></a>
+                            <a href="#" class="qty__adjust-btn js-qty__adjust-btn increase"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 1024 1024" class="icon icon-plus"><path d="M465.066 465.067l0.001-411.166c-0.005-0.407-0.005-0.407-0.006-0.805 0-29.324 23.796-53.095 53.149-53.095s53.149 23.771 53.149 53.095c-0.001 0.365-0.001 0.365-0.004 0.524l-0.009 411.446 398.754 0.001c0.407-0.005 0.407-0.005 0.805-0.006 29.324 0 53.095 23.796 53.095 53.149s-23.771 53.149-53.095 53.149c-0.365-0.001-0.365-0.001-0.524-0.004l-399.037-0.009-0.009 396.75c0.059 1.378 0.059 1.378 0.071 2.762 0 29.35-23.817 53.142-53.197 53.142-28.299 0-51.612-22.132-53.124-50.361l-0.044-0.832 0.583-0.382-0.586 0.017c-0.020-0.795-0.020-0.795-0.024-1.59 0.011-1.42 0.011-1.42 0.050-1.933l0.001-397.576-409.162-0.009c-1.378 0.059-1.378 0.059-2.762 0.071-29.35 0-53.142-23.817-53.142-53.197 0-28.299 22.132-51.612 50.361-53.124l0.832-0.044 0.382 0.583-0.017-0.586c0.795-0.020 0.795-0.020 1.59-0.024 1.42 0.011 1.42 0.011 1.933 0.050l409.986 0.001z"></path></svg></a>
+                        </div>
+                        <a data-variant-id="{{variant-4-id}}" href="#" class="btn btn-default add-to-cart btn-subscribe">{{atc_text}}</a>
+                    </div>
+                </div>
+                <div class="btn-tagline">{{tagline}}</div>
+                <div class="prod-key-points desktop-none">
+                    <div class="point point1">
+                        <span class="point-icon">{{point1-icon}}</span>
+                        <span class="point-text">{{point1-text}}</span>
+                    </div>
+                    <div class="point point2">
+                        <span class="point-icon">{{point2-icon}}</span>
+                        <span class="point-text">{{point2-text}}</span>
+                    </div>
+                    <div class="point point3">
+                        <span class="point-icon">{{point3-icon}}</span>
+                        <span class="point-text">{{point3-text}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+$(document).ready(function(){
+    $('.plp-hero .modal-wrap').on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        if(e.target !== e.currentTarget) return;
+        $(this).removeClass('active');
+    });
+    $('.plp-hero .modal-close').on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).closest('.modal-wrap').removeClass('active');
+    });
+    $('.plp-hero .prod-nutrition-chart-link').on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).closest('.plp-hero').find('#modalNutrition').addClass('active');
+    });
+    $("#product-variant-select").on('change', function(e){
+        var $option = $(this).find('input:checked', this);
+        var image = $option.data('image');
+        var name = $option.html();
+        var id = $option.val();
+        var description = $option.data('description');
+        var nutritionImage = $option.data('nutrition-image');
+
+        var $hero = $(this).closest('.plp-hero');
+        var $nutritionLink = $hero.find('.prod-nutrition-chart-link');
+        $hero.find('.plp-hero-prod-img > img').attr('src', image);
+        $hero.find('.variation-name').html(name);
+        $hero.find('.add-to-cart').data('variant-id', id);
+        $hero.find('.prod-description-content').html(description);
+        $hero.find('#modalNutrition .modal-content').html((nutritionImage ? '<img src="' + nutritionImage + '"/>' : ''));
+        if(nutritionImage){
+            $nutritionLink.addClass('active');
+        } else {
+            $nutritionLink.removeClass('active');
+        }
+    });
+});
+</script>
+<style>
+.modal-wrap:not(.active) {
+    display: none;
+}
+.prod-nutrition-chart-link:not(.active) {
+    display: none;
+}
+.prod-nutrition-chart-link:hover {
+    cursor: pointer;
+}
+.modal-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.33);
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-inner {
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 24px rgba(0,0,0,.3);
+}
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    transform: translate(25%, -25%);
+    cursor: pointer;
+}
+.modal-close:before {
+    content: 'x';
+    color: #000;
+    display: block;
+    padding: .5em;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 1;
+    width: 2em;
+    text-align: center;
+    height: 2em;
+    box-shadow: 0 2px 12px rgba(0,0,0,.16);
+}
+.modal-content img {
+    display: block;
+    max-height: calc(100vh - 40px);
+    max-width: calc(100vw - 40px);
+}
+@media (min-width: 768px)
+{
+    .modal-inner{
+        max-width: 90vw;
+        max-height: 90vh;
+        padding: 15px;
+    }
+    .modal-content img {
+        max-height: calc(90vh - 30px);
+        max-width: calc(90vw - 30px);
+    }
+}
+</style>

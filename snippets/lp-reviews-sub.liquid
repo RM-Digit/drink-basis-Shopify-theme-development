@@ -1,0 +1,91 @@
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% if atc_text == blank %}
+    {% assign atc_text = "Start My Trial" %}
+{% endif %}
+
+{% if object.headline != blank %}
+    {% assign headline = object.headline %}
+{% else %}
+    {% assign headline = "" %}
+{% endif %}
+
+{% if object.review1-rating != blank %}
+    {% assign review1-rating = object.review1-rating %}
+{% else %}
+    {% assign review1-rating = "5" %}
+{% endif %}
+{% if object.review1-image != blank %}
+    {% assign review1-image = object.review1-image %}
+{% endif %}
+{% if object.review1-quote != blank %}
+    {% assign review1-quote = object.review1-quote %}
+{% endif %}
+{% if object.review1-author != blank %}
+    {% assign review1-author = object.review1-author %}
+{% endif %}
+
+{% if object.review2-rating != blank %}
+    {% assign review2-rating = object.review2-rating %}
+{% else %}
+    {% assign review2-rating = "5" %}
+{% endif %}
+{% if object.review2-image != blank %}
+    {% assign review2-image = object.review2-image %}
+{% endif %}
+{% if object.review2-quote != blank %}
+    {% assign review2-quote = object.review2-quote %}
+{% endif %}
+{% if object.review2-author != blank %}
+    {% assign review2-author = object.review2-author %}
+{% endif %}
+
+<section class="plp-reviews">
+    <div class="container">
+        <h2 class="headline">{{ headline }}</h2>
+        <div class="row reviews-wrap">
+            <div class="review column col-xs-12">
+                <div class="review-image">
+                    <img src="{{review1-image | img_url: '1248x1216'}}"/>
+                </div>
+                <div class="review-content">
+                    <div class="review-stars stars stars{{review1-rating}}">
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                    </div>
+                    <div class="quote">{{review1-quote}}</div>
+                    <div class="author">{{review1-author}}</div>
+                    <a href="#featuredProduct" class="btn btn-default">{{atc_text}}</a>
+                </div>
+            </div>
+            <div class="review column col-xs-12">
+                <div class="review-image">
+                    <img src="{{review2-image | img_url: '1248x1216'}}"/>
+                </div>
+                <div class="review-content">
+                    <div class="review-stars stars stars{{review2-rating}}">
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                    </div>
+                    <div class="quote">{{review2-quote}}</div>
+                    <div class="author">{{review2-author}}</div>
+                    <a href="#featuredProduct" class="btn btn-default">{{atc_text}}</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+

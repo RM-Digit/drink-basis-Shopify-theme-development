@@ -1,0 +1,574 @@
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% if object.ingredients-vp != blank %}
+    {% assign ingredients-vp = object.ingredients-vp %}
+{% else %}
+    {% capture ingredients-vp %}Organic Cane Sugar<br/>
+    Natural Fruit Flavors<br/>
+    Citric Acid<br/>
+    Sea Salt<br/>
+    Magnesium Citrate<br/>
+    Potassium Citrate<br/>
+    Sodium Citrate<br/>
+    Monk Fruit Extract{% endcapture %}
+{% endif %}
+
+{% if object.ingredients-bl != blank %}
+    {% assign ingredients-bl = object.ingredients-bl %}
+{% else %}
+    {% assign ingredients-bl = ingredients-vp %}
+{% endif %}
+
+{% if object.ingredients-gm != blank %}
+    {% assign ingredients-gm = object.ingredients-gm %}
+{% else %}
+    {% assign ingredients-gm = ingredients-vp %}
+{% endif %}
+
+{% if object.ingredients-cr != blank %}
+    {% assign ingredients-cr = object.ingredients-cr %}
+{% else %}
+    {% assign ingredients-cr = ingredients-vp %}
+{% endif %}
+
+{% if object.ni-point1-icon != blank %}
+    {% assign ni-point1-icon = object.ni-point1-icon %}
+{% endif %}
+{% if object.ni-point1-headline != blank %}
+    {% assign ni-point1-headline = object.ni-point1-headline %}
+{% else %}
+    {% assign ni-point1-headline = "" %}
+{% endif %}
+{% if object.ni-point1-content != blank %}
+    {% assign ni-point1-content = object.ni-point1-content %}
+{% else %}
+    {% assign ni-point1-content = "" %}
+{% endif %}
+
+{% if object.ni-point2-icon != blank %}
+    {% assign ni-point2-icon = object.ni-point2-icon %}
+{% endif %}
+{% if object.ni-point2-headline != blank %}
+    {% assign ni-point2-headline = object.ni-point2-headline %}
+{% else %}
+    {% assign ni-point2-headline = "" %}
+{% endif %}
+{% if object.ni-point2-content != blank %}
+    {% assign ni-point2-content = object.ni-point2-content %}
+{% else %}
+    {% assign ni-point2-content = "" %}
+{% endif %}
+
+{% if object.ni-point3-icon != blank %}
+    {% assign ni-point3-icon = object.ni-point3-icon %}
+{% endif %}
+{% if object.ni-point3-headline != blank %}
+    {% assign ni-point3-headline = object.ni-point3-headline %}
+{% else %}
+    {% assign ni-point3-headline = "" %}
+{% endif %}
+{% if object.ni-point3-content != blank %}
+    {% assign ni-point3-content = object.ni-point3-content %}
+{% else %}
+    {% assign ni-point3-content = "" %}
+{% endif %}
+
+{% if object.ni-point4-icon != blank %}
+    {% assign ni-point4-icon = object.ni-point4-icon %}
+{% endif %}
+{% if object.ni-point4-headline != blank %}
+    {% assign ni-point4-headline = object.ni-point4-headline %}
+{% else %}
+    {% assign ni-point4-headline = "" %}
+{% endif %}
+{% if object.ni-point4-content != blank %}
+    {% assign ni-point4-content = object.ni-point4-content %}
+{% else %}
+    {% assign ni-point4-content = "" %}
+{% endif %}
+
+{% assign ni-s-point1-icon = object.ni-s-point1-icon %}
+{% assign ni-s-point1-text = object.ni-s-point1-text %}
+{% assign ni-s-point2-icon = object.ni-s-point2-icon %}
+{% assign ni-s-point2-text = object.ni-s-point2-text %}
+{% assign ni-s-point3-icon = object.ni-s-point3-icon %}
+{% assign ni-s-point3-text = object.ni-s-point3-text %}
+
+{% if object.ni-cal-ps-vp != blank %}
+    {% assign cal-ps-vp = object.ni-cal-ps-vp %}
+{% endif %}
+{% if object.ni-fat-ps-vp != blank %}
+    {% assign fat-ps-vp = object.ni-fat-ps-vp %}
+{% endif %}
+{% if object.ni-fat-dv-vp != blank %}
+    {% assign fat-dv-vp = object.ni-fat-dv-vp %}
+{% endif %}
+{% if object.ni-sodium-ps-vp != blank %}
+    {% assign sodium-ps-vp = object.ni-sodium-ps-vp %}
+{% endif %}
+{% if object.ni-sodium-dv-vp != blank %}
+    {% assign sodium-dv-vp = object.ni-sodium-dv-vp %}
+{% endif %}
+{% if object.ni-tcarb-ps-vp != blank %}
+    {% assign tcarb-ps-vp = object.ni-tcarb-ps-vp %}
+{% endif %}
+{% if object.ni-tcarb-dv-vp != blank %}
+    {% assign tcarb-dv-vp = object.ni-tcarb-dv-vp %}
+{% endif %}
+{% if object.ni-totalsugar-ps-vp != blank %}
+    {% assign totalsugar-ps-vp = object.ni-totalsugar-ps-vp %}
+{% endif %}
+{% if object.ni-totalsugar-dv-vp != blank %}
+    {% assign totalsugar-dv-vp = object.ni-totalsugar-dv-vp %}
+{% endif %}
+{% if object.ni-addedsugar-ps-vp != blank %}
+    {% assign addedsugar-ps-vp = object.ni-addedsugar-ps-vp %}
+{% endif %}
+{% if object.ni-addedsugar-dv-vp != blank %}
+    {% assign addedsugar-dv-vp = object.ni-addedsugar-dv-vp %}
+{% endif %}
+{% if object.ni-protein-ps-vp != blank %}
+    {% assign protein-ps-vp = object.ni-protein-ps-vp %}
+{% endif %}
+{% if object.ni-protein-dv-vp != blank %}
+    {% assign protein-dv-vp = object.ni-protein-dv-vp %}
+{% endif %}
+{% if object.ni-potassium-ps-vp != blank %}
+    {% assign potassium-ps-vp = object.ni-potassium-ps-vp %}
+{% endif %}
+{% if object.ni-potassium-dv-vp != blank %}
+    {% assign potassium-dv-vp = object.ni-potassium-dv-vp %}
+{% endif %}
+{% if object.ni-magnesium-ps-vp != blank %}
+    {% assign magnesium-ps-vp = object.ni-magnesium-ps-vp %}
+{% endif %}
+{% if object.ni-magnesium-dv-vp != blank %}
+    {% assign magnesium-dv-vp = object.ni-magnesium-dv-vp %}
+{% endif %}
+{% if object.ni-zinc-ps-vp != blank %}
+    {% assign zinc-ps-vp = object.ni-zinc-ps-vp %}
+{% endif %}
+{% if object.ni-zinc-dv-vp != blank %}
+    {% assign zinc-dv-vp = object.ni-zinc-dv-vp %}
+{% endif %}
+
+{% assign cta-url = object.ni-cta-url %}
+{% if object.ni-cta-text != blank %}
+    {% assign cta-text = object.ni-cta-text %}
+{% else %}
+    {% assign cta-text = "Buy Now" %}
+{% endif %}
+
+<section id="pdpNutrition" class="pdp-nutrition">
+    <div class="container">
+        <div class="row">
+            <div class="column col-sm-6 col-xs-12 nutrition-ingredients">
+                <input type="radio" name="ni-tabs" id="niTabNutrition" checked>
+                <label for="niTabNutrition">Nutrition</label>
+                <input type="radio" name="ni-tabs" id="niTabIngredients">
+                <label for="niTabIngredients">Ingredients</label>
+                <select id="niVariantSelect">
+                    {%- for variant in product.variants -%}
+                        {% case variant.title %}
+                            {% when "Blackberry Lemon" %}
+                                {% assign var-sn = "bl" %}
+                            {% when "Grapefruit Melon" %}
+                                {% assign var-sn = "gm" %}
+                            {% when "Cran Raspberry" %}
+                                {% assign var-sn = "cr" %}
+                            {% else %}
+                                {% assign var-sn = "vp" %}
+                        {% endcase %}
+                        <option value="{{ variant.id }}" data-sku="{{variant.sku}}"
+                            data-vsn="{{var-sn}}"
+                            {% if variant == first_variant %}selected{% endif %}
+                            {% unless variant.available %}disabled="disabled"{% endunless %}
+                        >{{ variant.title }}</option>
+                    {%- endfor -%}
+                </select>
+                <div class="nutrition-ingredients-content">
+                    <div class="nutrition-content">
+                        <div class="nutrition-content-vp">
+                            <div class="row nc-headline">
+                                <div class="col-xs-6">
+                                    {% if cal-ps-vp %}
+                                    <span class="xl-emph">{{cal-ps-vp}}</span>
+                                    <span>Calories <br/>Per Serving</span>
+                                    {% endif %}
+                                </div>
+                                <div class="col-xs-3">
+                                    Amount Per Serving
+                                </div>
+                                <div class="col-xs-3">
+                                    % Daily Value
+                                </div>
+                            </div>
+                            {% if fat-ps-vp or fat-dv-vp %}
+                            <div class="row">
+                                <div class="col-xs-6">Total Fat</div>
+                                <div class="col-xs-3">{{fat-ps-vp}}</div>
+                                <div class="col-xs-3">{{fat-dv-vp}}</div>
+                            </div>
+                            {% endif %}
+                            {% if sodium-ps-vp or sodium-dv-vp %}
+                            <div class="row">
+                                <div class="col-xs-6">Sodium</div>
+                                <div class="col-xs-3">{{sodium-ps-vp}}</div>
+                                <div class="col-xs-3">{{sodium-dv-vp}}</div>
+                            </div>
+                            {% endif %}
+                            {% if tcarb-ps-vp or tcarb-dv-vp %}
+                            <div class="row">
+                                <div class="col-xs-6">Total Carbohydrates</div>
+                                <div class="col-xs-3">{{tcarb-ps-vp}}</div>
+                                <div class="col-xs-3">{{tcarb-dv-vp}}</div>
+                            </div>
+                            {% endif %}
+                            {% if totalsugar-ps-vp or totalsugar-dv-vp %}
+                            <div class="row">
+                                <div class="col-xs-6">Total Sugars</div>
+                                <div class="col-xs-3">{{totalsugar-ps-vp}}</div>
+                                <div class="col-xs-3">{{totalsugar-dv-vp}}</div>
+                            </div>
+                            {% endif %}
+                            {% if addedsugar-ps-vp or addedsugar-dv-vp %}
+                            <div class="row">
+                                <div class="col-xs-6 indent">Added Sugars</div>
+                                <div class="col-xs-3">{{addedsugar-ps-vp}}</div>
+                                <div class="col-xs-3">{{addedsugar-dv-vp}}</div>
+                            </div>
+                            {% endif %}
+                            {% if protein-ps-vp or protein-dv-vp %}
+                            <div class="row">
+                                <div class="col-xs-6">Protein</div>
+                                <div class="col-xs-3">{{protein-ps-vp}}</div>
+                                <div class="col-xs-3">{{protein-dv-vp}}</div>
+                            </div>
+                            {% endif %}
+                            {% if potassium-ps-vp or potassium-dv-vp %}
+                            <div class="row">
+                                <div class="col-xs-6">Potassium</div>
+                                <div class="col-xs-3">{{potassium-ps-vp}}</div>
+                                <div class="col-xs-3">{{potassium-dv-vp}}</div>
+                            </div>
+                            {% endif %}
+                            {% if magnesium-ps-vp or magnesium-dv-vp %}
+                            <div class="row">
+                                <div class="col-xs-6">Magnesium</div>
+                                <div class="col-xs-3">{{magnesium-ps-vp}}</div>
+                                <div class="col-xs-3">{{magnesium-dv-vp}}</div>
+                            </div>
+                            {% endif %}
+                            {% if zinc-ps-vp or zinc-dv-vp %}
+                            <div class="row">
+                                <div class="col-xs-6">Chloride</div>
+                                <div class="col-xs-3">{{zinc-ps-vp}}</div>
+                                <div class="col-xs-3">{{zinc-dv-vp}}</div>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="ingredients-content">
+                        <div class="ingredients-vp">
+                            {{ingredients-vp}}
+                        </div>
+                        <div class="ingredients-bl">
+                            {{ingredients-bl}}
+                        </div>
+                        <div class="ingredients-gm">
+                            {{ingredients-gm}}
+                        </div>
+                        <div class="ingredients-cr">
+                            {{ingredients-cr}}
+                        </div>
+                    </div>
+                </div>
+                <div class="ni-selling-points">
+                    <div class="s-point s-point1">
+                        {% if ni-s-point1-icon != blank %}
+                        <span class="icon-wrap">
+                            <img src="{{ni-s-point1-icon | img_url: 'x56'}}" alt="" class="s-point-icon">
+                        </span>
+                        {% endif %}
+                        <span class="s-point-text">{{ni-s-point1-text}}</span>
+                    </div>
+                    <div class="s-point s-point2">
+                        {% if ni-s-point2-icon != blank %}
+                        <span class="icon-wrap">
+                            <img src="{{ni-s-point2-icon | img_url: 'x56'}}" alt="" class="s-point-icon">
+                        </span>
+                        {% endif %}
+                        <span class="s-point-text">{{ni-s-point2-text}}</span>
+                    </div>
+                    <div class="s-point s-point3">
+                        {% if ni-s-point3-icon != blank %}
+                        <span class="icon-wrap">
+                            <img src="{{ni-s-point3-icon | img_url: 'x56'}}" alt="" class="s-point-icon">
+                        </span>
+                        {% endif %}
+                        <span class="s-point-text">{{ni-s-point3-text}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-sm-6 col-xs-12 key-points">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 point">
+                        <div class="point-icon point1">
+                            {% if ni-point1-icon %}
+                                <img src="{{ni-point1-icon | img_url: 'x100'}}"/>
+                            {% endif %}
+                        </div>
+                        <div class="point-headline">{{ni-point1-headline}}</div>
+                        <div class="point-content">{{ni-point1-content}}</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 point">
+                        <div class="point-icon point2">
+                            {% if ni-point2-icon %}
+                                <img src="{{ni-point2-icon | img_url: 'x100'}}"/>
+                            {% endif %}
+                        </div>
+                        <div class="point-headline">{{ni-point2-headline}}</div>
+                        <div class="point-content">{{ni-point2-content}}</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 point">
+                        <div class="point-icon point3">
+                            {% if ni-point3-icon %}
+                                <img src="{{ni-point3-icon | img_url: 'x100'}}"/>
+                            {% endif %}
+                        </div>
+                        <div class="point-headline">{{ni-point3-headline}}</div>
+                        <div class="point-content">{{ni-point3-content}}</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 point">
+                        <div class="point-icon point4">
+                            {% if ni-point4-icon %}
+                                <img src="{{ni-point4-icon | img_url: 'x100'}}"/>
+                            {% endif %}
+                        </div>
+                        <div class="point-headline">{{ni-point4-headline}}</div>
+                        <div class="point-content">{{ni-point4-content}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if cta-url != blank %}
+    <div class="section-cta-wrap"><a href="{{cta-url}}" class="btn btn-default">{{cta-text}}</a></div>
+    {% endif %}
+</section>
+
+<style>
+.pdp-nutrition {
+    {{gradient_default}}
+    color: #191c22;
+    font-family: 'Circular';
+}
+.pdp-nutrition.bl {
+    background: #bfacc9;
+}
+.pdp-nutrition.gm {
+    background: #fecdc6;
+}
+.pdp-nutrition.cr {
+    background: #ff91b3;
+}
+.pdp-nutrition.bl .ingredients-vp,
+.pdp-nutrition.gm .ingredients-vp,
+.pdp-nutrition.cr .ingredients-vp {
+    display: none;
+}
+.pdp-nutrition:not(.bl) .ingredients-bl {
+    display: none;
+}
+.pdp-nutrition:not(.gm) .ingredients-gm {
+    display: none;
+}
+.pdp-nutrition:not(.cr) .ingredients-cr {
+    display: none;
+}
+.pdp-nutrition .container {
+    max-width: 90rem;
+}
+.pdp-nutrition .key-points {
+    text-align: center;
+    font-size: 14px;
+}
+.pdp-nutrition .key-points .point {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.pdp-nutrition .key-points .point > * {
+    max-width: 274px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+.pdp-nutrition .key-points img {
+    max-height: 50px;
+}
+.pdp-nutrition .key-points .point-headline {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.nutrition-ingredients > input {
+    display: none;
+}
+.nutrition-ingredients > label {
+    display: inline-block;
+    width: auto;
+    margin-right: .75em;
+    border-bottom: 4px solid transparent;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+.nutrition-ingredients > input:checked + label {
+    border-bottom-color: currentColor;
+    font-weight: 500;
+}
+.nutrition-ingredients select {
+    float: right;
+    width: auto;
+    min-width: 150px;
+    border: 2px solid currentColor;
+    border-radius: 22px;
+    color: #191c22;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.nutrition-content, .ingredients-content {
+    display: none;
+}
+#niTabNutrition:checked ~ .nutrition-ingredients-content .nutrition-content {
+    display: block;
+}
+#niTabIngredients:checked ~ .nutrition-ingredients-content .ingredients-content {
+    display: block;
+}
+
+.nutrition-content .row > * {
+  width: 100%;
+}
+.nutrition-content .row {
+  margin-bottom: .5rem;
+}
+.row.nc-headline {
+  font-size: 12px;
+  font-weight: 300;
+}
+.row.nc-headline > * {
+    vertical-align: bottom;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+}
+.nutrition-content .row > :last-child {
+    text-align: right;
+    justify-content: flex-end;
+}
+.row.nc-headline .col-xs-6 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.row.nc-headline .xl-emph {
+  font-size: 60px;
+  margin-right: 1rem;
+  line-height: .75;
+}
+.ingredients-content {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-top: .5em;
+}
+.ingredients-content p {
+    font: inherit;
+}
+
+.ni-selling-points {
+    margin-top: 3rem;
+}
+.s-point {
+    margin-bottom: .5rem;
+    display: inline-block;
+    margin-right: 2rem;
+}
+.s-point-icon {
+    max-height: 28px;
+    vertical-align: middle;
+    line-height: 1;
+    margin-right: .5rem;
+}
+.s-point-text {
+    font-size: 12px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+.nutrition-content .indent::before {
+    content: '';
+    display: inline-block;
+    width: 2em;
+}
+@media (max-width: 575px)
+{
+    #niVariantSelect {
+        width: 100%;
+        float: left;
+    }
+    .row.nc-headline {
+        font-size: 10px;
+    }
+    .row.nc-headline .col-xs-6 {
+        font-size: 12px;
+    }
+    .row.nc-headline .xl-emph {
+        font-size: 48px;
+        margin-right: .275em;
+    }
+    .nutrition-content .row:not(.nc-headline) {
+        font-size: 14px;
+        line-height: 2;
+    }
+    .ni-selling-points {
+        display: none;
+    }
+    .nutrition-ingredients {
+        margin-bottom: 3rem;
+    }
+}
+@media (min-width: 576px)
+{
+    .pdp-nutrition .key-points {
+        order: -1;
+    }
+}
+@media (min-width: 768px)
+{
+    #pdpNutrition {
+        padding-top: 5.5rem;
+        padding-bottom: 5.5rem;
+    }
+}
+@media (min-width: 992px)
+{
+    #pdpNutrition > .container > .row > * {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+</style>
+<script>
+$("#niVariantSelect").on('change', function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    pdpSetVariant($(this).val());
+});
+</script>

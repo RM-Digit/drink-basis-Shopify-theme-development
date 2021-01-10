@@ -1,0 +1,172 @@
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+{{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+{{ 'slick.min.js'  | asset_url | script_tag }}
+
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% if object.headline != blank %}
+    {% assign headline = object.headline %}
+{% else %}
+    {% assign headline = "The reviews are in!" %}
+{% endif %}
+
+{% if object.review_1_rating != blank %}
+    {% assign review_1_rating = object.review_1_rating %}
+{% else %}
+    {% assign review_1_rating = "5" %}
+{% endif %}
+{% if object.review_1_icon != blank %}
+    {% assign review_1_icon = object.review_1_icon %}
+{% endif %}
+{% if object.review_1_quote != blank %}
+    {% assign review_1_quote = object.review_1_quote %}
+{% else %}
+    {% capture review_1_quote %}"We are obsessed with Basis and it will forever be a staple in our household"{% endcapture %}
+{% endif %}
+{% if object.review_1_author != blank %}
+    {% assign review_1_author = object.review_1_author %}
+{% else %}
+    {% assign review_1_author = "@stylemeblonde" %}
+{% endif %}
+
+{% if object.review_2_rating != blank %}
+    {% assign review_2_rating = object.review_2_rating %}
+{% else %}
+    {% assign review_2_rating = "5" %}
+{% endif %}
+{% if object.review_2_icon != blank %}
+    {% assign review_2_icon = object.review_2_icon %}
+{% endif %}
+{% if object.review_2_quote != blank %}
+    {% assign review_2_quote = object.review_2_quote %}
+{% else %}
+    {% capture review_2_quote %}"I'm floored at how incredible your product is and can't believe it took so long for someone to do it, but I'm so glad you are!"{% endcapture %}
+{% endif %}
+{% if object.review_2_author != blank %}
+    {% assign review_2_author = object.review_2_author %}
+{% else %}
+    {% assign review_2_author = "@mkminnis_" %}
+{% endif %}
+
+{% if object.review_3_rating != blank %}
+    {% assign review_3_rating = object.review_3_rating %}
+{% else %}
+    {% assign review_3_rating = "5" %}
+{% endif %}
+{% if object.review_3_icon != blank %}
+    {% assign review_3_icon = object.review_3_icon %}
+{% endif %}
+{% if object.review_3_quote != blank %}
+    {% assign review_3_quote = object.review_3_quote %}
+{% else %}
+    {% capture review_3_quote %}"I love it and my husband loves it! We have been drinking it post workout and I think it really makes a difference."{% endcapture %}
+{% endif %}
+{% if object.review_3_author != blank %}
+    {% assign review_3_author = object.review_3_author %}
+{% else %}
+    {% assign review_3_author = "@denverdarling" %}
+{% endif %}
+
+
+
+<section class="plp-reviews">
+    <div class="container">
+        <h2 class="headline">{{headline}}</h2>
+        <div class="row slider">
+            <div class="column col-xs-12 col-md-4">
+                <div class="plp-review">
+                    <div class="review-stars stars stars{{review_1_rating}}">
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                    </div>
+                    <div class="icon">
+                    {% if review_1_icon %}
+                        <img src="{{review_1_icon | img_url: '56x'}}"/>
+                    {% else %}
+                        👍
+                    {% endif %}
+                    </div>
+                    <div class="quote">{{review_1_quote}}</div>
+                    <div class="author">{{review_1_author}}</div>
+                </div>
+            </div>
+            <div class="column col-xs-12 col-md-4">
+                <div class="plp-review">
+                    <div class="review-stars stars stars{{review_2_rating}}">
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                    </div>
+                    <div class="icon">
+                    {% if review_2_icon %}
+                        <img src="{{review_2_icon | img_url: '56x'}}"/>
+                    {% else %}
+                        😀
+                    {% endif %}
+                    </div>
+                    <div class="quote">{{review_2_quote}}</div>
+                    <div class="author">{{review_2_author}}</div>
+                </div>
+            </div>
+            <div class="column col-xs-12 col-md-4">
+                <div class="plp-review">
+                    <div class="review-stars stars stars{{review_3_rating}}">
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                        <svg class="star" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28"><g><g><path d="M28.189 9.926L19.41 8.612 15.476.53c-.302-.707-1.513-.707-1.816 0L9.725 8.612.948 9.926c-.404.1-.707.404-.908.707-.101.404 0 .808.201 1.01l6.357 6.364-1.514 8.89c-.1.404.101.809.404 1.01.302.203.706.203 1.11.102l7.87-4.243 7.869 4.243c.1.1.303.1.504.1.202 0 .404-.1.606-.201.302-.202.504-.607.403-1.01l-1.513-8.89 6.356-6.365c.303-.303.404-.707.202-1.01a1.22 1.22 0 0 0-.706-.707z"/></g></g></svg>
+                    </div>
+                    <div class="icon">
+                    {% if review_3_icon %}
+                        <img src="{{review_3_icon | img_url: '56x'}}"/>
+                    {% else %}
+                        💪
+                    {% endif %}
+                    </div>
+                    <div class="quote">{{review_3_quote}}</div>
+                    <div class="author">{{review_3_author}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="isMobile"></div>
+<script>
+function initSliderReviews(){
+    $('.plp-reviews .slider').slick({
+        infinite: true,
+        arrows: false,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+}
+function checkMobileSliderReviews(){
+    if($('.isMobile').css('display') == 'block'){
+        if(!$('.plp-reviews .slider').hasClass('slick-initialized')){
+            initSliderReviews();
+        }
+    } else {
+        if($('.plp-reviews .slider').hasClass('slick-initialized')){
+            $('.plp-reviews .slider').slick('unslick');
+        }
+    }
+}
+$(document).ready(function(){
+    checkMobileSliderReviews();
+    $(window).resize(function(e){
+        checkMobileSliderReviews();
+    });
+});
+</script>

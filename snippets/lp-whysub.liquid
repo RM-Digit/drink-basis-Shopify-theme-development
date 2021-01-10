@@ -1,0 +1,120 @@
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% if object.headline != blank %}
+    {% assign headline = object.headline %}
+{% else %}
+    {% assign headline = "" %}
+{% endif %}
+
+{% if object.point1-icon != blank %}
+    {% assign point1-icon = object.point1-icon %}
+{% endif %}
+{% if object.point1-title != blank %}
+    {% assign point1-title = object.point1-title %}
+{% else %}
+    {% assign point1-title = "" %}
+{% endif %}
+{% if object.point1-text != blank %}
+    {% assign point1-text = object.point1-text %}
+{% else %}
+    {% assign point1-text = "" %}
+{% endif %}
+
+{% if object.point2-icon != blank %}
+    {% assign point2-icon = object.point2-icon %}
+{% endif %}
+{% if object.point2-title != blank %}
+    {% assign point2-title = object.point2-title %}
+{% else %}
+    {% assign point2-title = "" %}
+{% endif %}
+{% if object.point2-text != blank %}
+    {% assign point2-text = object.point2-text %}
+{% else %}
+    {% assign point2-text = "" %}
+{% endif %}
+
+{% if object.point3-icon != blank %}
+    {% assign point3-icon = object.point3-icon %}
+{% endif %}
+{% if object.point3-title != blank %}
+    {% assign point3-title = object.point3-title %}
+{% else %}
+    {% assign point3-title = "" %}
+{% endif %}
+{% if object.point3-text != blank %}
+    {% assign point3-text = object.point3-text %}
+{% else %}
+    {% assign point3-text = "" %}
+{% endif %}
+
+{% if object.point4-icon != blank %}
+    {% assign point4-icon = object.point4-icon %}
+{% endif %}
+{% if object.point4-title != blank %}
+    {% assign point4-title = object.point4-title %}
+{% else %}
+    {% assign point4-title = "" %}
+{% endif %}
+{% if object.point4-text != blank %}
+    {% assign point4-text = object.point4-text %}
+{% else %}
+    {% assign point4-text = "" %}
+{% endif %}
+
+<section class="plp-why">
+    <div class="container">
+        <h2 class="headline">{{ headline }}</h2>
+        <div class="row why-content">
+            <div class="column col-xs-12 col-md-3">
+                <div class="why-icon">
+                {% if point1-icon %}
+                    <img src="{{point1-icon | img_url: '104x'}}"/>
+                {% else %}
+                    💰
+                {% endif %}
+                </div>
+                <div class="title">{{point1-title}}</div>
+                <div class="text">{{point1-text}}</div>
+            </div>
+            <div class="column col-xs-12 col-md-3">
+                <div class="why-icon">
+                {% if point2-icon %}
+                    <img src="{{point2-icon | img_url: '104x'}}"/>
+                {% else %}
+                    🚀
+                {% endif %}
+                </div>
+                <div class="title">{{point2-title}}</div>
+                <div class="text">{{point2-text}}</div>
+            </div>
+            <div class="column col-xs-12 col-md-3">
+                <div class="why-icon">
+                {% if point3-icon %}
+                    <img src="{{point3-icon | img_url: '104x'}}"/>
+                {% else %}
+                    💥
+                {% endif %}
+                </div>
+                <div class="title">{{point3-title}}</div>
+                <div class="text">{{point3-text}}</div>
+            </div>
+            <div class="column col-xs-12 col-md-3">
+                <div class="why-icon">
+                {% if point4-icon %}
+                    <img src="{{point4-icon | img_url: '104x'}}"/>
+                {% else %}
+                    🤝
+                {% endif %}
+                </div>
+                <div class="title">{{point4-title}}</div>
+                <div class="text">{{point4-text}}</div>
+            </div>
+        </div>
+    </div>
+</section>

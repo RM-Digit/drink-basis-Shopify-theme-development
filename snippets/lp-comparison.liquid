@@ -1,0 +1,169 @@
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% if atc-text == blank %}
+    {% assign atc-text = "Start My Trial" %}
+{% endif %}
+
+{% if object.featured-image != blank %}
+    {% assign featured-image = object.featured-image | img_url: 'master' %}
+{% else %}
+    {% assign featured-image = 'prodplacement1.png' | asset_url %}
+{% endif %}
+
+{% if object.compare1-logo-image != blank %}
+    {% assign compare1-logo-image = object.compare1-logo-image | img_url: 'master' %}
+{% else %}
+    {% assign compare1-logo-image = 'logo-dark.png' | asset_url %}
+{% endif %}
+
+{% if object.compare1-product-image != blank %}
+    {% assign compare1-product-image = object.compare1-product-image | img_url: 'master' %}
+{% else %}
+    {% assign compare1-product-image = 'prod-cranraspberry-stick.png' | asset_url %}
+{% endif %}
+{% if object.variant-id != blank %}
+    {% assign variant-id = object.variant-id %}
+{% else %}
+    {% assign variant-id = "32078604959862" %}
+{% endif %}
+
+{% if object.compare1-point1-icon != blank %}
+    {% assign compare1-point1-icon = object.compare1-point1-icon | img_url: 'master' %}
+{% else %}
+    {% assign compare1-point1-icon = 'icon-sugar.png' | asset_url %}
+{% endif %}
+{% if object.compare1-point1-text != blank %}
+    {% assign compare1-point1-text = object.compare1-point1-text %}
+{% else %}
+    {% assign compare1-point1-text = "4g sugar" %}
+{% endif %}
+{% if object.compare1-point2-icon != blank %}
+    {% assign compare1-point2-icon = object.compare1-point2-icon | img_url: 'master' %}
+{% else %}
+    {% assign compare1-point2-icon = 'icon-calories.png' | asset_url %}
+{% endif %}
+{% if object.compare1-point2-text != blank %}
+    {% assign compare1-point2-text = object.compare1-point2-text %}
+{% else %}
+    {% assign compare1-point2-text = "25 calories" %}
+{% endif %}
+{% if object.compare1-point3-icon != blank %}
+    {% assign compare1-point3-icon = object.compare1-point3-icon | img_url: 'master' %}
+{% else %}
+    {% assign compare1-point3-icon = 'icon-electrolytes.png' | asset_url %}
+{% endif %}
+{% if object.compare1-point3-text != blank %}
+    {% assign compare1-point3-text = object.compare1-point3-text %}
+{% else %}
+    {% assign compare1-point3-text = "1,000 mg electrolytes" %}
+{% endif %}
+
+{% if object.compare2-logo-image != blank %}
+    {% assign compare2-logo-image = object.compare2-logo-image | img_url: 'master' %}
+{% else %}
+    {% assign compare2-logo-image = blank %}
+{% endif %}
+{% if object.compare2-logo-text != blank %}
+    {% assign compare2-logo-text = object.compare2-logo-text %}
+{% else %}
+    {% assign compare2-logo-text = "Other Brands" %}
+{% endif %}
+{% if compare2-logo-image != blank %}
+    {% assign compare2-logo = "<img src='{{compare2-logo-image}}' alt=''>" %}
+{% else %}
+    {% assign compare2-logo = compare2-logo-text %}
+{% endif %}
+
+{% if object.compare2-product-image != blank %}
+    {% assign compare2-product-image = object.compare2-product-image | img_url: 'master' %}
+{% else %}
+    {% assign compare2-product-image = 'prod-other-stick.png' | asset_url %}
+{% endif %}
+
+{% if object.compare2-point1-icon != blank %}
+    {% assign compare2-point1-icon = object.compare2-point1-icon | img_url: 'master' %}
+{% else %}
+    {% assign compare2-point1-icon = 'icon-sugar.png' | asset_url %}
+{% endif %}
+{% if object.compare2-point1-text != blank %}
+    {% assign compare2-point1-text = object.compare2-point1-text %}
+{% else %}
+    {% assign compare2-point1-text = "11g sugar" %}
+{% endif %}
+{% if object.compare2-point2-icon != blank %}
+    {% assign compare2-point2-icon = object.compare2-point2-icon | img_url: 'master' %}
+{% else %}
+    {% assign compare2-point2-icon = 'icon-calories.png' | asset_url %}
+{% endif %}
+{% if object.compare2-point2-text != blank %}
+    {% assign compare2-point2-text = object.compare2-point2-text %}
+{% else %}
+    {% assign compare2-point2-text = "45 calories" %}
+{% endif %}
+{% if object.compare2-point3-icon != blank %}
+    {% assign compare2-point3-icon = object.compare2-point3-icon | img_url: 'master' %}
+{% else %}
+    {% assign compare2-point3-icon = 'icon-electrolytes.png' | asset_url %}
+{% endif %}
+{% if object.compare2-point3-text != blank %}
+    {% assign compare2-point3-text = object.compare2-point3-text %}
+{% else %}
+    {% assign compare2-point3-text = "890 mg electrolytes" %}
+{% endif %}
+
+
+<section class="plp-comparison">
+    <div class="container">
+        <div class="row">
+            <div class="column col-xs-12 col-md-6 comparison-placement">
+                <div style="background-image:url({{featured-image}});" class="comparison-placement-image"></div>
+            </div>
+            <div class="column col-xs-12 col-md-6 comparison-prod-wrap">
+                <div class="row">
+                    <div class="column col-xs-6">
+                        <div class="comparison-prod basis-prod">
+                            <div class="cp-logo"><img src="{{compare1-logo-image}}" alt=""></div>
+                            <div class="cp-image"><img src="{{compare1-product-image}}" alt=""></div>
+                            <div class="cp-point cp-sugar">
+                                <img src="{{compare1-point1-icon}}" alt="" class="icon icon-sugar">
+                                {{compare1-point1-text}}
+                            </div>
+                            <div class="cp-point cp-calories">
+                                <img src="{{compare1-point2-icon}}" alt="" class="icon icon-calories">
+                                {{compare1-point2-text}}
+                            </div>
+                            <div class="cp-point cp-electrolytes">
+                                <img src="{{compare1-point3-icon}}" alt="" class="icon icon-electrolytes">
+                                {{compare1-point3-text}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column col-xs-6">
+                        <div class="comparison-prod other-prod">
+                            <div class="cp-logo">{{compare2-logo}}</div>
+                            <div class="cp-image"><img src="{{compare2-product-image}}" alt=""></div>
+                            <div class="cp-point cp-sugar">
+                                <img src="{{compare2-point1-icon}}" alt="" class="icon icon-sugar">
+                                {{compare2-point1-text}}
+                            </div>
+                            <div class="cp-point cp-calories">
+                                <img src="{{compare2-point2-icon}}" alt="" class="icon icon-calories">
+                                {{compare2-point2-text}}
+                            </div>
+                            <div class="cp-point cp-electrolytes">
+                                <img src="{{compare2-point3-icon}}" alt="" class="icon icon-electrolytes">
+                                {{compare2-point3-text}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{% if is_subscription_lp %}#featuredProduct{% else %}{% if is-atc %}/cart/{{variant-id}}:1?discount=vp25o1{% else %}#{% endif %}{% endif %}" data-variant-id="{{variant-id}}" class="btn btn-default {% if is_subscription_lp %}{% else %}add-to-cart btn-subscribe{% endif %}">{{atc-text}}</a>
+            </div>
+        </div>
+    </div>
+</section>

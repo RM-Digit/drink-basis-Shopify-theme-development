@@ -1,0 +1,75 @@
+.prod-quantity-wrap{
+    border: none!important;
+    border-radius: 0!important;
+    justify-content: flex-start;
+    background: transparent;
+}
+
+div.qty__adjust{
+    position: relative;
+    min-width: 75px;
+    overflow: visible;
+    background-color: #fcf9ef;
+    background-color: var(--colorBody);
+    color: #44271c;
+    color: var(--colorTextBody);
+    width: 165px;
+    border: 2px solid;
+    border-color: var(--colorTextBody);
+}
+input#quantity{
+    display: block;
+    background: none;
+    width: 100%;
+    padding: 8px 25px;
+    margin: 0;
+    z-index: 1;
+    padding-right: 55px;
+    padding-left: 55px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 100%;
+}
+.qty__adjust-btn{
+    cursor: pointer;
+position: absolute;
+display: block;
+top: 0;
+bottom: 0;
+border: 0 none;
+background: none;
+text-align: center;
+overflow: hidden;
+padding: 0 5px;
+line-height: 1;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+transition: background-color 0.1s ease-out;
+z-index: 2;
+fill: #44271c;
+fill: var(--colorTextBody);
+width: 55px;
+height: 55px;
+}
+.qty__adjust-btn.js-qty__adjust-btn.decrease{
+    border-right: 2px solid;
+border-right-color: var(--colorTextBody);
+left: 0!important;
+display: flex;
+}
+.qty__adjust-btn.js-qty__adjust-btn.increase{
+    right: 0!important;
+    border-left: 2px solid;
+    border-left-color: var(--colorTextBody);
+    display: flex;
+}
+.prod-quantity-wrap button.productForm-submit{
+    margin-left: 20px;
+    border: none!important;
+    border-radius: 0!important;
+    width: fit-content;
+}

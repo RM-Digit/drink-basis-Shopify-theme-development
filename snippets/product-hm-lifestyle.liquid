@@ -1,0 +1,128 @@
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% assign headline = object.lifestyle-headline %}
+{% assign tagline = object.lifestyle-tagline %}
+{% assign lpoint1-icon = object.lpoint1-icon %}
+{% assign lpoint1-title = object.lpoint1-title %}
+{% assign lpoint2-icon = object.lpoint2-icon %}
+{% assign lpoint2-title = object.lpoint2-title %}
+{% assign lpoint3-icon = object.lpoint3-icon %}
+{% assign lpoint3-title = object.lpoint3-title %}
+{% assign lpoint4-icon = object.lpoint4-icon %}
+{% assign lpoint4-title = object.lpoint4-title %}
+{% assign lpoint5-icon = object.lpoint5-icon %}
+{% assign lpoint5-title = object.lpoint5-title %}
+{% assign lpoint6-icon = object.lpoint6-icon %}
+{% assign lpoint6-title = object.lpoint6-title %}
+{% assign lpoint7-icon = object.lpoint7-icon %}
+{% assign lpoint7-title = object.lpoint7-title %}
+{% assign lpoint8-icon = object.lpoint8-icon %}
+{% assign lpoint8-title = object.lpoint8-title %}
+
+{% assign cta-url = object.lifestyle-cta-url %}
+{% if object.lifestyle-cta-text != blank %}
+    {% assign cta-text = object.lifestyle-cta-text %}
+{% else %}
+    {% assign cta-text = "Buy Now" %}
+{% endif %}
+
+
+<section id="pdpLifestyle" class="pdp-lifestyle">
+    <div class="container">
+        <h2 class="headline">{{headline}}</h2>
+        <div class="tagline">{{tagline}}</div>
+        <div class="lpoints-wrap">
+            <div class="lpoint">
+                <div class="lpoint-icon"><img src="{{lpoint1-icon | img_url: 'x91', scale: 2}}" alt=""></div>
+                <div class="lpoint-title">{{lpoint1-title}}</div>
+            </div>
+            <div class="lpoint">
+                <div class="lpoint-icon"><img src="{{lpoint2-icon | img_url: 'x91', scale: 2}}" alt=""></div>
+                <div class="lpoint-title">{{lpoint2-title}}</div>
+            </div>
+            <div class="lpoint">
+                <div class="lpoint-icon"><img src="{{lpoint3-icon | img_url: 'x91', scale: 2}}" alt=""></div>
+                <div class="lpoint-title">{{lpoint3-title}}</div>
+            </div>
+            <div class="lpoint">
+                <div class="lpoint-icon"><img src="{{lpoint4-icon | img_url: 'x91', scale: 2}}" alt=""></div>
+                <div class="lpoint-title">{{lpoint4-title}}</div>
+            </div>
+            <div class="lpoint">
+                <div class="lpoint-icon"><img src="{{lpoint5-icon | img_url: 'x91', scale: 2}}" alt=""></div>
+                <div class="lpoint-title">{{lpoint5-title}}</div>
+            </div>
+            <div class="lpoint">
+                <div class="lpoint-icon"><img src="{{lpoint6-icon | img_url: 'x91', scale: 2}}" alt=""></div>
+                <div class="lpoint-title">{{lpoint6-title}}</div>
+            </div>
+            <div class="lpoint">
+                <div class="lpoint-icon"><img src="{{lpoint7-icon | img_url: 'x91', scale: 2}}" alt=""></div>
+                <div class="lpoint-title">{{lpoint7-title}}</div>
+            </div>
+            <div class="lpoint">
+                <div class="lpoint-icon"><img src="{{lpoint8-icon | img_url: 'x91', scale: 2}}" alt=""></div>
+                <div class="lpoint-title">{{lpoint8-title}}</div>
+            </div>
+        </div>
+    </div>
+    {% if cta-url != blank %}
+    <div class="section-cta-wrap"><a href="{{cta-url}}" class="btn btn-default">{{cta-text}}</a></div>
+    {% endif %}
+</section>
+
+<style>
+.pdp-lifestyle {
+    text-align: center;
+}
+.pdp-lifestyle .headline {
+    color: #191c22;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+.pdp-lifestyle .tagline {
+    color: #212027;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+.lpoint img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lpoint-title {
+    color: #191c22;
+}
+.lpoint {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+.lpoints-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+@media (min-width: 768px)
+{
+    .lpoint {
+        width: 25%;
+    }
+    .pdp-lifestyle .headline {
+        max-width: 450px;
+    }
+    .pdp-lifestyle .tagline {
+        max-width: 450px;
+    }
+    .lpoint-title {
+        font-size: 18px;
+    }
+}
+</style>

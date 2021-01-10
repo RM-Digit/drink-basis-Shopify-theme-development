@@ -1,0 +1,928 @@
+{{ 'landing-page-styles.css' | asset_url | stylesheet_tag }}
+
+{% if section.settings.lp-announcement-bar != blank %}
+<div class="js-siteAlert siteAlert container-wrap lp-alert" data-status="true" data-status-mobile="true" data-scroll-lock-fill-gap="">
+	<div class="container u-center">
+		<div class="row u-center">
+			<div class="block u-center">
+                <span class="alert-title h4" data-theme-editor-setting="section.announcement.text">
+                    <p>{{section.settings.lp-announcement-bar}}</p>
+                </span>
+            </div>
+		</div>
+	</div>
+</div>
+{% endif %}
+{% if section.settings.lp-announcement-bar != blank or section.settings.lp-hide-announcement-bar %}
+<style>
+.siteAlert:not(.lp-alert){
+    display: none;
+}
+</style>  
+{% endif %}
+
+{% assign atc-text = "Add To Cart" %}
+{% assign is-atc = true %}
+{% for block in section.blocks %}
+    {% case block.type %}
+        {% when 'lp-featured-product' %}
+        {% include 'lp-featured-product' %}
+        
+        {% when 'lp-about' %}
+        {% include 'lp-about'%}
+
+        {% when 'lp-discover' %}
+        {% include 'lp-discover'%}
+
+        {% when 'lp-comparison' %}
+        {% include 'lp-comparison'%}
+        
+        {% when 'lp-reviews' %}
+        {% include 'lp-reviews' %}
+
+        {% when 'lp-social' %}
+        {% include 'lp-social' %}
+
+        {% when 'lp-similar-products' %}
+        {% include 'lp-similar-products' %}
+
+    {% endcase %}
+{% endfor %}
+
+<script>
+$('.add-to-cart').on('click', function(){
+    var id = $(this).data('variant-id');
+    snaptr('track', 'ADD_CART', {
+        'currency': '{{shop.currency}}',
+        'price': 18.75,
+        'item_ids': id,
+    });
+});
+$(window).on('load resize orientationchange', function(){
+    $(".bodyWrap").css('padding-top', $("#shopify-section-announcement").height());
+});
+</script>
+<style>
+#shopify-section-announcement {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+</style>
+
+{% schema %}
+    {
+        "name": "Custom Sections",
+        "class": "custom-sections",
+        "settings": [
+            {
+                "type": "text",
+                "id": "lp-announcement-bar",
+                "label": "Landing Page Announcement Bar"
+            },
+            {
+                "type": "checkbox",
+                "id": "lp-hide-announcement-bar",
+                "label": "Hide  Announcement Bar",
+                "default": false,
+                "info": "Hide the default announcement bar (if no custom announcement to replace it)"
+            }
+        ],
+        "blocks":[
+            {
+                "type": "lp-featured-product",
+                "name": "Featured Product",
+                "settings":[
+                    {
+                        "type": "header",
+                        "content": "General Product Info"
+                    },
+                    {
+                        "type": "text",
+                        "id": "product-name",
+                        "label": "Product Name"
+                    },
+                    {
+                        "type": "text",
+                        "id": "price",
+                        "label": "Price"
+                    },
+                    {
+                        "type": "text",
+                        "id": "full-price",
+                        "label": "Full Price"
+                    },
+                    {
+                        "type": "text",
+                        "id": "discount",
+                        "label": "Discount"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "is-new",
+                        "label": "New",
+                        "default": true
+                    },
+                    {
+                        "type": "text",
+                        "id": "tagline",
+                        "label": "Tagline"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Key Points"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "point1-icon",
+                        "label": "Point 1 Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "point1-text",
+                        "label": "Point 1 Text"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "point2-icon",
+                        "label": "Point 2 Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "point2-text",
+                        "label": "Point 2 Text"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "point3-icon",
+                        "label": "Point 3 Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "point3-text",
+                        "label": "Point 3 Text"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Variant 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant-1-id",
+                        "label": "ID"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant-1-name",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "color",
+                        "id": "variant-1-color",
+                        "label": "Color"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "variant-1-description",
+                        "label": "Description"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant-1-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant-1-nutrition-image",
+                        "label": "Nutrition Chart Image"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Variant 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant-2-id",
+                        "label": "ID"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant-2-name",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "color",
+                        "id": "variant-2-color",
+                        "label": "Color"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "variant-2-description",
+                        "label": "Description"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant-2-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant-2-nutrition-image",
+                        "label": "Nutrition Chart Image"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Variant 3"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant-3-id",
+                        "label": "ID"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant-3-name",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "color",
+                        "id": "variant-3-color",
+                        "label": "Color"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "variant-3-description",
+                        "label": "Description"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant-3-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant-3-nutrition-image",
+                        "label": "Nutrition Chart Image"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Variant 4"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant-4-id",
+                        "label": "ID"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant-4-name",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "color",
+                        "id": "variant-4-color",
+                        "label": "Color"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "variant-4-description",
+                        "label": "Description"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant-4-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant-4-nutrition-image",
+                        "label": "Nutrition Chart Image"
+                    }
+                ]
+            },
+            {
+                "type": "lp-about",
+                "name": "Steps",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "headline",
+                        "label": "Headline"
+                    },
+                    {
+                        "type": "text",
+                        "id": "tagline",
+                        "label": "Tagline"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant-id",
+                        "label": "Variant ID",
+                        "info": "Used to generate CTA link"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Step 1"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "step1-icon",
+                        "label": "Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "step1-title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "step1-text",
+                        "label": "Content"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Step 2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "step2-icon",
+                        "label": "Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "step2-title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "step2-text",
+                        "label": "Content"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Step 3"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "step3-icon",
+                        "label": "Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "step3-title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "step3-text",
+                        "label": "Content"
+                    }
+                ]
+            },
+            {
+                "type": "lp-discover",
+                "name": "Discover",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "headline",
+                        "label": "Headline"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "description",
+                        "label": "Description"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Variant 1"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant1-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant1-title",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "variant1-description",
+                        "label": "Description"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant1-id",
+                        "label": "Variant ID",
+                        "info": "Used to generate CTA"
+                    },
+                    {
+                        "type": "color",
+                        "id": "variant1-bg-color",
+                        "label": "BG Color"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Variant 2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant2-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant2-title",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "variant2-description",
+                        "label": "Description"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant2-id",
+                        "label": "Variant ID",
+                        "info": "Used to generate CTA"
+                    },
+                    {
+                        "type": "color",
+                        "id": "variant2-bg-color",
+                        "label": "BG Color"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Variant 3"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant3-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant3-title",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "variant3-description",
+                        "label": "Description"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant3-id",
+                        "label": "Variant ID",
+                        "info": "Used to generate CTA"
+                    },
+                    {
+                        "type": "color",
+                        "id": "variant3-bg-color",
+                        "label": "BG Color"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Variant 4"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "variant4-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant4-title",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "variant4-description",
+                        "label": "Description"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant4-id",
+                        "label": "Variant ID",
+                        "info": "Used to generate CTA"
+                    },
+                    {
+                        "type": "color",
+                        "id": "variant4-bg-color",
+                        "label": "BG Color"
+                    }
+                ]
+            },
+            {
+                "type": "lp-comparison",
+                "name": "Comparison",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "featured-image",
+                        "label": "Featured Image"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Basis Product Details"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "compare1-logo-image",
+                        "label": "Basis Logo"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "compare1-product-image",
+                        "label": "Product Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "variant-id",
+                        "label": "Variant ID",
+                        "info": "Used to generate CTA"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Point 1"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "compare1-point1-icon",
+                        "label": "Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "compare1-point1-text",
+                        "label": "Details"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Point 2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "compare1-point2-icon",
+                        "label": "Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "compare1-point2-text",
+                        "label": "Details"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Point 3"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "compare1-point3-icon",
+                        "label": "Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "compare1-point3-text",
+                        "label": "Details"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Other Brand Details"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "compare2-logo-image",
+                        "label": "Logo"
+                    },
+                    {
+                        "type": "text",
+                        "id": "compare2-logo-text",
+                        "label": "Brand Name",
+                        "info": "Display the brand name when you do not provide a logo"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "compare2-product-image",
+                        "label": "Product Image"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Point 1"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "compare2-point1-icon",
+                        "label": "Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "compare2-point1-text",
+                        "label": "Details"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Point 2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "compare2-point2-icon",
+                        "label": "Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "compare2-point2-text",
+                        "label": "Details"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Point 3"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "compare2-point3-icon",
+                        "label": "Icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "compare2-point3-text",
+                        "label": "Details"
+                    }
+                ]
+            },
+            {
+                "type": "lp-reviews",
+                "name": "Reviews",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "headline",
+                        "label": "Headline"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Review 1"
+                    },
+                    {
+                    "id": "review_1_rating",
+                    "label": "Review Rating",
+                    "type": "radio",
+                    "options": [
+                        {"value": "1", "label": "1"},
+                        {"value": "2", "label": "2"},
+                        {"value": "3", "label": "3"},
+                        {"value": "4", "label": "4"},
+                        {"value": "5", "label": "5"}
+                    ],
+                    "default": "5"
+                    },
+                    {
+                    "id": "review_1_icon",
+                    "label": "Icon",
+                    "type": "image_picker"
+                    },
+                    {
+                    "id": "review_1_quote",
+                    "label": "Quote",
+                    "type": "textarea"
+                    },
+                    {
+                    "id": "review_1_author",
+                    "label": "Author",
+                    "type": "text"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Review 2"
+                    },
+                    {
+                    "id": "review_2_rating",
+                    "label": "Review Rating",
+                    "type": "radio",
+                    "options": [
+                        {"value": "1", "label": "1"},
+                        {"value": "2", "label": "2"},
+                        {"value": "3", "label": "3"},
+                        {"value": "4", "label": "4"},
+                        {"value": "5", "label": "5"}
+                    ],
+                    "default": "5"
+                    },
+                    {
+                    "id": "review_2_icon",
+                    "label": "Icon",
+                    "type": "image_picker"
+                    },
+                    {
+                    "id": "review_2_quote",
+                    "label": "Quote",
+                    "type": "textarea"
+                    },
+                    {
+                    "id": "review_2_author",
+                    "label": "Author",
+                    "type": "text"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Review 3"
+                    },
+                    {
+                    "id": "review_3_rating",
+                    "label": "Review Rating",
+                    "type": "radio",
+                    "options": [
+                        {"value": "1", "label": "1"},
+                        {"value": "2", "label": "2"},
+                        {"value": "3", "label": "3"},
+                        {"value": "4", "label": "4"},
+                        {"value": "5", "label": "5"}
+                    ],
+                    "default": "5"
+                    },
+                    {
+                    "id": "review_3_icon",
+                    "label": "Icon",
+                    "type": "image_picker"
+                    },
+                    {
+                    "id": "review_3_quote",
+                    "label": "Quote",
+                    "type": "textarea"
+                    },
+                    {
+                    "id": "review_3_author",
+                    "label": "Author",
+                    "type": "text"
+                    }
+                ]
+            },
+            {
+                "type": "lp-social",
+                "name": "Social",
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "headline",
+                        "label": "Headline"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image1",
+                        "label": "Image 1"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image2",
+                        "label": "Image 2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image3",
+                        "label": "Image 3"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image4",
+                        "label": "Image 4"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image5",
+                        "label": "Image 5"
+                    }
+                ]
+            },
+            {
+                "type": "lp-similar-products",
+                "name": "Similar Products",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "headline",
+                        "label": "Headline"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Product 1"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "prod1-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "prod1-name",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "url",
+                        "id": "prod1-cart-link",
+                        "label": "Add To Cart URL"
+                    },
+                    {
+                        "type": "color",
+                        "id": "prod1-bg",
+                        "label": "Background Color"
+                    },
+                    {
+                        "type": "color",
+                        "id": "prod1-btn-bg",
+                        "label": "Button Background Color"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Product 2"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "prod2-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "prod2-name",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "url",
+                        "id": "prod2-cart-link",
+                        "label": "Add To Cart URL"
+                    },
+                    {
+                        "type": "color",
+                        "id": "prod2-bg",
+                        "label": "Background Color"
+                    },
+                    {
+                        "type": "color",
+                        "id": "prod2-btn-bg",
+                        "label": "Button Background Color"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Product 3"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "prod3-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "prod3-name",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "url",
+                        "id": "prod3-cart-link",
+                        "label": "Add To Cart URL"
+                    },
+                    {
+                        "type": "color",
+                        "id": "prod3-bg",
+                        "label": "Background Color"
+                    },
+                    {
+                        "type": "color",
+                        "id": "prod3-btn-bg",
+                        "label": "Button Background Color"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Product 4"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "prod4-image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "text",
+                        "id": "prod4-name",
+                        "label": "Name"
+                    },
+                    {
+                        "type": "url",
+                        "id": "prod4-cart-link",
+                        "label": "Add To Cart URL"
+                    },
+                    {
+                        "type": "color",
+                        "id": "prod4-bg",
+                        "label": "Background Color"
+                    },
+                    {
+                        "type": "color",
+                        "id": "prod4-btn-bg",
+                        "label": "Button Background Color"
+                    }
+                ]
+            }
+        ]
+        
+    }
+{% endschema %}
+

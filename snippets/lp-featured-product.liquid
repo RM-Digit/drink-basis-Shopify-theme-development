@@ -1,0 +1,393 @@
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{%- comment -%}
+{% assign id = object.id %}
+{% assign featured_product = object.settings.featured_product %}
+{% assign product = all_products[featured_product] %}
+{% for option in product.options_with_values %}
+    {% for value in option.values %}
+        
+    {% endfor %}
+{% endfor %}
+
+{% assign variant = product.selected_or_first_available_variant %}
+
+{% assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media %}
+{% assign featured_media_id = featured_media.id %}
+{% assign product_description_content = product.description %}
+{%- endcomment -%}
+
+{% if atc-text == blank %}
+    {% assign atc-text = "Start My Trial" %}
+{% endif %}
+
+
+{% if object.product-name != blank %}
+    {% assign product-name = object.product-name %}
+{% else %}
+    {% assign product-name = "Clean Hydration Mix" %}
+{% endif %}
+{% if object.price != blank %}
+    {% assign price = object.price %}
+{% else %}
+    {% assign price = "$18.75" %}
+{% endif %}
+{% if object.full-price != blank %}
+    {% assign full-price = object.full-price %}
+{% else %}
+    {% assign full-price = "$24.99" %}
+{% endif %}
+{% if object.discount != blank %}
+    {% assign discount = object.discount %}
+{% else %}
+    {% assign discount = "" %}
+{% endif %}
+{% assign is-new = object.is-new %}
+
+{%- comment -%}Sub description{%- endcomment -%}
+{% if object.tagline != blank %}
+    {% assign tagline = object.tagline %}
+{% elsif is-atc %}
+    {% assign tagline = "" %}
+{% else %}
+    {% assign tagline = "Just pay shipping and handling!" %}
+{% endif %}
+{% if object.point1-icon != blank %}
+    {% capture point1-icon %}<img src="{{object.point1-icon | img_url: '28x'}}"/>{% endcapture %}
+{% else %}
+    {% assign point1-icon = "⚡️" %}
+{% endif %}
+{% if object.point1-text != blank %}
+    {% assign point1-text = object.point1-text %}
+{% else %}
+    {% assign point1-text = "1,000 mg of electrolytes" %}
+{% endif %}
+{% if object.point2-icon != blank %}
+    {% capture point2-icon %}<img src="{{object.point2-icon | img_url: '28x'}}"/>{% endcapture %}
+{% else %}
+    {% assign point2-icon = "🌱" %}
+{% endif %}
+{% if object.point2-text != blank %}
+    {% assign point2-text = object.point2-text %}
+{% else %}
+    {% assign point2-text = "4 grams of organic cane sugar" %}
+{% endif %}
+{% if object.point3-icon != blank %}
+    {% capture point3-icon %}<img src="{{object.point3-icon | img_url: '28x'}}"/>{% endcapture %}
+{% else %}
+    {% assign point3-icon = "😋" %}
+{% endif %}
+{% if object.point3-text != blank %}
+    {% assign point3-text = object.point3-text %}
+{% else %}
+    {% assign point3-text = "deliciously subtle flavor" %}
+{% endif %}
+
+
+{% if object.variant-1-id != blank %}
+    {% assign variant-1-id = object.variant-1-id %}
+{% else %}
+    {% assign variant-1-id = "32078604959862" %}
+{% endif %}
+{% if object.variant-1-name != blank %}
+    {% assign variant-1-name = object.variant-1-name %}
+{% else %}
+    {% assign variant-1-name = "Variety Pack" %}
+{% endif %}
+{% if object.variant-1-color != blank %}
+    {% assign variant-1-color = object.variant-1-color %}
+{% else %}
+    {% assign variant-1-color = "#fecdc6" %}
+{% endif %}
+{% if object.variant-1-description != blank %}
+    {% assign variant-1-description = object.variant-1-description %}
+{% else %}
+    {% assign variant-1-description = "Whats inside? 5 Cran-Raspberry sticks. 5 Grapefruit Melon, and 5 Blackberry Lemon." %}
+{% endif %}
+{% if object.variant-1-image != blank %}
+    {% assign variant-1-image = object.variant-1-image | img_url: '700x' %}
+{% else %}
+    {% assign variant-1-image = 'prod-varietypack-ex-front.png' | asset_url %}
+{% endif %}
+{% if object.variant-1-nutrition-image %}
+    {% assign variant-1-nutrition-image = object.variant-1-nutrition-image | img_url: 'master' %}
+{% endif %}
+
+
+{% if object.variant-2-id != blank %}
+    {% assign variant-2-id = object.variant-2-id %}
+{% else %}
+    {% assign variant-2-id = "32078604861558" %}
+{% endif %}
+{% if object.variant-2-name != blank %}
+    {% assign variant-2-name = object.variant-2-name %}
+{% else %}
+    {% assign variant-2-name = "Blackberry Lemon" %}
+{% endif %}
+{% if object.variant-2-color != blank %}
+    {% assign variant-2-color = object.variant-2-color %}
+{% else %}
+    {% assign variant-2-color = "#bfacc9" %}
+{% endif %}
+{% if object.variant-2-description != blank %}
+    {% assign variant-2-description = object.variant-2-description %}
+{% else %}
+    {% assign variant-2-description = "A nice mix of berry with a hint of citrus. Our number one selling beverage flavor!" %}
+{% endif %}
+{% if object.variant-2-image != blank %}
+    {% assign variant-2-image = object.variant-2-image | img_url: '700x' %}
+{% else %}
+    {% assign variant-2-image = 'prod-varietypack-ex-front.png' | asset_url %}
+{% endif %}
+{% if object.variant-2-nutrition-image %}
+    {% assign variant-2-nutrition-image = object.variant-2-nutrition-image | img_url: 'master' %}
+{% endif %}
+
+
+{% if object.variant-3-id != blank %}
+    {% assign variant-3-id = object.variant-3-id %}
+{% else %}
+    {% assign variant-3-id = "32078604927094" %}
+{% endif %}
+{% if object.variant-3-name != blank %}
+    {% assign variant-3-name = object.variant-3-name %}
+{% else %}
+    {% assign variant-3-name = "Cran Raspberry" %}
+{% endif %}
+{% if object.variant-3-color != blank %}
+    {% assign variant-3-color = object.variant-3-color %}
+{% else %}
+    {% assign variant-3-color = "#ff91b3" %}
+{% endif %}
+{% if object.variant-3-description != blank %}
+    {% assign variant-3-description = object.variant-3-description %}
+{% else %}
+    {% assign variant-3-description = "Our most flavorful option with a classic berry combination." %}
+{% endif %}
+{% if object.variant-3-image != blank %}
+    {% assign variant-3-image = object.variant-3-image | img_url: '700x' %}
+{% else %}
+    {% assign variant-3-image = 'prod-varietypack-ex-front.png' | asset_url %}
+{% endif %}
+{% if object.variant-3-nutrition-image %}
+    {% assign variant-3-nutrition-image = object.variant-3-nutrition-image | img_url: 'master' %}
+{% endif %}
+
+
+{% if object.variant-4-id != blank %}
+    {% assign variant-4-id = object.variant-4-id %}
+{% else %}
+    {% assign variant-4-id = "32078604894326" %}
+{% endif %}
+{% if object.variant-4-name != blank %}
+    {% assign variant-4-name = object.variant-4-name %}
+{% else %}
+    {% assign variant-4-name = "Grapefruit Melon" %}
+{% endif %}
+{% if object.variant-4-color != blank %}
+    {% assign variant-4-color = object.variant-4-color %}
+{% else %}
+    {% assign variant-4-color = "#fecdc6" %}
+{% endif %}
+{% if object.variant-4-description != blank %}
+    {% assign variant-4-description = object.variant-4-description %}
+{% else %}
+    {% assign variant-4-description = "Our most subtle flavor with only a hint of grapefruit and melon." %}
+{% endif %}
+{% if object.variant-4-image != blank %}
+    {% assign variant-4-image = object.variant-4-image | img_url: '700x' %}
+{% else %}
+    {% assign variant-4-image = 'prod-varietypack-ex-front.png' | asset_url %}
+{% endif %}
+{% if object.variant-4-nutrition-image %}
+    {% assign variant-4-nutrition-image = object.variant-4-nutrition-image | img_url: 'master' %}
+{% endif %}
+
+
+
+
+<section class="plp-hero">
+{%- comment -%}    <div class="plp-banner">Free Shipping On All Orders!</div>{%- endcomment -%}
+    <div class="modal-wrap" id="modalNutrition">
+        <div class="modal-inner">
+            <div class="modal-close"></div>
+            <div class="modal-content">{% if variant-1-nutrition-image != blank %}
+                <img src="{{variant-1-nutrition-image}}"/>
+            {% endif %}</div>
+        </div>
+    </div>
+    <div class="plp-logo mobile-none"><img src="{{ 'logo.png' | asset_url}}"/></div>
+    <div class="container plp-product-details">
+        <div class="row">
+            <div class="column col-sm-6 col-xs-12 plp-hero-prod-img">
+                {%- comment -%}<div class="plp-tag-discount">25%<br/>OFF</div>{%- endcomment -%}
+                {% if is-new %}<div class="plp-tag-new">NEW</div>{% endif %}
+                <img src="{{variant-1-image}}"/>
+            </div>
+            <div class="column col-sm-6 col-xs-12 plp-hero-prod-details">
+                <h2 class="prod-name">
+                    {% if is-new %}<span class="prod-is-new">New:</span>{% endif %}
+                    {{product-name}}<br/>
+                    <span class="variation-name">{{variant-1-name}}</span> (15 sticks)
+                </h2>
+                <div class="prod-price">
+                    <span class="cur-price">{{price}}</span>
+                    <strike class="full-price">{{full-price}}</strike>
+                    <span class="discount-percent">{{discount}}</span>
+                </div>
+                <div class="prod-description">
+                    <div class="prod-description-content">{{variant-1-description}}</div>
+                    <a class="prod-nutrition-chart-link{% if variant-1-nutrition-image != blank %} active{% endif %}">View Nutritional Chart</a>
+                </div>
+                <div class="prod-attribute-select">
+      <div class="select-container">
+        <label class="label">Flavor</label>
+          <select id="product-variant-select" data-productid="4570756644982" class="multi_select" data-variant-selector>
+              <option selected="selected" value="{{variant-1-id}}" data-image="{{variant-1-image}}" data-color="{{variant-1-color}}" data-description="{{variant-1-description}}" data-nutrition-image="{{variant-1-nutrition-image}}">{{variant-1-name}}</option>
+              <option value="{{variant-2-id}}" data-image="{{variant-2-image}}" data-color="{{variant-2-color}}" data-description="{{variant-2-description}}" data-nutrition-image="{{variant-2-nutrition-image}}">{{variant-2-name}}</option>
+              <option value="{{variant-3-id}}" data-image="{{variant-3-image}}" data-color="{{variant-3-color}}" data-description="{{variant-3-description}}" data-nutrition-image="{{variant-3-nutrition-image}}">{{variant-3-name}}</option>
+              <option value="{{variant-4-id}}" data-image="{{variant-4-image}}" data-color="{{variant-4-color}}" data-description="{{variant-4-description}}" data-nutrition-image="{{variant-4-nutrition-image}}">{{variant-4-name}}</option>
+          </select>
+      </div>
+                </div>
+                <a data-variant-id="{{variant-1-id}}" href="{% if is-atc %}/cart/{{variant-1-id}}:1?discount=vp25o1{% else %}#{% endif %}" class="btn btn-default add-to-cart btn-subscribe">{{atc-text}}</a>
+                <div class="btn-tagline">{{tagline}}</div>
+                <div class="prod-key-points">
+                    <div class="point point1">
+                        <span class="point-icon">{{point1-icon}}</span>
+                        <span class="point-text">{{point1-text}}</span>
+                    </div>
+                    <div class="point point2">
+                        <span class="point-icon">{{point2-icon}}</span>
+                        <span class="point-text">{{point2-text}}</span>
+                    </div>
+                    <div class="point point3">
+                        <span class="point-icon">{{point3-icon}}</span>
+                        <span class="point-text">{{point3-text}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+$(document).ready(function(){
+    $('.plp-hero .modal-wrap').on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        if(e.target !== e.currentTarget) return;
+        $(this).removeClass('active');
+    });
+    $('.plp-hero .modal-close').on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).closest('.modal-wrap').removeClass('active');
+    });
+    $('.plp-hero .prod-nutrition-chart-link').on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).closest('.plp-hero').find('#modalNutrition').addClass('active');
+    });
+    $("#product-variant-select").on('change', function(e){
+        var $option = $(this).find(':selected');
+        var color = $option.data('color');
+        var image = $option.data('image');
+        var name = $option.html();
+        var id = $option.val();
+        var description = $option.data('description');
+        var nutritionImage = $option.data('nutrition-image');
+
+        var $hero = $(this).closest('.plp-hero');
+        var $nutritionLink = $hero.find('.prod-nutrition-chart-link');
+        $hero.css('background-color', color);
+        $hero.find('.plp-hero-prod-img img').attr('src', image);
+        $hero.find('.variation-name').html(name);
+        $hero.find('.add-to-cart').data('variant-id', id);
+        $hero.find('.prod-description-content').html(description);
+        $hero.find('#modalNutrition .modal-content').html((nutritionImage ? '<img src="' + nutritionImage + '"/>' : ''));
+        {% if is-atc %}
+        $hero.find('.add-to-cart').attr('href', '/cart/' + id + ':1?discount=vp25o1');
+        {% endif %}
+        if(nutritionImage){
+            $nutritionLink.addClass('active');
+        } else {
+            $nutritionLink.removeClass('active');
+        }
+    });
+});
+</script>
+<style>
+.modal-wrap:not(.active) {
+    display: none;
+}
+.prod-nutrition-chart-link:not(.active) {
+    display: none;
+}
+.prod-nutrition-chart-link:hover {
+    cursor: pointer;
+}
+.modal-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.33);
+    z-index: 111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-inner {
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 24px rgba(0,0,0,.3);
+}
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    transform: translate(25%, -25%);
+    cursor: pointer;
+}
+.modal-close:before {
+    content: 'x';
+    color: #000;
+    display: block;
+    padding: .5em;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 1;
+    width: 2em;
+    text-align: center;
+    height: 2em;
+    box-shadow: 0 2px 12px rgba(0,0,0,.16);
+}
+.modal-content img {
+    display: block;
+    max-height: calc(100vh - 40px);
+    max-width: calc(100vw - 40px);
+}
+@media (min-width: 768px)
+{
+    .modal-inner{
+        max-width: 90vw;
+        max-height: 90vh;
+        padding: 15px;
+    }
+    .modal-content img {
+        max-height: calc(90vh - 30px);
+        max-width: calc(90vw - 30px);
+    }
+}
+</style>

@@ -1,0 +1,69 @@
+{%- assign last_element_class = '' -%}
+
+{%- if show_featured -%}
+	{%- assign last_row_items = article_limit | minus: article_columns | plus: 1 -%}
+	{%- if forloop.index > last_row_items -%}
+		{%- assign last_element_class = 'visually-hidden' -%}
+	{%- endif -%}
+{%- endif -%}
+
+{%- assign show_author = false -%}
+{%- if section.settings.author and article.user.first_name != blank -%}
+	{%- assign show_author = true -%}
+	{%- capture author -%}{{ article.user.first_name }} {{ article.user.last_name }}{%- endcapture -%}
+{%- endif-%}
+
+{%- capture article_excerpt -%}
+	{{- article.excerpt_or_content | strip_html | strip | truncatewords: 50 -}}
+{%- endcapture -%}
+
+<div
+	class="blogModule-posts__post block s1 med_s12 lg_s1{{ columns_size }} {% unless article.image %}blogModule-posts__post--no-image{% else %}blogModule-posts__post--has-image{% endunless %} {{ last_element_class }}{% if settings.transition_grid_items %} will-animate{% endif %}"
+	{% if settings.transition_grid_items %}
+		data-animation="fadeInUp"
+	{% endif %}
+	data-blog-post>
+	<div class="blogModule-posts__post-block">
+		{%- if article.image -%}
+			<a href="{{ article.url }}" title="{{ article.title }}" aria-label="{{ article.title }}"
+				class="carousel-slide-image lazyload"
+				style="padding-top: {{ image_aspect_ratio | times: 100 }}%;"
+				{% if article.image %}
+				data-bgset="{% include 'bgset', image: article.image %}"
+				data-sizes="auto"
+				data-parent-fit="cover"
+				{% endif %}>
+			</a>
+			<noscript>
+				<a class="carousel-slide-image" style="background-image:url('{{ article.image | img_url: '2048x' }}'); padding-top: {{ image_aspect_ratio | times: 100 }}%;"></a>
+			</noscript>
+		{%- endif -%}
+
+		{%- if section.settings.tags -%}
+			<div class="post-tags">
+				{%- for tag in article.tags -%}
+					<a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="post-tags__tag">{{ tag | downcase }}</a>
+				{%- endfor -%}
+			</div>
+		{%- endif -%}
+	</div>
+
+	<a href="{{ article.url }}" title="{{ article.title }}" aria-label="{{ article.title }}" class="carousel-slide-info">
+		{%- if show_date or show_author or show_comments -%}
+			<div class="post-meta">
+				{%- if show_author -%}
+					<span class="post-meta__author">{{- 'blog.article.by_author' | t: author: author -}}</span>
+				{%- endif -%}
+				{%- if show_date -%}
+					<span class="post-meta__date"><time pubdate datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%B %d, %Y' }}</time></span>
+				{%- endif -%}
+				{%- if show_comments -%}
+					<span class="post-meta__comment-count">{{ 'blog.blog_list_view.comment_count' | t: count: article.comments_count }}</span>
+				{%- endif -%}
+			</div>
+		{%- endif -%}
+
+		<h3 class="post-title" data-post-title>{{ article.title }}</h3>
+		<p class="excerpt" data-post-excerpt>{{ article_excerpt }}</p>
+	</a>
+</div>

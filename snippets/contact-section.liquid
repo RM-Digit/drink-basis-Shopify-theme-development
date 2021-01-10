@@ -1,0 +1,62 @@
+{%- capture page_title -%}
+	{%- if show_page_title or banner_subheading != blank or banner_text != blank -%}
+	<div class="page-title">
+		<div class="container">
+			<div class="row row-sm page-title__wrapper">
+				{%- if banner_subheading != blank -%}
+					<p class="page-title__subheading subheading-text">{{ banner_subheading }}</p>
+				{%- endif -%}
+
+				{%- if show_page_title -%}
+					<h1 class="page-title__heading">{{ page.title }}</h1>
+				{%- elsif banner_heading != blank -%}
+					<h1 class="page-title__heading">{{ banner_heading }}</h1>
+				{%- endif -%}
+
+				{%- if banner_text != blank -%}
+					<div class="page-title__text">{{ banner_text }}</div>
+				{%- endif -%}
+			</div>
+		</div>
+	</div>
+	{%- endif -%}
+{%- endcapture -%}
+
+<div data-section-id="{{ section.id }}" data-section-type="contact-template">
+	{%- if banner_image -%}
+		{%- comment -%} Banner Settings {%- endcomment -%}
+		{%- assign banner_text_position = section.settings.banner_text_position -%}
+		{%- assign banner_height = section.settings.banner_height -%}
+		{%- assign banner_color_text = section.settings.banner_color_text -%}
+		{%- assign banner_color_overlay = section.settings.banner_color_overlay -%}
+		{%- assign banner_overlay_opacity = section.settings.banner_overlay_opacity | times: 0.01 | round: 2 -%}
+
+		{%- include 'banner--page' -%}
+	{%- endif -%}
+
+	<div class="container-wrap">
+		<div class="contact-form-container container">
+			<div class="row row-med">
+				<div class="contact-column contact-column-form">
+					{%- if banner_image == blank -%}
+						{%- if contact_heading != blank or contact_content != blank-%}
+							<div class="contact-text">
+								{%- if contact_heading != blank -%}
+									<h2>{{ contact_heading }}</h2>
+								{%- endif -%}
+
+								{%- if contact_content != blank -%}
+									<div class="content-wrapper text-content rte">
+										{{ contact_content }}
+									</div>
+								{%- endif -%}
+							</div>
+						{%- endif -%}
+					{%- endif -%}
+
+					{%- include 'contact-form' -%}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

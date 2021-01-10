@@ -1,0 +1,213 @@
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% assign compare-headline = object.compare-headline %}
+{% assign compare-other-image = object.compare-other-image %}
+{% assign compare-other-calories = object.compare-other-calories %}
+{% assign compare-other-sugar = object.compare-other-sugar %}
+{% assign compare-other-electrolytes = object.compare-other-electrolytes %}
+{% assign compare-basis-image = object.compare-basis-image %}
+{% assign compare-basis-calories = object.compare-basis-calories %}
+{% assign compare-basis-sugar = object.compare-basis-sugar %}
+{% assign compare-basis-electrolytes = object.compare-basis-electrolytes %}
+
+{% assign cta-url = object.compare-cta-url %}
+{% if object.compare-cta-text != blank %}
+    {% assign cta-text = object.compare-cta-text %}
+{% else %}
+    {% assign cta-text = "Buy Now" %}
+{% endif %}
+
+
+<section id="pdpComparison" class="pdp-comparison">
+    <div class="container">
+        <h2 class="headline">{{compare-headline}}</h2>
+        <div class="comparison-block">
+            <div class="other-block">
+                <div class="title">Other mixes</div>
+                <div class="img-wrap"><img src="{{compare-other-image | img_url: 'x530'}}" alt=""></div>
+                <div class="details">
+                    <div class="detail">
+                        <div class="quantity">{{compare-other-calories}}</div>
+                        <div class="label">Calories</div>
+                    </div>
+                    <div class="detail">
+                        <div class="quantity">{{compare-other-sugar}}</div>
+                        <div class="label">Sugar</div>
+                    </div>
+                    <div class="detail">
+                        <div class="quantity">{{compare-other-electrolytes}}</div>
+                        <div class="label">Electrolytes</div>
+                    </div>
+                </div>
+            </div>
+            <div class="vs-block">
+                <div class="vs-icon">Vs</div>
+            </div>
+            <div class="basis-block">
+                <div class="title">Basis</div>
+                <div class="img-wrap"><img src="{{compare-basis-image | img_url: 'x600'}}" alt=""></div>
+                <div class="details">
+                    <div class="detail">
+                        <div class="quantity">{{compare-basis-calories}}</div>
+                        <div class="label">Calories</div>
+                    </div>
+                    <div class="detail">
+                        <div class="quantity">{{compare-basis-sugar}}</div>
+                        <div class="label">Sugar</div>
+                    </div>
+                    <div class="detail">
+                        <div class="quantity">{{compare-basis-electrolytes}}</div>
+                        <div class="label">Electrolytes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if cta-url != blank %}
+    <div class="section-cta-wrap"><a href="{{cta-url}}" class="btn btn-default">{{cta-text}}</a></div>
+    {% endif %}
+</section>
+
+<style>
+.pdp-comparison {
+    color: #191c22;
+    font-family: 'Circular';
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 2.25;
+    text-align: center;
+}
+.pdp-comparison .comparison-block .title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+.pdp-comparison .comparison-block .details .quantity {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.other-block,
+.basis-block {
+    border-radius: 20px;
+    background-color: #eff0f2;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.comparison-block .details {
+    display: flex;
+    justify-content: space-around;
+}
+.other-block > *,
+.basis-block > * {
+    width: 100%;
+}
+.pdp-comparison .img-wrap {
+    margin-bottom: 1rem;
+}
+.pdp-comparison .img-wrap img {
+    max-height: 235px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.vs-block {
+    position: relative;
+}
+.vs-block:before {
+    height: 2px;
+    width: 100%;
+    background: #191c22;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.vs-block .vs-icon {
+    color: #191c22;
+    font-family: 'Circular';
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #191c22;
+    border-radius: 50%;
+    margin: .5rem auto;
+    background: #fff;
+    position: relative;
+}
+@media (max-width: 767px)
+{
+    .pdp-comparison .headline {
+        display: none;
+    }
+}
+@media (min-width: 768px)
+{
+    .pdp-comparison .headline {
+        margin-bottom: 3rem;
+    }
+    .pdp-comparison .comparison-block {
+        display: flex;
+        position: relative;
+        border-radius: 20px;
+        background: #eff0f2;
+    }
+    .pdp-comparison .img-wrap img {
+        max-height: 300px;
+    }
+    .vs-block {
+        position: absolute;
+        left: 50%;
+        top: 50px;
+        bottom: 50px;
+        z-index: 2;
+        transform: translateX(-50%);
+    }
+    .vs-block:before {
+        height: 100%;
+        width: 2px;
+        transform: translateX(-50%);
+        top: 0;
+        left: 50%;
+    }
+    .vs-block .vs-icon {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .comparison-block .other-block,
+    .comparison-block .basis-block {
+        width: 50%;
+        position: relative;
+        padding: 50px;
+    }
+    .vs-block .vs-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 76px;
+        background: #eff0f2;
+    }
+    .pdp-comparison .comparison-block .title {
+        order: 1;
+    }
+    .pdp-comparison .comparison-block .details {
+        order: 2;
+    }
+}
+</style>

@@ -1,0 +1,106 @@
+{% case type %}
+    {% when 'section' %}
+        {% assign object = section.settings %}
+    {% else %}
+        {% assign object = block.settings %}
+{% endcase %}
+
+{% if atc_text == blank %}
+    {% assign atc_text = "Start My Trial" %}
+{% endif %}
+
+{% if object.headline != blank %}
+    {% assign headline = object.headline %}
+{% else %}
+    {% assign headline = "" %}
+{% endif %}
+{% if object.tagline != blank %}
+    {% assign tagline = object.tagline %}
+{% else %}
+    {% assign tagline = "" %}
+{% endif %}
+
+{% if object.step1-icon != blank %}
+    {% assign step1-icon = object.step1-icon %}
+{% endif %}
+{% if object.step1-title != blank %}
+    {% assign step1-title = object.step1-title %}
+{% else %}
+    {% assign step1-title = "" %}
+{% endif %}
+{% if object.step1-text != blank %}
+    {% assign step1-text = object.step1-text %}
+{% else %}
+    {% assign step1-text = "" %}
+{% endif %}
+
+{% if object.step2-icon != blank %}
+    {% assign step2-icon = object.step2-icon %}
+{% endif %}
+{% if object.step2-title != blank %}
+    {% assign step2-title = object.step2-title %}
+{% else %}
+    {% assign step2-title = "" %}
+{% endif %}
+{% if object.step2-text != blank %}
+    {% assign step2-text = object.step2-text %}
+{% else %}
+    {% assign step2-text = "" %}
+{% endif %}
+
+{% if object.step3-icon != blank %}
+    {% assign step3-icon = object.step3-icon %}
+{% endif %}
+{% if object.step3-title != blank %}
+    {% assign step3-title = object.step3-title %}
+{% else %}
+    {% assign step3-title = "" %}
+{% endif %}
+{% if object.step3-text != blank %}
+    {% assign step3-text = object.step3-text %}
+{% else %}
+    {% assign step3-text = "" %}
+{% endif %}
+
+<section class="plp-how">
+    <div class="container">
+        <h2 class="headline">{{ headline }}</h2>
+        <div class="tagline">{{ tagline }}</div>
+        <div class="row hiw-content">
+            <div class="column col-xs-12 col-md-4">
+                <div class="hiw-icon">
+                {% if step1-icon %}
+                    <img src="{{step1-icon | img_url: '92x'}}"/>
+                {% else %}
+                    💦
+                {% endif %}
+                </div>
+                <div class="title">{{step1-title}}</div>
+                <div class="text">{{step1-text}}</div>
+            </div>
+            <div class="column col-xs-12 col-md-4">
+                <div class="hiw-icon">
+                {% if step2-icon %}
+                    <img src="{{step2-icon | img_url: '92x'}}"/>
+                {% else %}
+                    💰
+                {% endif %}
+                </div>
+                <div class="title">{{step2-title}}</div>
+                <div class="text">{{step2-text}}</div>
+            </div>
+            <div class="column col-xs-12 col-md-4">
+                <div class="hiw-icon">
+                {% if step3-icon %}
+                    <img src="{{step3-icon | img_url: '92x'}}"/>
+                {% else %}
+                    🎉
+                {% endif %}
+                </div>
+                <div class="title">{{step3-title}}</div>
+                <div class="text">{{step3-text}}</div>
+            </div>
+        </div>
+        <a href="#featuredProduct" class="btn btn-default">{{atc_text}}</a>
+    </div>
+</section>
